@@ -337,6 +337,47 @@
 <vertex x="3.3" y="5.7"/>
 </polygon>
 </package>
+<package name="RN4020">
+<description>Footprint for the Microchip RN4020
+
+
+This footprint has omitted the ground pads on pins 9 and 16.
+-Alex Marcellus</description>
+<wire x1="-5.75" y1="9.75" x2="-5.75" y2="4.8" width="0.127" layer="51"/>
+<wire x1="-5.75" y1="4.8" x2="-5.75" y2="-9.75" width="0.127" layer="21"/>
+<wire x1="-5.75" y1="-9.75" x2="5.75" y2="-9.75" width="0.127" layer="21"/>
+<wire x1="5.75" y1="-9.75" x2="5.75" y2="4.8" width="0.127" layer="21"/>
+<wire x1="5.75" y1="4.8" x2="5.75" y2="9.75" width="0.127" layer="51"/>
+<wire x1="5.75" y1="9.75" x2="-5.75" y2="9.75" width="0.127" layer="51"/>
+<smd name="P$8" x="-5.5" y="-7.25" dx="1.5" dy="0.8" layer="1"/>
+<smd name="P$7" x="-5.5" y="-6.05" dx="1.5" dy="0.8" layer="1"/>
+<smd name="P$6" x="-5.5" y="-4.85" dx="1.5" dy="0.8" layer="1"/>
+<smd name="P$5" x="-5.5" y="-3.65" dx="1.5" dy="0.8" layer="1"/>
+<smd name="P$4" x="-5.5" y="-2.45" dx="1.5" dy="0.8" layer="1"/>
+<smd name="P$3" x="-5.5" y="-1.25" dx="1.5" dy="0.8" layer="1"/>
+<smd name="P$2" x="-5.5" y="-0.05" dx="1.5" dy="0.8" layer="1"/>
+<smd name="P$1" x="-5.5" y="1.15" dx="1.5" dy="0.8" layer="1"/>
+<smd name="P$10" x="-3" y="-9.5" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$11" x="-1.8" y="-9.5" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$12" x="-0.6" y="-9.5" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$13" x="0.6" y="-9.5" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$14" x="1.8" y="-9.5" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$15" x="3" y="-9.5" dx="1.5" dy="0.8" layer="1" rot="R90"/>
+<smd name="P$17" x="5.5" y="-7.25" dx="1.5" dy="0.8" layer="1"/>
+<smd name="P$18" x="5.5" y="-6.05" dx="1.5" dy="0.8" layer="1"/>
+<smd name="P$19" x="5.5" y="-4.85" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$20" x="5.5" y="-3.65" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$21" x="5.5" y="-2.45" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$22" x="5.5" y="-1.25" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$23" x="5.5" y="-0.05" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<smd name="P$24" x="5.5" y="1.15" dx="1.5" dy="0.8" layer="1" rot="R180"/>
+<wire x1="-5.75" y1="4.8" x2="5.75" y2="4.8" width="0.127" layer="21"/>
+<rectangle x1="-5.75" y1="4.8" x2="5.75" y2="9.75" layer="41"/>
+<rectangle x1="-3.9" y1="3.2" x2="-1.7" y2="4.8" layer="41"/>
+<rectangle x1="-5.45" y1="2.15" x2="-4.45" y2="3.75" layer="41"/>
+<rectangle x1="4.45" y1="2.15" x2="5.45" y2="3.75" layer="41"/>
+<circle x="-4" y="1" radius="0.5" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BTM7752G">
@@ -487,6 +528,35 @@
 <rectangle x1="-1.872" y1="0.287" x2="-1.745" y2="1.176" layer="94"/>
 <pin name="+" x="0" y="2.54" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
 <pin name="-" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+</symbol>
+<symbol name="RN4020">
+<wire x1="-25.4" y1="25.4" x2="25.4" y2="25.4" width="0.254" layer="94"/>
+<wire x1="25.4" y1="25.4" x2="25.4" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="25.4" y1="-25.4" x2="-25.4" y2="-25.4" width="0.254" layer="94"/>
+<wire x1="-25.4" y1="-25.4" x2="-25.4" y2="25.4" width="0.254" layer="94"/>
+<pin name="GND@1" x="-27.94" y="20.32" length="short" direction="pwr"/>
+<pin name="AIO2" x="-27.94" y="15.24" length="short"/>
+<pin name="AIO1" x="-27.94" y="10.16" length="short"/>
+<pin name="AIO0" x="-27.94" y="5.08" length="short"/>
+<pin name="UART_TX" x="-27.94" y="0" length="short" direction="out"/>
+<pin name="UART_RX" x="-27.94" y="-5.08" length="short" direction="in"/>
+<pin name="WAKE_SW" x="-27.94" y="-10.16" length="short" direction="in"/>
+<pin name="CMD/MLDP" x="-27.94" y="-15.24" length="short" direction="in"/>
+<pin name="PIO1" x="-12.7" y="-27.94" length="short" rot="R90"/>
+<pin name="PIO2" x="-7.62" y="-27.94" length="short" rot="R90"/>
+<pin name="PIO3" x="-2.54" y="-27.94" length="short" rot="R90"/>
+<pin name="PIO4" x="2.54" y="-27.94" length="short" rot="R90"/>
+<pin name="PIO5" x="7.62" y="-27.94" length="short" rot="R90"/>
+<pin name="WAKE_HW" x="12.7" y="-27.94" length="short" rot="R90"/>
+<pin name="SPI/!PIO" x="27.94" y="-15.24" length="short" direction="in" rot="R180"/>
+<pin name="RTS/PIO6" x="27.94" y="-10.16" length="short" rot="R180"/>
+<pin name="PWM/PIO7" x="27.94" y="-5.08" length="short" rot="R180"/>
+<pin name="RSVD" x="27.94" y="0" length="short" direction="nc" rot="R180"/>
+<pin name="SDA" x="27.94" y="5.08" length="short" rot="R180"/>
+<pin name="SCL" x="27.94" y="10.16" length="short" rot="R180"/>
+<pin name="VDD" x="27.94" y="15.24" length="short" direction="pwr" rot="R180"/>
+<pin name="GND@24" x="27.94" y="20.32" length="short" direction="pwr" rot="R180"/>
+<text x="-5.08" y="0" size="2.54" layer="94">&gt;Name</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -647,6 +717,42 @@
 <connects>
 <connect gate="G$1" pin="+" pad="P$1"/>
 <connect gate="G$1" pin="-" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RN4020" prefix="U">
+<gates>
+<gate name="G$1" symbol="RN4020" x="0" y="0"/>
+</gates>
+<devices>
+<device name="RN4020" package="RN4020">
+<connects>
+<connect gate="G$1" pin="AIO0" pad="P$4"/>
+<connect gate="G$1" pin="AIO1" pad="P$3"/>
+<connect gate="G$1" pin="AIO2" pad="P$2"/>
+<connect gate="G$1" pin="CMD/MLDP" pad="P$8"/>
+<connect gate="G$1" pin="GND@1" pad="P$1"/>
+<connect gate="G$1" pin="GND@24" pad="P$24"/>
+<connect gate="G$1" pin="PIO1" pad="P$10"/>
+<connect gate="G$1" pin="PIO2" pad="P$11"/>
+<connect gate="G$1" pin="PIO3" pad="P$12"/>
+<connect gate="G$1" pin="PIO4" pad="P$13"/>
+<connect gate="G$1" pin="PIO5" pad="P$14"/>
+<connect gate="G$1" pin="PWM/PIO7" pad="P$19"/>
+<connect gate="G$1" pin="RSVD" pad="P$20"/>
+<connect gate="G$1" pin="RTS/PIO6" pad="P$18"/>
+<connect gate="G$1" pin="SCL" pad="P$22"/>
+<connect gate="G$1" pin="SDA" pad="P$21"/>
+<connect gate="G$1" pin="SPI/!PIO" pad="P$17"/>
+<connect gate="G$1" pin="UART_RX" pad="P$6"/>
+<connect gate="G$1" pin="UART_TX" pad="P$5"/>
+<connect gate="G$1" pin="VDD" pad="P$23"/>
+<connect gate="G$1" pin="WAKE_HW" pad="P$15"/>
+<connect gate="G$1" pin="WAKE_SW" pad="P$7"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1606,6 +1712,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="FRAME3" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="U$6" library="BB8" deviceset="CAP_POL_PAN" device="" value="100uF"/>
 <part name="U$7" library="BB8" deviceset="CAP_POL_PAN" device="" value="100uF"/>
+<part name="U1" library="BB8" deviceset="RN4020" device="RN4020"/>
 </parts>
 <sheets>
 <sheet>
@@ -1651,6 +1758,7 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="FRAME3" gate="V" x="411.48" y="-5.08"/>
 <instance part="U$6" gate="G$1" x="7.62" y="116.84"/>
 <instance part="U$7" gate="G$1" x="7.62" y="45.72"/>
+<instance part="U1" gate="G$1" x="22.86" y="-76.2"/>
 </instances>
 <busses>
 </busses>
