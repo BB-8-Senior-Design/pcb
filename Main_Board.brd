@@ -415,6 +415,28 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="2.8" y1="-0.8" x2="2.8" y2="2" width="0.127" layer="21"/>
 <text x="-3" y="3" size="0.6096" layer="21">&gt;NAME</text>
 </package>
+<package name="14-TSSOP">
+<smd name="P$1" x="0" y="0" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$2" x="0.65" y="0" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$3" x="1.3" y="0" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$4" x="1.95" y="0" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$5" x="2.6" y="0" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$6" x="3.25" y="0" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$7" x="3.9" y="0" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$14" x="0" y="5.6" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$13" x="0.65" y="5.6" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$12" x="1.3" y="5.6" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$11" x="1.95" y="5.6" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$10" x="2.6" y="5.6" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$9" x="3.25" y="5.6" dx="0.35" dy="1.6" layer="1"/>
+<smd name="P$8" x="3.9" y="5.6" dx="0.35" dy="1.6" layer="1"/>
+<wire x1="4.5" y1="0.8" x2="-0.5" y2="0.8" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="0.8" x2="-0.5" y2="4.8" width="0.127" layer="21"/>
+<wire x1="-0.5" y1="4.8" x2="4.5" y2="4.8" width="0.127" layer="21"/>
+<wire x1="4.5" y1="4.8" x2="4.5" y2="0.8" width="0.127" layer="21"/>
+<circle x="0" y="1.4" radius="0.3" width="0.127" layer="21"/>
+<text x="0" y="2.5" size="0.6096" layer="21">&gt;NAME</text>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Passives">
@@ -697,6 +719,8 @@ design rules under a new name.</description>
 <element name="U$8" library="BB8" package="SOT-223" value="LMS8117" x="-113" y="-132"/>
 <element name="C13" library="SparkFun-Capacitors" package="0805" value="" x="-118" y="-131"/>
 <element name="C14" library="SparkFun-Capacitors" package="0805" value="" x="-121" y="-131"/>
+<element name="U$9" library="BB8" package="14-TSSOP" value="SN74LV4T125" x="-127" y="-132"/>
+<element name="U$10" library="BB8" package="14-TSSOP" value="SN74LV4T125" x="-133" y="-132"/>
 </elements>
 <signals>
 <signal name="GND">
@@ -742,9 +766,29 @@ design rules under a new name.</description>
 <contactref element="C13" pad="2"/>
 <contactref element="U$8" pad="P$1"/>
 <contactref element="C14" pad="2"/>
+<contactref element="U$9" pad="P$1"/>
+<contactref element="U$9" pad="P$4"/>
+<contactref element="U$9" pad="P$7"/>
+<contactref element="U$9" pad="P$10"/>
+<contactref element="U$9" pad="P$13"/>
+<contactref element="U$10" pad="P$7"/>
+<contactref element="U$10" pad="P$4"/>
+<contactref element="U$10" pad="P$1"/>
+<contactref element="U$10" pad="P$12"/>
+<contactref element="U$10" pad="P$9"/>
+<wire x1="-125.05" y1="-132" x2="-123.1" y2="-132" width="0" layer="19" extent="1-1"/>
+<wire x1="-127" y1="-132" x2="-125.05" y2="-132" width="0" layer="19" extent="1-1"/>
+<wire x1="-129.1" y1="-132" x2="-127" y2="-132" width="0" layer="19" extent="1-1"/>
+<wire x1="-131.05" y1="-132" x2="-129.1" y2="-132" width="0" layer="19" extent="1-1"/>
+<wire x1="-133" y1="-132" x2="-131.05" y2="-132" width="0" layer="19" extent="1-1"/>
+<wire x1="-120.1" y1="-131" x2="-123.1" y2="-132" width="0" layer="19" extent="1-1"/>
 <wire x1="-117.1" y1="-131" x2="-120.1" y2="-131" width="0" layer="19" extent="1-1"/>
 <wire x1="-115.3" y1="-132" x2="-117.1" y2="-131" width="0" layer="19" extent="1-1"/>
-<wire x1="-106.1" y1="-95" x2="-117.1" y2="-131" width="0" layer="19" extent="1-1"/>
+<wire x1="-126.35" y1="-126.4" x2="-127" y2="-132" width="0" layer="19" extent="1-1"/>
+<wire x1="-124.4" y1="-126.4" x2="-126.35" y2="-126.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-129.75" y1="-126.4" x2="-126.35" y2="-126.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-131.7" y1="-126.4" x2="-129.75" y2="-126.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-106.1" y1="-95" x2="-124.4" y2="-126.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-103.1" y1="-95" x2="-106.1" y2="-95" width="0" layer="19" extent="1-1"/>
 <wire x1="-101.9" y1="-95" x2="-103.1" y2="-95" width="0" layer="19" extent="1-1"/>
 <wire x1="-98.9" y1="-95" x2="-101.9" y2="-95" width="0" layer="19" extent="1-1"/>
@@ -893,7 +937,13 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="VCC"/>
 <contactref element="U$8" pad="P$3"/>
 <contactref element="C13" pad="1"/>
+<contactref element="U$10" pad="P$14"/>
+<contactref element="U$10" pad="P$13"/>
+<contactref element="U$10" pad="P$10"/>
 <wire x1="-110.7" y1="-132" x2="-118.9" y2="-131" width="0" layer="19" extent="1-1"/>
+<wire x1="-130.4" y1="-126.4" x2="-118.9" y2="-131" width="0" layer="19" extent="1-1"/>
+<wire x1="-132.35" y1="-126.4" x2="-130.4" y2="-126.4" width="0" layer="19" extent="1-1"/>
+<wire x1="-133" y1="-126.4" x2="-132.35" y2="-126.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-40.64" y1="-35.56" x2="-110.7" y2="-132" width="0" layer="19" extent="1-1"/>
 <wire x1="-15.24" y1="-13.97" x2="-40.64" y2="-35.56" width="0" layer="19" extent="1-1"/>
 </signal>
@@ -981,6 +1031,8 @@ design rules under a new name.</description>
 <contactref element="U$8" pad="P$2"/>
 <contactref element="U$8" pad="P$4"/>
 <contactref element="C14" pad="1"/>
+<contactref element="U$9" pad="P$14"/>
+<wire x1="-121.9" y1="-131" x2="-127" y2="-126.4" width="0" layer="19" extent="1-1"/>
 <wire x1="-113" y1="-132" x2="-121.9" y2="-131" width="0" layer="19" extent="1-1"/>
 <wire x1="-113" y1="-125.7" x2="-113" y2="-132" width="0" layer="19" extent="1-1"/>
 <wire x1="-100.1" y1="-95" x2="-113" y2="-125.7" width="0" layer="19" extent="1-1"/>
@@ -1020,11 +1072,53 @@ design rules under a new name.</description>
 <signal name="MC1_IN2">
 <contactref element="R2" pad="1"/>
 </signal>
-<signal name="MC1_INH">
+<signal name="MC1_INH_5">
 <contactref element="R3" pad="2"/>
+<contactref element="U$10" pad="P$3"/>
+<wire x1="-131.7" y1="-132" x2="-33.39" y2="-15.24" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="MC2_INH">
+<signal name="MC2_INH_5">
 <contactref element="R8" pad="2"/>
+<contactref element="U$10" pad="P$6"/>
+<wire x1="-129.75" y1="-132" x2="-33.39" y2="-40.64" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="M1_A_5">
+<contactref element="U$3" pad="A"/>
+<contactref element="U$9" pad="P$2"/>
+<wire x1="-126.35" y1="-132" x2="-12.7" y2="-13.97" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="M1_B_5">
+<contactref element="U$3" pad="B"/>
+<contactref element="U$9" pad="P$5"/>
+<wire x1="-10.16" y1="-13.97" x2="-124.4" y2="-132" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="M2_A_5">
+<contactref element="U$4" pad="A"/>
+<contactref element="U$9" pad="P$12"/>
+<wire x1="-38.1" y1="-35.56" x2="-125.7" y2="-126.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="M2_B_5">
+<contactref element="U$4" pad="B"/>
+<contactref element="U$9" pad="P$9"/>
+<wire x1="-35.56" y1="-35.56" x2="-123.75" y2="-126.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="M1_A_3.3">
+<contactref element="U$9" pad="P$3"/>
+</signal>
+<signal name="M1_B_3.3">
+<contactref element="U$9" pad="P$6"/>
+</signal>
+<signal name="M2_A_3.3">
+<contactref element="U$9" pad="P$11"/>
+</signal>
+<signal name="M2_B_3.3">
+<contactref element="U$9" pad="P$8"/>
+</signal>
+<signal name="MC1_INH_3.3">
+<contactref element="U$10" pad="P$2"/>
+</signal>
+<signal name="MC1_ING_3.3">
+<contactref element="U$10" pad="P$5"/>
 </signal>
 </signals>
 </board>
