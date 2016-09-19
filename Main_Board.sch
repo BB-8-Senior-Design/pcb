@@ -446,76 +446,76 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <pin name="B" x="5.08" y="5.08" visible="pad" length="middle" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="STM32F4">
-<pin name="VBAT" x="-50.8" y="35.56" length="middle"/>
+<pin name="VBAT" x="-50.8" y="38.1" length="middle"/>
 <pin name="PC13" x="-50.8" y="30.48" length="middle"/>
-<pin name="PC14" x="-50.8" y="25.4" length="middle"/>
-<pin name="PC15" x="-50.8" y="20.32" length="middle"/>
-<pin name="PH0" x="-50.8" y="15.24" length="middle"/>
-<pin name="PH1" x="-50.8" y="10.16" length="middle"/>
-<pin name="!RST" x="-50.8" y="5.08" length="middle"/>
-<pin name="PC0" x="-50.8" y="0" length="middle"/>
-<pin name="PC1" x="-50.8" y="-5.08" length="middle"/>
-<pin name="PC2" x="-50.8" y="-10.16" length="middle"/>
-<pin name="PC3" x="-50.8" y="-15.24" length="middle"/>
-<pin name="VSSA" x="-50.8" y="-20.32" length="middle"/>
-<pin name="VDDA" x="-50.8" y="-25.4" length="middle"/>
-<pin name="PA0_WKUP" x="-50.8" y="-30.48" length="middle"/>
-<pin name="PA1" x="-50.8" y="-35.56" length="middle"/>
-<pin name="PA2" x="-50.8" y="-40.64" length="middle"/>
-<pin name="PA3" x="-38.1" y="-53.34" length="middle" rot="R90"/>
-<pin name="VSS" x="-33.02" y="-53.34" length="middle" rot="R90"/>
-<pin name="VDD" x="-27.94" y="-53.34" length="middle" rot="R90"/>
-<pin name="PA4" x="-22.86" y="-53.34" length="middle" rot="R90"/>
-<pin name="PA5" x="-17.78" y="-53.34" length="middle" rot="R90"/>
-<pin name="PA6" x="-12.7" y="-53.34" length="middle" rot="R90"/>
-<pin name="PA7" x="-7.62" y="-53.34" length="middle" rot="R90"/>
-<pin name="PC4" x="-2.54" y="-53.34" length="middle" rot="R90"/>
-<pin name="PC5" x="2.54" y="-53.34" length="middle" rot="R90"/>
-<pin name="PB0" x="7.62" y="-53.34" length="middle" rot="R90"/>
-<pin name="PB1" x="12.7" y="-53.34" length="middle" rot="R90"/>
-<pin name="PB2" x="17.78" y="-53.34" length="middle" rot="R90"/>
-<pin name="PB10" x="22.86" y="-53.34" length="middle" rot="R90"/>
-<pin name="PB11" x="27.94" y="-53.34" length="middle" rot="R90"/>
-<pin name="VCAP_1" x="33.02" y="-53.34" length="middle" rot="R90"/>
-<pin name="VDD@32" x="38.1" y="-53.34" length="middle" rot="R90"/>
-<pin name="PB12" x="50.8" y="-40.64" length="middle" rot="R180"/>
-<pin name="PB13" x="50.8" y="-35.56" length="middle" rot="R180"/>
-<pin name="PB14" x="50.8" y="-30.48" length="middle" rot="R180"/>
-<pin name="PB15" x="50.8" y="-25.4" length="middle" rot="R180"/>
-<pin name="PC6" x="50.8" y="-20.32" length="middle" rot="R180"/>
-<pin name="PC7" x="50.8" y="-15.24" length="middle" rot="R180"/>
-<pin name="PC8" x="50.8" y="-10.16" length="middle" rot="R180"/>
-<pin name="PC9" x="50.8" y="-5.08" length="middle" rot="R180"/>
-<pin name="PA8" x="50.8" y="0" length="middle" rot="R180"/>
-<pin name="PA9" x="50.8" y="5.08" length="middle" rot="R180"/>
-<pin name="PA10" x="50.8" y="10.16" length="middle" rot="R180"/>
-<pin name="PA11" x="50.8" y="15.24" length="middle" rot="R180"/>
-<pin name="PA12" x="50.8" y="20.32" length="middle" rot="R180"/>
-<pin name="PA13" x="50.8" y="25.4" length="middle" rot="R180"/>
-<pin name="VCAP_2" x="50.8" y="30.48" length="middle" rot="R180"/>
-<pin name="VDD@48" x="50.8" y="35.56" length="middle" rot="R180"/>
-<pin name="PA14" x="38.1" y="48.26" length="middle" rot="R270"/>
-<pin name="PA15" x="33.02" y="48.26" length="middle" rot="R270"/>
-<pin name="PC10" x="27.94" y="48.26" length="middle" rot="R270"/>
-<pin name="PC11" x="22.86" y="48.26" length="middle" rot="R270"/>
-<pin name="PC12" x="17.78" y="48.26" length="middle" rot="R270"/>
-<pin name="PD2" x="12.7" y="48.26" length="middle" rot="R270"/>
-<pin name="PB3" x="7.62" y="48.26" length="middle" rot="R270"/>
-<pin name="PB4" x="2.54" y="48.26" length="middle" rot="R270"/>
-<pin name="PB5" x="-2.54" y="48.26" length="middle" rot="R270"/>
-<pin name="PB6" x="-7.62" y="48.26" length="middle" rot="R270"/>
-<pin name="PB7" x="-12.7" y="48.26" length="middle" rot="R270"/>
-<pin name="BOOT0" x="-17.78" y="48.26" length="middle" rot="R270"/>
-<pin name="PB8" x="-22.86" y="48.26" length="middle" rot="R270"/>
-<pin name="PB9" x="-27.94" y="48.26" length="middle" rot="R270"/>
-<pin name="VSS@63" x="-33.02" y="48.26" length="middle" rot="R270"/>
-<pin name="VDD@64" x="-38.1" y="48.26" length="middle" rot="R270"/>
-<wire x1="-45.72" y1="-48.26" x2="45.72" y2="-48.26" width="0.254" layer="94"/>
-<wire x1="45.72" y1="-48.26" x2="45.72" y2="43.18" width="0.254" layer="94"/>
-<wire x1="45.72" y1="43.18" x2="-45.72" y2="43.18" width="0.254" layer="94"/>
-<wire x1="-45.72" y1="43.18" x2="-45.72" y2="-48.26" width="0.254" layer="94"/>
-<text x="-10.16" y="10.16" size="5.08" layer="94">&gt;NAME</text>
-<text x="-10.16" y="-5.08" size="5.08" layer="94">&gt;VALUE</text>
+<pin name="PC14" x="-50.8" y="22.86" length="middle"/>
+<pin name="PC15" x="-50.8" y="15.24" length="middle"/>
+<pin name="PH0" x="-50.8" y="7.62" length="middle"/>
+<pin name="PH1" x="-50.8" y="0" length="middle"/>
+<pin name="!RST" x="-50.8" y="-7.62" length="middle"/>
+<pin name="PC0" x="-50.8" y="-15.24" length="middle"/>
+<pin name="PC1" x="-50.8" y="-22.86" length="middle"/>
+<pin name="PC2" x="-50.8" y="-30.48" length="middle"/>
+<pin name="PC3" x="-50.8" y="-38.1" length="middle"/>
+<pin name="VSSA" x="-50.8" y="-45.72" length="middle"/>
+<pin name="VDDA" x="-50.8" y="-53.34" length="middle"/>
+<pin name="PA0_WKUP" x="-50.8" y="-60.96" length="middle"/>
+<pin name="PA1" x="-50.8" y="-68.58" length="middle"/>
+<pin name="PA2" x="-50.8" y="-76.2" length="middle"/>
+<pin name="PA3" x="-50.8" y="-83.82" length="middle"/>
+<pin name="VSS" x="-50.8" y="-91.44" length="middle"/>
+<pin name="VDD" x="-50.8" y="-99.06" length="middle"/>
+<pin name="PA4" x="-50.8" y="-106.68" length="middle"/>
+<pin name="PA5" x="-50.8" y="-114.3" length="middle"/>
+<pin name="PA6" x="-50.8" y="-121.92" length="middle"/>
+<pin name="PA7" x="-50.8" y="-129.54" length="middle"/>
+<pin name="PC4" x="-50.8" y="-137.16" length="middle"/>
+<pin name="PC5" x="-2.54" y="-137.16" length="middle" rot="R180"/>
+<pin name="PB0" x="-2.54" y="-129.54" length="middle" rot="R180"/>
+<pin name="PB1" x="-2.54" y="-121.92" length="middle" rot="R180"/>
+<pin name="PB2" x="-2.54" y="-114.3" length="middle" rot="R180"/>
+<pin name="PB10" x="-2.54" y="-106.68" length="middle" rot="R180"/>
+<pin name="PB11" x="-2.54" y="-99.06" length="middle" rot="R180"/>
+<pin name="VCAP_1" x="-2.54" y="-91.44" length="middle" rot="R180"/>
+<pin name="VDD@32" x="-2.54" y="-83.82" length="middle" rot="R180"/>
+<pin name="PB12" x="-2.54" y="-76.2" length="middle" rot="R180"/>
+<pin name="PB13" x="-2.54" y="-68.58" length="middle" rot="R180"/>
+<pin name="PB14" x="-2.54" y="-60.96" length="middle" rot="R180"/>
+<pin name="PB15" x="-2.54" y="-53.34" length="middle" rot="R180"/>
+<pin name="PC6" x="-2.54" y="-45.72" length="middle" rot="R180"/>
+<pin name="PC7" x="-2.54" y="-38.1" length="middle" rot="R180"/>
+<pin name="PC8" x="-2.54" y="-30.48" length="middle" rot="R180"/>
+<pin name="PC9" x="-2.54" y="-22.86" length="middle" rot="R180"/>
+<pin name="PA8" x="-2.54" y="-15.24" length="middle" rot="R180"/>
+<pin name="PA9" x="-2.54" y="-7.62" length="middle" rot="R180"/>
+<pin name="PA10" x="-2.54" y="0" length="middle" rot="R180"/>
+<pin name="PA11" x="-2.54" y="7.62" length="middle" rot="R180"/>
+<pin name="PA12" x="-2.54" y="15.24" length="middle" rot="R180"/>
+<pin name="PA13" x="-2.54" y="22.86" length="middle" rot="R180"/>
+<pin name="VCAP_2" x="-2.54" y="30.48" length="middle" rot="R180"/>
+<pin name="VDD@48" x="-2.54" y="38.1" length="middle" rot="R180"/>
+<pin name="PA14" x="-2.54" y="99.06" length="middle" rot="R180"/>
+<pin name="PA15" x="-2.54" y="91.44" length="middle" rot="R180"/>
+<pin name="PC10" x="-2.54" y="83.82" length="middle" rot="R180"/>
+<pin name="PC11" x="-2.54" y="76.2" length="middle" rot="R180"/>
+<pin name="PC12" x="-2.54" y="68.58" length="middle" rot="R180"/>
+<pin name="PD2" x="-2.54" y="60.96" length="middle" rot="R180"/>
+<pin name="PB3" x="-2.54" y="53.34" length="middle" rot="R180"/>
+<pin name="PB4" x="-2.54" y="45.72" length="middle" rot="R180"/>
+<pin name="PB5" x="-50.8" y="99.06" length="middle"/>
+<pin name="PB6" x="-50.8" y="91.44" length="middle"/>
+<pin name="PB7" x="-50.8" y="83.82" length="middle"/>
+<pin name="BOOT0" x="-50.8" y="76.2" length="middle"/>
+<pin name="PB8" x="-50.8" y="68.58" length="middle"/>
+<pin name="PB9" x="-50.8" y="60.96" length="middle"/>
+<pin name="VSS@63" x="-50.8" y="53.34" length="middle"/>
+<pin name="VDD@64" x="-50.8" y="45.72" length="middle"/>
+<wire x1="-45.72" y1="-142.24" x2="-7.62" y2="-142.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-142.24" x2="-7.62" y2="104.14" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="104.14" x2="-45.72" y2="104.14" width="0.254" layer="94"/>
+<wire x1="-45.72" y1="104.14" x2="-45.72" y2="-142.24" width="0.254" layer="94"/>
+<text x="-33.02" y="-33.02" size="5.08" layer="94" rot="R90">&gt;NAME</text>
+<text x="-20.32" y="-33.02" size="5.08" layer="94" rot="R90">&gt;VALUE</text>
 </symbol>
 <symbol name="CAP_POL">
 <wire x1="-2.54" y1="0" x2="2.54" y2="0" width="0.254" layer="94"/>
@@ -776,9 +776,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="0" y="2.54" size="1.778" layer="51" font="vector"> https://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="11.43" y="0" size="1.778" layer="51" font="vector">Designed by:</text>
 </package>
-<package name="DUMMY">
-<description>NOTHING HERE!!! For when you want a symbol with no package as an option against symbols with a package.</description>
-</package>
 </packages>
 <symbols>
 <symbol name="DGND">
@@ -797,6 +794,18 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
 <text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="5V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="3.3V">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="FRAME_LEDGER">
+<wire x1="0" y1="0" x2="0" y2="279.4" width="0.4064" layer="94"/>
+<wire x1="0" y1="279.4" x2="431.8" y2="279.4" width="0.4064" layer="94"/>
+<wire x1="431.8" y1="279.4" x2="431.8" y2="0" width="0.4064" layer="94"/>
+<wire x1="431.8" y1="0" x2="0" y2="0" width="0.4064" layer="94"/>
 </symbol>
 <symbol name="DOCFIELD">
 <wire x1="0" y1="0" x2="71.12" y2="0" width="0.254" layer="94"/>
@@ -829,12 +838,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="2.54" y="27.94" size="1.9304" layer="94">Attribution Share-Alike 4.0 License</text>
 <text x="2.54" y="24.13" size="1.9304" layer="94"> https://creativecommons.org/licenses/by-sa/4.0/</text>
 <text x="1.27" y="11.43" size="2.54" layer="94">Design by:</text>
-</symbol>
-<symbol name="LETTER_L">
-<wire x1="0" y1="185.42" x2="248.92" y2="185.42" width="0.4064" layer="94"/>
-<wire x1="248.92" y1="185.42" x2="248.92" y2="0" width="0.4064" layer="94"/>
-<wire x1="0" y1="185.42" x2="0" y2="0" width="0.4064" layer="94"/>
-<wire x1="0" y1="0" x2="248.92" y2="0" width="0.4064" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -877,25 +880,30 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </device>
 </devices>
 </deviceset>
-<deviceset name="FRAME-LETTER" prefix="FRAME">
-<description>&lt;b&gt;Schematic Frame&lt;/b&gt;&lt;p&gt;
-Standard 8.5x11 US Letter frame</description>
+<deviceset name="3.3V" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
-<gate name="G$1" symbol="LETTER_L" x="0" y="0"/>
-<gate name="V" symbol="DOCFIELD" x="147.32" y="0" addlevel="must"/>
+<gate name="G$1" symbol="3.3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FRAME-LEDGER" prefix="FRAME">
+<description>&lt;b&gt;Schematic Frame&lt;/b&gt;&lt;p&gt;
+Standard 11x14 US Ledger frame</description>
+<gates>
+<gate name="G$1" symbol="FRAME_LEDGER" x="0" y="0"/>
+<gate name="G$2" symbol="DOCFIELD" x="330.2" y="0" addlevel="must"/>
 </gates>
 <devices>
 <device name="" package="CREATIVE_COMMONS">
 <technologies>
 <technology name=""/>
-</technologies>
-</device>
-<device name="NO_PACKAGE" package="DUMMY">
-<technologies>
-<technology name="">
-<attribute name="DESIGNER" value="Nobody" constant="no"/>
-<attribute name="VERSION" value="v01" constant="no"/>
-</technology>
 </technologies>
 </device>
 </devices>
@@ -1708,17 +1716,40 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND10" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$5" library="BB8" deviceset="STM32F405RGT6" device=""/>
-<part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
-<part name="FRAME3" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device=""/>
 <part name="U$6" library="BB8" deviceset="CAP_POL_PAN" device="" value="100uF"/>
 <part name="U$7" library="BB8" deviceset="CAP_POL_PAN" device="" value="100uF"/>
 <part name="U1" library="BB8" deviceset="RN4020" device="RN4020"/>
+<part name="SUPPLY5" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY7" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY8" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY9" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY10" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND12" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND13" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C2" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="10uF"/>
+<part name="C4" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100nF"/>
+<part name="C5" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100nF"/>
+<part name="C6" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100nF"/>
+<part name="C7" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100nF"/>
+<part name="C8" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100nF"/>
+<part name="C9" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="100nF"/>
+<part name="C10" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
+<part name="C11" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="2.2uF"/>
+<part name="C12" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="2.2uF"/>
+<part name="GND15" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND16" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="FRAME4" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
-<text x="83.82" y="170.18" size="6.4516" layer="95">Motor Controllers </text>
-<text x="365.76" y="170.18" size="6.4516" layer="95">Microcontroller</text>
+<text x="0" y="223.52" size="6.4516" layer="95">Motor Controllers </text>
+<text x="495.3" y="223.52" size="6.4516" layer="95">Microcontroller</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="58.42" y="99.06"/>
@@ -1752,13 +1783,36 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <instance part="GND9" gate="1" x="17.78" y="35.56"/>
 <instance part="GND10" gate="1" x="7.62" y="35.56"/>
 <instance part="U$5" gate="G$1" x="386.08" y="104.14"/>
-<instance part="FRAME2" gate="G$1" x="-7.62" y="-5.08"/>
-<instance part="FRAME2" gate="V" x="139.7" y="-5.08"/>
-<instance part="FRAME3" gate="G$1" x="264.16" y="-5.08"/>
-<instance part="FRAME3" gate="V" x="411.48" y="-5.08"/>
 <instance part="U$6" gate="G$1" x="7.62" y="116.84"/>
 <instance part="U$7" gate="G$1" x="7.62" y="45.72"/>
 <instance part="U1" gate="G$1" x="22.86" y="-76.2"/>
+<instance part="SUPPLY5" gate="G$1" x="287.02" y="50.8"/>
+<instance part="SUPPLY6" gate="G$1" x="312.42" y="5.08"/>
+<instance part="SUPPLY7" gate="G$1" x="401.32" y="144.78"/>
+<instance part="SUPPLY8" gate="G$1" x="309.88" y="149.86"/>
+<instance part="SUPPLY9" gate="G$1" x="391.16" y="22.86"/>
+<instance part="SUPPLY10" gate="G$1" x="325.12" y="144.78"/>
+<instance part="GND11" gate="1" x="281.94" y="55.88"/>
+<instance part="GND12" gate="1" x="320.04" y="10.16"/>
+<instance part="GND13" gate="1" x="317.5" y="154.94"/>
+<instance part="SUPPLY11" gate="G$1" x="525.78" y="137.16"/>
+<instance part="GND14" gate="1" x="525.78" y="116.84"/>
+<instance part="C2" gate="G$1" x="492.76" y="127"/>
+<instance part="C4" gate="G$1" x="505.46" y="127"/>
+<instance part="C5" gate="G$1" x="518.16" y="127"/>
+<instance part="C6" gate="G$1" x="530.86" y="127"/>
+<instance part="C7" gate="G$1" x="543.56" y="127"/>
+<instance part="C8" gate="G$1" x="556.26" y="127"/>
+<instance part="C9" gate="G$1" x="309.88" y="53.34"/>
+<instance part="C10" gate="G$1" x="297.18" y="53.34"/>
+<instance part="C11" gate="G$1" x="393.7" y="12.7" rot="R90"/>
+<instance part="C12" gate="G$1" x="391.16" y="134.62" rot="R90"/>
+<instance part="GND15" gate="1" x="403.86" y="10.16"/>
+<instance part="GND16" gate="1" x="401.32" y="132.08"/>
+<instance part="FRAME2" gate="G$1" x="274.32" y="-45.72"/>
+<instance part="FRAME2" gate="G$2" x="604.52" y="-45.72"/>
+<instance part="FRAME4" gate="G$1" x="-172.72" y="-43.18"/>
+<instance part="FRAME4" gate="G$2" x="157.48" y="-43.18"/>
 </instances>
 <busses>
 </busses>
@@ -1957,6 +2011,64 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="U$7" gate="G$1" pin="-"/>
 <pinref part="GND10" gate="1" pin="GND"/>
 <wire x1="7.62" y1="40.64" x2="7.62" y2="38.1" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND11" gate="1" pin="GND"/>
+<pinref part="U$5" gate="G$1" pin="VSSA"/>
+<wire x1="281.94" y1="58.42" x2="297.18" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="297.18" y1="58.42" x2="309.88" y2="58.42" width="0.1524" layer="91"/>
+<junction x="297.18" y="58.42"/>
+<pinref part="C9" gate="G$1" pin="1"/>
+<wire x1="309.88" y1="58.42" x2="335.28" y2="58.42" width="0.1524" layer="91"/>
+<junction x="309.88" y="58.42"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VSS"/>
+<pinref part="GND12" gate="1" pin="GND"/>
+<wire x1="335.28" y1="12.7" x2="320.04" y2="12.7" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="GND13" gate="1" pin="GND"/>
+<pinref part="U$5" gate="G$1" pin="VSS@63"/>
+<wire x1="317.5" y1="157.48" x2="335.28" y2="157.48" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C2" gate="G$1" pin="2"/>
+<wire x1="492.76" y1="124.46" x2="492.76" y2="121.92" width="0.1524" layer="91"/>
+<pinref part="C4" gate="G$1" pin="2"/>
+<wire x1="492.76" y1="121.92" x2="505.46" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="121.92" x2="505.46" y2="124.46" width="0.1524" layer="91"/>
+<pinref part="C5" gate="G$1" pin="2"/>
+<wire x1="505.46" y1="121.92" x2="518.16" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="121.92" x2="518.16" y2="124.46" width="0.1524" layer="91"/>
+<junction x="505.46" y="121.92"/>
+<pinref part="C6" gate="G$1" pin="2"/>
+<wire x1="518.16" y1="121.92" x2="525.78" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="525.78" y1="121.92" x2="530.86" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="530.86" y1="121.92" x2="530.86" y2="124.46" width="0.1524" layer="91"/>
+<junction x="518.16" y="121.92"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="530.86" y1="121.92" x2="543.56" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="543.56" y1="121.92" x2="543.56" y2="124.46" width="0.1524" layer="91"/>
+<junction x="530.86" y="121.92"/>
+<pinref part="C8" gate="G$1" pin="2"/>
+<wire x1="543.56" y1="121.92" x2="556.26" y2="121.92" width="0.1524" layer="91"/>
+<wire x1="556.26" y1="121.92" x2="556.26" y2="124.46" width="0.1524" layer="91"/>
+<junction x="543.56" y="121.92"/>
+<pinref part="GND14" gate="1" pin="GND"/>
+<wire x1="525.78" y1="119.38" x2="525.78" y2="121.92" width="0.1524" layer="91"/>
+<junction x="525.78" y="121.92"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="GND16" gate="1" pin="GND"/>
+<wire x1="393.7" y1="134.62" x2="401.32" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="GND15" gate="1" pin="GND"/>
+<wire x1="396.24" y1="12.7" x2="403.86" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2193,6 +2305,88 @@ Standard 0603 ceramic capacitor, and 0.1" leaded capacitor.</description>
 <pinref part="U$2" gate="G$1" pin="INH"/>
 <pinref part="R8" gate="G$1" pin="1"/>
 <wire x1="78.74" y1="10.16" x2="86.36" y2="10.16" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="3.3V" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="VDDA"/>
+<pinref part="SUPPLY5" gate="G$1" pin="3.3V"/>
+<wire x1="335.28" y1="50.8" x2="309.88" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="309.88" y1="50.8" x2="297.18" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="50.8" x2="287.02" y2="50.8" width="0.1524" layer="91"/>
+<junction x="297.18" y="50.8"/>
+<pinref part="C9" gate="G$1" pin="2"/>
+<junction x="309.88" y="50.8"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VDD@64"/>
+<pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
+<wire x1="335.28" y1="149.86" x2="309.88" y2="149.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VDD@48"/>
+<pinref part="SUPPLY7" gate="G$1" pin="3.3V"/>
+<wire x1="383.54" y1="142.24" x2="401.32" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="401.32" y1="142.24" x2="401.32" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VDD"/>
+<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
+<wire x1="335.28" y1="5.08" x2="312.42" y2="5.08" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VDD@32"/>
+<wire x1="383.54" y1="20.32" x2="391.16" y2="20.32" width="0.1524" layer="91"/>
+<pinref part="SUPPLY9" gate="G$1" pin="3.3V"/>
+<wire x1="391.16" y1="20.32" x2="391.16" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="VBAT"/>
+<pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
+<wire x1="335.28" y1="142.24" x2="325.12" y2="142.24" width="0.1524" layer="91"/>
+<wire x1="325.12" y1="142.24" x2="325.12" y2="144.78" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="1"/>
+<wire x1="492.76" y1="134.62" x2="505.46" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="505.46" y1="134.62" x2="518.16" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="518.16" y1="134.62" x2="525.78" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="525.78" y1="134.62" x2="530.86" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="530.86" y1="134.62" x2="543.56" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="543.56" y1="134.62" x2="556.26" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="556.26" y1="134.62" x2="556.26" y2="132.08" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="1"/>
+<wire x1="543.56" y1="132.08" x2="543.56" y2="134.62" width="0.1524" layer="91"/>
+<junction x="543.56" y="134.62"/>
+<pinref part="C6" gate="G$1" pin="1"/>
+<wire x1="530.86" y1="132.08" x2="530.86" y2="134.62" width="0.1524" layer="91"/>
+<junction x="530.86" y="134.62"/>
+<pinref part="C5" gate="G$1" pin="1"/>
+<wire x1="518.16" y1="132.08" x2="518.16" y2="134.62" width="0.1524" layer="91"/>
+<junction x="518.16" y="134.62"/>
+<pinref part="C4" gate="G$1" pin="1"/>
+<wire x1="505.46" y1="132.08" x2="505.46" y2="134.62" width="0.1524" layer="91"/>
+<junction x="505.46" y="134.62"/>
+<pinref part="C2" gate="G$1" pin="1"/>
+<wire x1="492.76" y1="132.08" x2="492.76" y2="134.62" width="0.1524" layer="91"/>
+<pinref part="SUPPLY11" gate="G$1" pin="3.3V"/>
+<wire x1="525.78" y1="137.16" x2="525.78" y2="134.62" width="0.1524" layer="91"/>
+<junction x="525.78" y="134.62"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="VCAP_2"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="383.54" y1="134.62" x2="386.08" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$16" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="VCAP_1"/>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="383.54" y1="12.7" x2="388.62" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
