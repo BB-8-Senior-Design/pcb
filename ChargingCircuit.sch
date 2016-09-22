@@ -202,6 +202,12 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="GND" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
+<symbol name="VCC">
+<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
+<text x="-1.016" y="3.556" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="VCC" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="FRAME-LETTER" prefix="FRAME">
@@ -231,6 +237,19 @@ Standard 8.5x11 US Letter frame</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" prefix="SUPPLY">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCC" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -398,6 +417,33 @@ package type SS</description>
 <text x="-2.25" y="-2.75" size="0.5" layer="21">&gt;NAME</text>
 <circle x="-2.5" y="2" radius="0.113134375" width="0.05" layer="21"/>
 </package>
+<package name="SD-5738">
+<smd name="P$9" x="-9.38" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$1" x="-6.88" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$2" x="-4.38" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$3" x="-1.08" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$4" x="0.62" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$5" x="3.12" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$6" x="5.62" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$7" x="8.05" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$8" x="9.75" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$CARDDETECT" x="11.75" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$COM" x="14.35" y="9.95" dx="2" dy="0.8" layer="1"/>
+<smd name="P$WRITEPROTECT" x="14.35" y="20" dx="2" dy="0.8" layer="1"/>
+<rectangle x1="-10" y1="6" x2="10.5" y2="10" layer="39"/>
+<rectangle x1="12" y1="4.5" x2="13.85" y2="22.3" layer="39"/>
+<circle x="12" y="23.5" radius="0.75" width="0.1" layer="45"/>
+<circle x="-12.2" y="23.5" radius="0.75" width="0.1" layer="45"/>
+<wire x1="-14.65" y1="0" x2="13.85" y2="0" width="0.25" layer="21"/>
+<wire x1="-14.65" y1="0" x2="-14.65" y2="29" width="0.25" layer="21"/>
+<wire x1="-14.65" y1="29" x2="13.85" y2="29" width="0.25" layer="21"/>
+<wire x1="13.85" y1="0" x2="13.85" y2="29" width="0.25" layer="21"/>
+<text x="-13.92" y="27.29" size="1" layer="21" font="vector">&gt;NAME</text>
+<rectangle x1="-17.15" y1="14.5" x2="-14.15" y2="17.5" layer="1"/>
+<rectangle x1="-17.15" y1="1.5" x2="-14.15" y2="4.5" layer="1"/>
+<rectangle x1="13.35" y1="14.5" x2="16.35" y2="17.5" layer="1"/>
+<rectangle x1="13.35" y1="1.5" x2="16.35" y2="4.5" layer="1"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MAX745">
@@ -532,6 +578,25 @@ package type SS</description>
 <pin name="OUT" x="20.32" y="30.48" length="middle" rot="R180"/>
 <text x="-7.62" y="0" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
+<symbol name="SD-CARD">
+<wire x1="-7.62" y1="22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
+<wire x1="10.16" y1="22.86" x2="10.16" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-27.94" x2="-7.62" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-27.94" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
+<pin name="CS" x="-12.7" y="15.24" length="middle"/>
+<pin name="MOSI" x="-12.7" y="0" length="middle"/>
+<pin name="GND@3" x="-12.7" y="-20.32" length="middle"/>
+<pin name="VCC" x="-12.7" y="20.32" length="middle"/>
+<pin name="CLK" x="-12.7" y="10.16" length="middle"/>
+<pin name="GND@6" x="-12.7" y="-25.4" length="middle"/>
+<pin name="MISO" x="-12.7" y="-5.08" length="middle"/>
+<pin name="UNUSED@8" x="15.24" y="-15.24" length="middle" rot="R180"/>
+<pin name="CHIPDET" x="-12.7" y="5.08" length="middle"/>
+<pin name="WP" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="COM" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="UNUSED@9" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<text x="-7.62" y="22.86" size="1.905" layer="95">&gt;NAME</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MAX745EAC" prefix="U">
@@ -663,6 +728,32 @@ package type SS</description>
 <connect gate="G$1" pin="PGND" pad="P$1 P$20"/>
 <connect gate="G$1" pin="RECT" pad="P$18"/>
 <connect gate="G$1" pin="TS/CTRL" pad="P$13"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5738-SDCARD" prefix="SD">
+<gates>
+<gate name="G$1" symbol="SD-CARD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SD-5738">
+<connects>
+<connect gate="G$1" pin="CHIPDET" pad="P$CARDDETECT"/>
+<connect gate="G$1" pin="CLK" pad="P$5"/>
+<connect gate="G$1" pin="COM" pad="P$COM"/>
+<connect gate="G$1" pin="CS" pad="P$1"/>
+<connect gate="G$1" pin="GND@3" pad="P$3"/>
+<connect gate="G$1" pin="GND@6" pad="P$6"/>
+<connect gate="G$1" pin="MISO" pad="P$7"/>
+<connect gate="G$1" pin="MOSI" pad="P$2"/>
+<connect gate="G$1" pin="UNUSED@8" pad="P$8"/>
+<connect gate="G$1" pin="UNUSED@9" pad="P$9"/>
+<connect gate="G$1" pin="VCC" pad="P$4"/>
+<connect gate="G$1" pin="WP" pad="P$WRITEPROTECT"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2404,6 +2495,73 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 </deviceset>
 </devicesets>
 </library>
+<library name="SparkFun-Connectors">
+<description>&lt;h3&gt;SparkFun Electronics' preferred foot prints&lt;/h3&gt;
+In this library you'll find connectors and sockets- basically anything that can be plugged into or onto.&lt;br&gt;&lt;br&gt;
+We've spent an enormous amount of time creating and checking these footprints and parts, but it is the end user's responsibility to ensure correctness and suitablity for a given componet or application. If you enjoy using this library, please buy one of our products at www.sparkfun.com.
+&lt;br&gt;&lt;br&gt;
+&lt;b&gt;Licensing:&lt;/b&gt; Creative Commons ShareAlike 4.0 International - https://creativecommons.org/licenses/by-sa/4.0/ 
+&lt;br&gt;&lt;br&gt;
+You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
+<packages>
+<package name="DEANS">
+<pad name="+" x="0" y="0" drill="1.27" diameter="3.556" shape="long"/>
+<pad name="-" x="0.7366" y="-6.9215" drill="1.27" diameter="3.556" shape="long" rot="R90"/>
+<wire x1="-3.81" y1="2.3622" x2="3.81" y2="2.3622" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-3.9878" x2="-3.81" y2="2.3622" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-3.9878" x2="3.81" y2="2.3622" width="0.2032" layer="21"/>
+<wire x1="-3.2004" y1="-10.922" x2="3.2004" y2="-10.922" width="0.2032" layer="21"/>
+<wire x1="-3.2004" y1="-10.922" x2="-3.2004" y2="-3.9878" width="0.2032" layer="21"/>
+<wire x1="3.2004" y1="-10.922" x2="3.2004" y2="-3.9878" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="-3.9878" x2="-3.2004" y2="-3.9878" width="0.2032" layer="21"/>
+<wire x1="3.2004" y1="-3.9878" x2="3.81" y2="-3.9878" width="0.2032" layer="21"/>
+<wire x1="-1.778" y1="-2.286" x2="-1.778" y2="-3.302" width="0.127" layer="21"/>
+<wire x1="-2.286" y1="-2.794" x2="-1.27" y2="-2.794" width="0.127" layer="21"/>
+<wire x1="-2.032" y1="-7.62" x2="-2.032" y2="-6.604" width="0.127" layer="21"/>
+<wire x1="0.0508" y1="-9.7536" x2="0.0508" y2="-4.064" width="0.127" layer="20"/>
+<wire x1="0.0508" y1="-4.064" x2="1.4224" y2="-4.064" width="0.127" layer="20"/>
+<wire x1="1.4224" y1="-4.064" x2="1.4224" y2="-9.7536" width="0.127" layer="20"/>
+<wire x1="0.0508" y1="-9.7536" x2="1.4224" y2="-9.7536" width="0.127" layer="20"/>
+<wire x1="2.8448" y1="-0.6858" x2="-2.8448" y2="-0.6858" width="0.127" layer="20"/>
+<wire x1="-2.8448" y1="-0.6858" x2="-2.8448" y2="0.6858" width="0.127" layer="20"/>
+<wire x1="-2.8448" y1="0.6858" x2="2.8448" y2="0.6858" width="0.127" layer="20"/>
+<wire x1="2.8448" y1="-0.6858" x2="2.8448" y2="0.6858" width="0.127" layer="20"/>
+</package>
+</packages>
+<symbols>
+<symbol name="BATTERY_CONN">
+<wire x1="-2.54" y1="2.54" x2="3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="2.54" y2="-2.54" width="0.6096" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.54" y2="0" width="0.6096" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="3.81" y2="2.54" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="3.81" y1="-5.08" x2="-2.54" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.54" y="3.302" size="1.778" layer="95">&gt;NAME</text>
+<pin name="+" x="7.62" y="0" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="-" x="7.62" y="-2.54" length="middle" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BATTERY_CONN" prefix="J">
+<description>Various footprints for battery connectors</description>
+<gates>
+<gate name="G$1" symbol="BATTERY_CONN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DEANS" package="DEANS">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -2479,6 +2637,11 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U2" library="SparkFun-AnalogIC" deviceset="TPA2005D1" device="DGN"/>
+<part name="J1" library="SparkFun-Connectors" deviceset="BATTERY_CONN" device="DEANS"/>
+<part name="FRAME4" library="SparkFun-Aesthetics" deviceset="FRAME-LETTER" device="NO_PACKAGE"/>
+<part name="SD1" library="BB8" deviceset="5738-SDCARD" device=""/>
+<part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="GND20" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -2487,6 +2650,11 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <text x="-20.32" y="160.02" size="6.35" layer="94">MAX745 Charging Circuit</text>
 <text x="-271.78" y="160.02" size="6.35" layer="94">Wireless Charging Receiver</text>
 <text x="-269.24" y="-30.48" size="6.35" layer="94">Audio Amplifier</text>
+<text x="160.02" y="45.72" size="1.778" layer="97">Temporary, please replace with whatever you need</text>
+<text x="-236.22" y="88.9" size="1.778" layer="97" rot="R90">Coil goes here</text>
+<text x="27.94" y="132.08" size="1.778" layer="97">Input from wireless charger</text>
+<text x="93.98" y="40.64" size="1.778" layer="97" rot="R270">Depends on what we want</text>
+<text x="-17.78" y="-30.48" size="6.35" layer="94">SD Card Connection (SPI)</text>
 </plain>
 <instances>
 <instance part="FRAME1" gate="G$1" x="-22.86" y="-15.24"/>
@@ -2579,6 +2747,12 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <instance part="GND18" gate="1" x="-185.42" y="-116.84"/>
 <instance part="GND19" gate="1" x="-119.38" y="-78.74"/>
 <instance part="U2" gate="G$1" x="-160.02" y="-81.28"/>
+<instance part="J1" gate="G$1" x="177.8" y="55.88"/>
+<instance part="FRAME4" gate="G$1" x="-22.86" y="-203.2"/>
+<instance part="FRAME4" gate="V" x="124.46" y="-203.2"/>
+<instance part="SD1" gate="G$1" x="83.82" y="-101.6"/>
+<instance part="SUPPLY1" gate="G$1" x="58.42" y="-76.2"/>
+<instance part="GND20" gate="1" x="63.5" y="-132.08"/>
 </instances>
 <busses>
 </busses>
@@ -2649,6 +2823,10 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <wire x1="198.12" y1="48.26" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="190.5" y1="48.26" x2="190.5" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="-"/>
+<wire x1="185.42" y1="53.34" x2="190.5" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="53.34" x2="190.5" y2="48.26" width="0.1524" layer="91"/>
+<junction x="190.5" y="48.26"/>
 </segment>
 <segment>
 <pinref part="GND12" gate="1" pin="GND"/>
@@ -2695,6 +2873,16 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <wire x1="-152.4" y1="-99.06" x2="-165.1" y2="-99.06" width="0.1524" layer="91"/>
 <wire x1="-165.1" y1="-99.06" x2="-165.1" y2="-93.98" width="0.1524" layer="91"/>
 <junction x="-152.4" y="-99.06"/>
+</segment>
+<segment>
+<pinref part="SD1" gate="G$1" pin="GND@3"/>
+<pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="71.12" y1="-121.92" x2="63.5" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="63.5" y1="-121.92" x2="63.5" y2="-127" width="0.1524" layer="91"/>
+<pinref part="SD1" gate="G$1" pin="GND@6"/>
+<wire x1="63.5" y1="-127" x2="63.5" y2="-129.54" width="0.1524" layer="91"/>
+<wire x1="71.12" y1="-127" x2="63.5" y2="-127" width="0.1524" layer="91"/>
+<junction x="63.5" y="-127"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -2786,6 +2974,9 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <junction x="190.5" y="60.96"/>
 <pinref part="C1" gate="G$1" pin="1"/>
 <wire x1="198.12" y1="60.96" x2="198.12" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="J1" gate="G$1" pin="+"/>
+<wire x1="190.5" y1="60.96" x2="190.5" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="190.5" y1="55.88" x2="185.42" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="STATUS" class="0">
@@ -3138,6 +3329,42 @@ Datasheet: &lt;href="http://focus.ti.com/lit/ds/symlink/tpa2005d1.pdf"&gt;http:/
 <pinref part="U2" gate="G$1" pin="OUT-"/>
 <wire x1="-142.24" y1="-83.82" x2="-137.16" y2="-83.82" width="0.1524" layer="91"/>
 <label x="-142.24" y="-83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="SCK" class="0">
+<segment>
+<pinref part="SD1" gate="G$1" pin="CLK"/>
+<wire x1="71.12" y1="-91.44" x2="58.42" y2="-91.44" width="0.1524" layer="91"/>
+<label x="58.42" y="-91.44" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MISO" class="0">
+<segment>
+<pinref part="SD1" gate="G$1" pin="MISO"/>
+<wire x1="71.12" y1="-106.68" x2="58.42" y2="-106.68" width="0.1524" layer="91"/>
+<label x="58.42" y="-106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="SD1" gate="G$1" pin="VCC"/>
+<wire x1="71.12" y1="-81.28" x2="58.42" y2="-81.28" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="-81.28" x2="58.42" y2="-76.2" width="0.1524" layer="91"/>
+<pinref part="SUPPLY1" gate="G$1" pin="VCC"/>
+</segment>
+</net>
+<net name="CS" class="0">
+<segment>
+<pinref part="SD1" gate="G$1" pin="CS"/>
+<wire x1="71.12" y1="-86.36" x2="58.42" y2="-86.36" width="0.1524" layer="91"/>
+<label x="58.42" y="-86.36" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="MOSI" class="0">
+<segment>
+<pinref part="SD1" gate="G$1" pin="MOSI"/>
+<wire x1="71.12" y1="-101.6" x2="58.42" y2="-101.6" width="0.1524" layer="91"/>
+<label x="58.42" y="-101.6" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
