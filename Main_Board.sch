@@ -4001,8 +4001,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="SUPPLY12" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND17" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY13" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="C13" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
-<part name="C14" library="SparkFun-Capacitors" deviceset="CAP" device="0805"/>
 <part name="GND18" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="U$9" library="BB8" deviceset="SN74LV4T125" device=""/>
 <part name="GND19" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -4074,6 +4072,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="J1" library="SparkFun-Connectors" deviceset="M03" device="PTH"/>
 <part name="GND42" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="U$13" library="BB8" deviceset="CAP_POL_PAN" device="" value="10uF"/>
+<part name="U$14" library="BB8" deviceset="CAP_POL_PAN" device="" value="10uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -4151,8 +4151,6 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="SUPPLY12" gate="G$1" x="-129.54" y="-88.9"/>
 <instance part="GND17" gate="1" x="-129.54" y="-106.68"/>
 <instance part="SUPPLY13" gate="G$1" x="-71.12" y="-91.44"/>
-<instance part="C13" gate="G$1" x="-124.46" y="-99.06"/>
-<instance part="C14" gate="G$1" x="-71.12" y="-99.06"/>
 <instance part="GND18" gate="1" x="-71.12" y="-106.68"/>
 <instance part="U$9" gate="G$1" x="157.48" y="129.54"/>
 <instance part="GND19" gate="1" x="147.32" y="93.98"/>
@@ -4225,6 +4223,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="J1" gate="J$1" x="233.68" y="76.2" rot="R180"/>
 <instance part="GND42" gate="1" x="218.44" y="68.58"/>
 <instance part="SUPPLY17" gate="G$1" x="218.44" y="81.28"/>
+<instance part="U$13" gate="G$1" x="-129.54" y="-96.52"/>
+<instance part="U$14" gate="G$1" x="-71.12" y="-96.52"/>
 </instances>
 <busses>
 </busses>
@@ -4492,18 +4492,17 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="396.24" y1="12.7" x2="403.86" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C13" gate="G$1" pin="2"/>
-<wire x1="-124.46" y1="-101.6" x2="-109.22" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-101.6" x2="-109.22" y2="-101.6" width="0.1524" layer="91"/>
 <pinref part="GND17" gate="1" pin="GND"/>
 <wire x1="-129.54" y1="-104.14" x2="-129.54" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="-101.6" x2="-124.46" y2="-101.6" width="0.1524" layer="91"/>
-<junction x="-124.46" y="-101.6"/>
 <pinref part="U2" gate="G$1" pin="ADJ/GND"/>
+<pinref part="U$13" gate="G$1" pin="-"/>
+<junction x="-129.54" y="-101.6"/>
 </segment>
 <segment>
-<pinref part="C14" gate="G$1" pin="2"/>
 <pinref part="GND18" gate="1" pin="GND"/>
 <wire x1="-71.12" y1="-101.6" x2="-71.12" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="U$14" gate="G$1" pin="-"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="1!OE"/>
@@ -4843,13 +4842,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="101.6" y1="50.8" x2="101.6" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C13" gate="G$1" pin="1"/>
-<wire x1="-109.22" y1="-93.98" x2="-124.46" y2="-93.98" width="0.1524" layer="91"/>
+<wire x1="-109.22" y1="-93.98" x2="-129.54" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="SUPPLY12" gate="G$1" pin="5V"/>
-<wire x1="-124.46" y1="-93.98" x2="-129.54" y2="-93.98" width="0.1524" layer="91"/>
 <wire x1="-129.54" y1="-93.98" x2="-129.54" y2="-88.9" width="0.1524" layer="91"/>
-<junction x="-124.46" y="-93.98"/>
 <pinref part="U2" gate="G$1" pin="VIN"/>
+<pinref part="U$13" gate="G$1" pin="+"/>
+<junction x="-129.54" y="-93.98"/>
 </segment>
 <segment>
 <pinref part="U$10" gate="G$1" pin="VCC"/>
@@ -5048,12 +5046,12 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <junction x="525.78" y="134.62"/>
 </segment>
 <segment>
-<pinref part="C14" gate="G$1" pin="1"/>
 <wire x1="-81.28" y1="-93.98" x2="-71.12" y2="-93.98" width="0.1524" layer="91"/>
 <pinref part="SUPPLY13" gate="G$1" pin="3.3V"/>
 <wire x1="-71.12" y1="-93.98" x2="-71.12" y2="-91.44" width="0.1524" layer="91"/>
-<junction x="-71.12" y="-93.98"/>
 <pinref part="U2" gate="G$1" pin="VOUT"/>
+<pinref part="U$14" gate="G$1" pin="+"/>
+<junction x="-71.12" y="-93.98"/>
 </segment>
 <segment>
 <pinref part="U$9" gate="G$1" pin="VCC"/>
