@@ -557,25 +557,25 @@ package type SS</description>
 <wire x1="15.24" y1="43.18" x2="15.24" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="15.24" y1="-45.72" x2="-15.24" y2="-45.72" width="0.254" layer="94"/>
 <wire x1="-15.24" y1="-45.72" x2="-15.24" y2="43.18" width="0.254" layer="94"/>
-<pin name="!AD-EN" x="-20.32" y="40.64" length="middle"/>
-<pin name="AD" x="-20.32" y="33.02" length="middle"/>
-<pin name="COMM1" x="-20.32" y="25.4" length="middle"/>
-<pin name="BOOT1" x="-20.32" y="17.78" length="middle"/>
-<pin name="AC1" x="-20.32" y="10.16" length="middle"/>
-<pin name="AC2" x="-20.32" y="-5.08" length="middle"/>
-<pin name="BOOT2" x="-20.32" y="-12.7" length="middle"/>
-<pin name="COMM2" x="-20.32" y="-20.32" length="middle"/>
-<pin name="CLAMP2" x="-20.32" y="-27.94" length="middle"/>
-<pin name="CLAMP1" x="-20.32" y="-35.56" length="middle"/>
-<pin name="ILIM" x="-20.32" y="-43.18" length="middle"/>
-<pin name="FOD" x="-2.54" y="-50.8" length="middle" rot="R90"/>
-<pin name="PGND" x="7.62" y="-50.8" length="middle" rot="R90"/>
-<pin name="EN2" x="20.32" y="-33.02" length="middle" rot="R180"/>
-<pin name="EN1" x="20.32" y="-27.94" length="middle" rot="R180"/>
-<pin name="!CHG" x="20.32" y="-22.86" length="middle" rot="R180"/>
-<pin name="TS/CTRL" x="20.32" y="-2.54" length="middle" rot="R180"/>
-<pin name="RECT" x="20.32" y="15.24" length="middle" rot="R180"/>
-<pin name="OUT" x="20.32" y="30.48" length="middle" rot="R180"/>
+<pin name="!AD-EN" x="-20.32" y="40.64" visible="pin" length="middle"/>
+<pin name="AD" x="-20.32" y="33.02" visible="pin" length="middle"/>
+<pin name="COMM1" x="-20.32" y="25.4" visible="pin" length="middle"/>
+<pin name="BOOT1" x="-20.32" y="17.78" visible="pin" length="middle"/>
+<pin name="AC1" x="-20.32" y="10.16" visible="pin" length="middle"/>
+<pin name="AC2" x="-20.32" y="-5.08" visible="pin" length="middle"/>
+<pin name="BOOT2" x="-20.32" y="-12.7" visible="pin" length="middle"/>
+<pin name="COMM2" x="-20.32" y="-20.32" visible="pin" length="middle"/>
+<pin name="CLAMP2" x="-20.32" y="-27.94" visible="pin" length="middle"/>
+<pin name="CLAMP1" x="-20.32" y="-35.56" visible="pin" length="middle"/>
+<pin name="ILIM" x="-20.32" y="-43.18" visible="pin" length="middle"/>
+<pin name="FOD" x="-2.54" y="-50.8" visible="pin" length="middle" rot="R90"/>
+<pin name="PGND" x="7.62" y="-50.8" visible="pin" length="middle" rot="R90"/>
+<pin name="EN2" x="20.32" y="-33.02" visible="pin" length="middle" rot="R180"/>
+<pin name="EN1" x="20.32" y="-27.94" visible="pin" length="middle" rot="R180"/>
+<pin name="!CHG" x="20.32" y="-22.86" visible="pin" length="middle" rot="R180"/>
+<pin name="TS/CTRL" x="20.32" y="-2.54" visible="pin" length="middle" rot="R180"/>
+<pin name="RECT" x="20.32" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="OUT" x="20.32" y="30.48" visible="pin" length="middle" rot="R180"/>
 <text x="-7.62" y="0" size="1.27" layer="95">&gt;NAME</text>
 </symbol>
 <symbol name="SD-CARD">
@@ -583,18 +583,18 @@ package type SS</description>
 <wire x1="10.16" y1="22.86" x2="10.16" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-27.94" x2="-7.62" y2="-27.94" width="0.254" layer="94"/>
 <wire x1="-7.62" y1="-27.94" x2="-7.62" y2="22.86" width="0.254" layer="94"/>
-<pin name="CS" x="-12.7" y="15.24" length="middle"/>
-<pin name="MOSI" x="-12.7" y="0" length="middle"/>
-<pin name="GND@3" x="-12.7" y="-20.32" length="middle"/>
-<pin name="VCC" x="-12.7" y="20.32" length="middle"/>
-<pin name="CLK" x="-12.7" y="10.16" length="middle"/>
-<pin name="GND@6" x="-12.7" y="-25.4" length="middle"/>
-<pin name="MISO" x="-12.7" y="-5.08" length="middle"/>
-<pin name="UNUSED@8" x="15.24" y="-15.24" length="middle" rot="R180"/>
-<pin name="CHIPDET" x="-12.7" y="5.08" length="middle"/>
-<pin name="WP" x="15.24" y="15.24" length="middle" rot="R180"/>
-<pin name="COM" x="15.24" y="10.16" length="middle" rot="R180"/>
-<pin name="UNUSED@9" x="15.24" y="-10.16" length="middle" rot="R180"/>
+<pin name="CS" x="-12.7" y="15.24" visible="pin" length="middle"/>
+<pin name="MOSI" x="-12.7" y="0" visible="pin" length="middle"/>
+<pin name="GND@3" x="-12.7" y="-20.32" visible="pin" length="middle"/>
+<pin name="VCC" x="-12.7" y="20.32" visible="pin" length="middle"/>
+<pin name="CLK" x="-12.7" y="10.16" visible="pin" length="middle"/>
+<pin name="GND@6" x="-12.7" y="-25.4" visible="pin" length="middle"/>
+<pin name="MISO" x="-12.7" y="-5.08" visible="pin" length="middle"/>
+<pin name="UNUSED@8" x="15.24" y="-15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="CHIPDET" x="-12.7" y="5.08" visible="pin" length="middle"/>
+<pin name="WP" x="15.24" y="15.24" visible="pin" length="middle" rot="R180"/>
+<pin name="COM" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
+<pin name="UNUSED@9" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
 <text x="-7.62" y="22.86" size="1.905" layer="95">&gt;NAME</text>
 </symbol>
 </symbols>
