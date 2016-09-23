@@ -1116,6 +1116,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="20.32" y1="-33.02" x2="20.32" y2="2.54" width="0.254" layer="94"/>
 <wire x1="20.32" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
 <text x="6.096" y="3.048" size="1.6764" layer="94">&gt;NAME</text>
+<text x="0" y="-35.56" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="THERMISTOR">
 <wire x1="-2.54" y1="0" x2="-2.159" y2="1.016" width="0.1524" layer="94"/>
@@ -1174,6 +1175,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <pin name="RECT" x="20.32" y="15.24" visible="pin" length="middle" rot="R180"/>
 <pin name="OUT" x="20.32" y="30.48" visible="pin" length="middle" rot="R180"/>
 <text x="-7.62" y="0" size="1.27" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="SD-CARD">
 <wire x1="-7.62" y1="22.86" x2="10.16" y2="22.86" width="0.254" layer="94"/>
@@ -1193,6 +1195,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <pin name="COM" x="15.24" y="10.16" visible="pin" length="middle" rot="R180"/>
 <pin name="UNUSED@9" x="15.24" y="-10.16" visible="pin" length="middle" rot="R180"/>
 <text x="-7.62" y="22.86" size="1.905" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="BQ40Z60">
 <wire x1="-45.72" y1="45.72" x2="45.72" y2="45.72" width="0.254" layer="94"/>
@@ -6820,9 +6823,9 @@ HERE</text>
 <instance part="FRAME6" gate="G$1" x="802.64" y="-347.98"/>
 <instance part="FRAME6" gate="G$2" x="1112.52" y="-350.52"/>
 <instance part="FRAME7" gate="G$1" x="1297.94" y="10.16"/>
-<instance part="FRAME7" gate="G$2" x="1640.84" y="2.54"/>
+<instance part="FRAME7" gate="G$2" x="1628.14" y="-25.4"/>
 <instance part="FRAME8" gate="G$1" x="1257.3" y="-312.42"/>
-<instance part="FRAME8" gate="G$2" x="1592.58" y="-309.88"/>
+<instance part="FRAME8" gate="G$2" x="1587.5" y="-347.98"/>
 <instance part="R25" gate="G$1" x="1292.86" y="-160.02" rot="R270"/>
 <instance part="R26" gate="G$1" x="1422.4" y="-185.42"/>
 </instances>
