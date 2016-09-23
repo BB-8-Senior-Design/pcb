@@ -4322,7 +4322,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="R39" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R41" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R42" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="C28" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C29" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C30" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C31" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
@@ -4576,7 +4575,6 @@ HERE</text>
 <instance part="R39" gate="G$1" x="-114.3" y="63.5"/>
 <instance part="R41" gate="G$1" x="-114.3" y="43.18"/>
 <instance part="R42" gate="G$1" x="-114.3" y="33.02"/>
-<instance part="C28" gate="G$1" x="-93.98" y="78.74"/>
 <instance part="C29" gate="G$1" x="-86.36" y="68.58"/>
 <instance part="C30" gate="G$1" x="-93.98" y="58.42"/>
 <instance part="C31" gate="G$1" x="-73.66" y="53.34" rot="R270"/>
@@ -5964,11 +5962,8 @@ HERE</text>
 <net name="N$73" class="0">
 <segment>
 <pinref part="U3" gate="G$1" pin="VC4"/>
-<wire x1="-60.96" y1="83.82" x2="-93.98" y2="83.82" width="0.1524" layer="91"/>
+<wire x1="-60.96" y1="83.82" x2="-109.22" y2="83.82" width="0.1524" layer="91"/>
 <pinref part="R37" gate="G$1" pin="2"/>
-<pinref part="C28" gate="G$1" pin="1"/>
-<wire x1="-93.98" y1="83.82" x2="-109.22" y2="83.82" width="0.1524" layer="91"/>
-<junction x="-93.98" y="83.82"/>
 </segment>
 </net>
 <net name="N$74" class="0">
@@ -5979,7 +5974,6 @@ HERE</text>
 <pinref part="C29" gate="G$1" pin="1"/>
 <wire x1="-86.36" y1="73.66" x2="-93.98" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-86.36" y="73.66"/>
-<pinref part="C28" gate="G$1" pin="2"/>
 <wire x1="-93.98" y1="73.66" x2="-109.22" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="76.2" x2="-93.98" y2="73.66" width="0.1524" layer="91"/>
 <junction x="-93.98" y="73.66"/>
