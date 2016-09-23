@@ -599,6 +599,39 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="10.16" y1="5.08" x2="-2.54" y2="5.08" width="0.127" layer="21"/>
 <wire x1="12.7" y1="5.08" x2="25.4" y2="5.08" width="0.127" layer="21"/>
 </package>
+<package name="IMU_BREAKOUT">
+<pad name="DEN" x="20.3" y="-10.16" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="INT2" x="20.3" y="-7.62" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="INT1" x="20.3" y="-5.08" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="INTM" x="20.3" y="-2.54" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="RDY" x="20.3" y="0" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="CS_M" x="20.3" y="2.54" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="CS_AG" x="20.3" y="5.08" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="SDO_M" x="20.3" y="7.62" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="SDO_AG" x="20.3" y="10.16" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="GND" x="0" y="-5.08" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="3.3V" x="0" y="-2.54" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="SDA" x="0" y="0" drill="1.016" diameter="1.8796" rot="R180"/>
+<pad name="SCL" x="0" y="2.54" drill="1.016" diameter="1.8796" rot="R180"/>
+<text x="15" y="-10.5" size="0.8128" layer="21">DEN</text>
+<text x="15" y="9.7" size="0.8128" layer="21">SDO/AG</text>
+<text x="15" y="7.2" size="0.8128" layer="21">SDO/M</text>
+<text x="15" y="4.6" size="0.8128" layer="21">CS/AG</text>
+<text x="15" y="2" size="0.8128" layer="21">CS/M</text>
+<text x="15" y="-0.4" size="0.8128" layer="21">RDY</text>
+<text x="15" y="-3.1" size="0.8128" layer="21">INTM</text>
+<text x="15" y="-5.5" size="0.8128" layer="21">INT1</text>
+<text x="15" y="-8.1" size="0.8128" layer="21">INT2</text>
+<text x="1.3" y="2.2" size="0.8128" layer="21">SCL</text>
+<text x="1.4" y="-0.3" size="0.8128" layer="21">SDA</text>
+<text x="1.4" y="-2.9" size="0.8128" layer="21">3.3V</text>
+<text x="1.5" y="-5.2" size="0.8128" layer="21">GND</text>
+<wire x1="21.5" y1="-11.5" x2="-1.5" y2="-11.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="-11.5" x2="-1.5" y2="11.5" width="0.127" layer="21"/>
+<wire x1="-1.5" y1="11.5" x2="21.5" y2="11.5" width="0.127" layer="21"/>
+<wire x1="21.5" y1="11.5" x2="21.5" y2="-11.5" width="0.127" layer="21"/>
+<text x="1" y="8" size="1.6764" layer="21">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BTM7752G">
@@ -897,6 +930,26 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="20.32" y1="-22.86" x2="20.32" y2="27.94" width="0.254" layer="94"/>
 <wire x1="20.32" y1="27.94" x2="0" y2="27.94" width="0.254" layer="94"/>
 <text x="0.254" y="28.956" size="1.778" layer="94">&gt;NAME</text>
+</symbol>
+<symbol name="IMU">
+<pin name="GND" x="-5.08" y="0" length="middle"/>
+<pin name="VCC" x="-5.08" y="-5.08" length="middle"/>
+<pin name="SDA" x="-5.08" y="-10.16" length="middle"/>
+<pin name="SCL" x="-5.08" y="-15.24" length="middle"/>
+<pin name="SDO_AG" x="-5.08" y="-20.32" length="middle"/>
+<pin name="SDO_M" x="-5.08" y="-25.4" length="middle"/>
+<pin name="RDY" x="-5.08" y="-30.48" length="middle"/>
+<pin name="INTM" x="25.4" y="-25.4" length="middle" rot="R180"/>
+<pin name="INT1" x="25.4" y="-20.32" length="middle" rot="R180"/>
+<pin name="INT2" x="25.4" y="-15.24" length="middle" rot="R180"/>
+<pin name="DEN" x="25.4" y="-10.16" length="middle" rot="R180"/>
+<pin name="CS_M" x="25.4" y="-5.08" length="middle" rot="R180"/>
+<pin name="CS_AG" x="25.4" y="0" length="middle" rot="R180"/>
+<wire x1="0" y1="2.54" x2="0" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="0" y1="-33.02" x2="20.32" y2="-33.02" width="0.254" layer="94"/>
+<wire x1="20.32" y1="-33.02" x2="20.32" y2="2.54" width="0.254" layer="94"/>
+<wire x1="20.32" y1="2.54" x2="0" y2="2.54" width="0.254" layer="94"/>
+<text x="6.096" y="3.048" size="1.6764" layer="94">&gt;NAME</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1279,6 +1332,33 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <connect gate="G$1" pin="P$19" pad="P$19"/>
 <connect gate="G$1" pin="VDD" pad="P$1"/>
 <connect gate="G$1" pin="VDD@2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IMU" prefix="U">
+<gates>
+<gate name="G$1" symbol="IMU" x="-10.16" y="10.16"/>
+</gates>
+<devices>
+<device name="" package="IMU_BREAKOUT">
+<connects>
+<connect gate="G$1" pin="CS_AG" pad="CS_AG"/>
+<connect gate="G$1" pin="CS_M" pad="CS_M"/>
+<connect gate="G$1" pin="DEN" pad="DEN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="INT1" pad="INT1"/>
+<connect gate="G$1" pin="INT2" pad="INT2"/>
+<connect gate="G$1" pin="INTM" pad="INTM"/>
+<connect gate="G$1" pin="RDY" pad="RDY"/>
+<connect gate="G$1" pin="SCL" pad="SCL"/>
+<connect gate="G$1" pin="SDA" pad="SDA"/>
+<connect gate="G$1" pin="SDO_AG" pad="SDO_AG"/>
+<connect gate="G$1" pin="SDO_M" pad="SDO_M"/>
+<connect gate="G$1" pin="VCC" pad="3.3V"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4074,6 +4154,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="SUPPLY17" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="U$13" library="BB8" deviceset="CAP_POL_PAN" device="" value="10uF"/>
 <part name="U$14" library="BB8" deviceset="CAP_POL_PAN" device="" value="10uF"/>
+<part name="U4" library="BB8" deviceset="IMU" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4225,6 +4306,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <instance part="SUPPLY17" gate="G$1" x="218.44" y="81.28"/>
 <instance part="U$13" gate="G$1" x="-129.54" y="-96.52"/>
 <instance part="U$14" gate="G$1" x="-71.12" y="-96.52"/>
+<instance part="U4" gate="G$1" x="792.48" y="180.34"/>
 </instances>
 <busses>
 </busses>
