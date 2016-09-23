@@ -5514,7 +5514,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <segment>
 <pinref part="U1" gate="G$1" pin="UART_RX"/>
 <wire x1="477.52" y1="-180.34" x2="467.36" y2="-180.34" width="0.1524" layer="91"/>
-<label x="467.36" y="-180.34" size="1.778" layer="95"/>
+<label x="464.82" y="-180.34" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U$5" gate="G$1" pin="PA2"/>
@@ -5530,8 +5530,8 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 </segment>
 <segment>
 <pinref part="U1" gate="G$1" pin="UART_TX"/>
-<wire x1="477.52" y1="-175.26" x2="467.36" y2="-175.26" width="0.1524" layer="91"/>
-<label x="467.36" y="-175.26" size="1.778" layer="95"/>
+<wire x1="477.52" y1="-175.26" x2="464.82" y2="-175.26" width="0.1524" layer="91"/>
+<label x="464.82" y="-175.26" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BLUE_WAKE_SW" class="0">
@@ -5546,11 +5546,16 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <label x="312.42" y="-2.54" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$33" class="0">
+<net name="BLU_CMD" class="0">
 <segment>
 <pinref part="U1" gate="G$1" pin="CMD/MLDP"/>
 <wire x1="477.52" y1="-190.5" x2="467.36" y2="-190.5" width="0.1524" layer="91"/>
-<label x="368.3" y="-193.04" size="1.778" layer="95"/>
+<label x="462.28" y="-190.5" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="PB1"/>
+<wire x1="383.54" y1="-17.78" x2="401.32" y2="-17.78" width="0.1524" layer="91"/>
+<label x="393.7" y="-17.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$34" class="0">
