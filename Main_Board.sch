@@ -4082,24 +4082,7 @@ Standard 3-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="495.3" y="223.52" size="6.4516" layer="95">Microcontroller</text>
 <text x="7.62" y="-66.04" size="6.4516" layer="95">Power Conversion</text>
 <text x="472.44" y="-71.12" size="6.4516" layer="95">Bluetooth</text>
-<text x="355.6" y="213.36" size="1.778" layer="94">Micro Input from MC:
-M1_A_3.3
-M1_B_3.3
-M2_A_3.3
-M2_B_3.3
-MC1_IS
-MC2_IS
-
-Micro Output to MC
-MC1_INH_3.3
-MC2_INH_3.3</text>
 <text x="35.56" y="-187.96" size="1.778" layer="95">double check</text>
-<text x="388.62" y="215.9" size="1.778" layer="94">OUTPUT FROM MICRO
-
-MC1_IN1
-MC1_IN2
-MC2_IN1
-MC2_IN2</text>
 </plain>
 <instances>
 <instance part="U$1" gate="G$1" x="58.42" y="99.06"/>
@@ -5126,12 +5109,22 @@ MC2_IN2</text>
 <wire x1="-2.54" y1="30.48" x2="-10.16" y2="30.48" width="0.1524" layer="91"/>
 <label x="-15.24" y="30.48" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="PB15"/>
+<wire x1="383.54" y1="50.8" x2="406.4" y2="50.8" width="0.1524" layer="91"/>
+<label x="396.24" y="50.8" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MC2_IN2" class="0">
 <segment>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="27.94" x2="-10.16" y2="27.94" width="0.1524" layer="91"/>
 <label x="-15.24" y="27.94" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="PB14"/>
+<wire x1="383.54" y1="43.18" x2="406.4" y2="43.18" width="0.1524" layer="91"/>
+<label x="396.24" y="43.18" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MC1_IN1" class="0">
@@ -5140,12 +5133,22 @@ MC2_IN2</text>
 <wire x1="-2.54" y1="101.6" x2="-10.16" y2="101.6" width="0.1524" layer="91"/>
 <label x="-12.7" y="101.6" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="PC7"/>
+<wire x1="383.54" y1="66.04" x2="406.4" y2="66.04" width="0.1524" layer="91"/>
+<label x="396.24" y="66.04" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="MC1_IN2" class="0">
 <segment>
 <pinref part="R2" gate="G$1" pin="1"/>
 <wire x1="7.62" y1="99.06" x2="-10.16" y2="99.06" width="0.1524" layer="91"/>
 <label x="-12.7" y="99.06" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$5" gate="G$1" pin="PC6"/>
+<wire x1="383.54" y1="58.42" x2="406.4" y2="58.42" width="0.1524" layer="91"/>
+<label x="396.24" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MC1_INH_5" class="0">
@@ -5281,8 +5284,6 @@ MC2_IN2</text>
 <wire x1="383.54" y1="81.28" x2="406.4" y2="81.28" width="0.1524" layer="91"/>
 <label x="396.24" y="81.28" size="1.778" layer="95"/>
 </segment>
-</net>
-<net name="MC1_ING_3.3" class="0">
 <segment>
 <pinref part="U$10" gate="G$1" pin="2A"/>
 <wire x1="152.4" y1="35.56" x2="139.7" y2="35.56" width="0.1524" layer="91"/>
@@ -5655,15 +5656,16 @@ MC2_IN2</text>
 <label x="200.66" y="76.2" size="1.778" layer="95"/>
 </segment>
 </net>
+<net name="MC2_INH_3.3" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PC8"/>
+<wire x1="383.54" y1="73.66" x2="406.4" y2="73.66" width="0.1524" layer="91"/>
+<label x="396.24" y="73.66" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 </schematic>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
