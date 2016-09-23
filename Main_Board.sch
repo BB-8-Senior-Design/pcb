@@ -3068,6 +3068,8 @@ This is the "EZ" version, which has limited top masking for improved ease of ass
 <part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="SUPPLY19" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND36" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="0"/>
+<part name="R15" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -3203,6 +3205,8 @@ MC2_INH_3.3</text>
 <instance part="R13" gate="G$1" x="325.12" y="180.34"/>
 <instance part="SUPPLY19" gate="G$1" x="304.8" y="187.96"/>
 <instance part="GND36" gate="1" x="304.8" y="172.72"/>
+<instance part="R14" gate="G$1" x="325.12" y="127"/>
+<instance part="R15" gate="G$1" x="325.12" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -4115,10 +4119,10 @@ MC2_INH_3.3</text>
 <net name="N$12" class="0">
 <segment>
 <pinref part="Y1" gate="G$1" pin="2"/>
-<pinref part="U$5" gate="G$1" pin="PC14"/>
-<wire x1="314.96" y1="127" x2="335.28" y2="127" width="0.1524" layer="91"/>
 <pinref part="C17" gate="G$1" pin="2"/>
 <wire x1="307.34" y1="127" x2="314.96" y2="127" width="0.1524" layer="91"/>
+<pinref part="R14" gate="G$1" pin="1"/>
+<wire x1="314.96" y1="127" x2="320.04" y2="127" width="0.1524" layer="91"/>
 <junction x="314.96" y="127"/>
 </segment>
 </net>
@@ -4153,11 +4157,11 @@ MC2_INH_3.3</text>
 <net name="N$20" class="0">
 <segment>
 <pinref part="C20" gate="G$1" pin="2"/>
-<pinref part="U$5" gate="G$1" pin="PH0"/>
 <wire x1="307.34" y1="111.76" x2="314.96" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="Y2" gate="G$1" pin="2"/>
-<wire x1="314.96" y1="111.76" x2="335.28" y2="111.76" width="0.1524" layer="91"/>
 <wire x1="314.96" y1="109.22" x2="314.96" y2="111.76" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="320.04" y1="111.76" x2="314.96" y2="111.76" width="0.1524" layer="91"/>
 <junction x="314.96" y="111.76"/>
 </segment>
 </net>
@@ -4210,6 +4214,20 @@ MC2_INH_3.3</text>
 <segment>
 <wire x1="383.54" y1="149.86" x2="414.02" y2="149.86" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="PB4"/>
+</segment>
+</net>
+<net name="N$29" class="0">
+<segment>
+<pinref part="R14" gate="G$1" pin="2"/>
+<pinref part="U$5" gate="G$1" pin="PC14"/>
+<wire x1="330.2" y1="127" x2="335.28" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$30" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PH0"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="335.28" y1="111.76" x2="330.2" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
