@@ -8926,6 +8926,9 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="SUPPLY25" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="J6" library="BB8" deviceset="2-PIN-JUMPER" device="" value="9.7uH"/>
 <part name="C24" library="BB8" deviceset="CAP-1206" device="" value="47uF"/>
+<part name="R71" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="D2" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="GREEN"/>
+<part name="GND48" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -9345,6 +9348,9 @@ SRN8040-101MCT-ND</text>
 <instance part="SUPPLY25" gate="G$1" x="1516.38" y="124.46"/>
 <instance part="J6" gate="G$1" x="828.04" y="88.9"/>
 <instance part="C24" gate="G$1" x="1158.24" y="60.96" rot="R180"/>
+<instance part="R71" gate="G$1" x="330.2" y="134.62"/>
+<instance part="D2" gate="G$1" x="314.96" y="134.62" rot="R270"/>
+<instance part="GND48" gate="1" x="289.56" y="132.08"/>
 </instances>
 <busses>
 </busses>
@@ -10131,6 +10137,11 @@ SRN8040-101MCT-ND</text>
 <pinref part="J5" gate="G$1" pin="GND"/>
 <wire x1="812.8" y1="147.32" x2="817.88" y2="147.32" width="0.1524" layer="91"/>
 <junction x="817.88" y="147.32"/>
+</segment>
+<segment>
+<pinref part="D2" gate="G$1" pin="C"/>
+<pinref part="GND48" gate="1" pin="GND"/>
+<wire x1="309.88" y1="134.62" x2="289.56" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -12459,6 +12470,19 @@ SRN8040-101MCT-ND</text>
 <wire x1="825.5" y1="152.4" x2="812.8" y2="152.4" width="0.1524" layer="91"/>
 <junction x="825.5" y="152.4"/>
 <pinref part="J5" gate="G$1" pin="PWR"/>
+</segment>
+</net>
+<net name="N$129" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="PC13"/>
+<pinref part="R71" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$130" class="0">
+<segment>
+<pinref part="R71" gate="G$1" pin="1"/>
+<pinref part="D2" gate="G$1" pin="A"/>
+<wire x1="325.12" y1="134.62" x2="317.5" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
