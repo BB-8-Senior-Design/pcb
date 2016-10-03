@@ -935,6 +935,16 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
 <wire x1="0" y1="0.0305" x2="0" y2="-0.0305" width="0.5588" layer="21"/>
 </package>
+<package name="SRN8040">
+<smd name="P$1" x="-3" y="0" dx="8.2" dy="3" layer="1" rot="R90"/>
+<smd name="P$2" x="3" y="0" dx="8.2" dy="3" layer="1" rot="R90"/>
+<text x="0" y="5" size="1.27" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-5.25" size="1.27" layer="27" font="vector" align="center">&gt;VALUE</text>
+<wire x1="-4" y1="-4" x2="-4" y2="4" width="0.127" layer="51"/>
+<wire x1="-4" y1="-4" x2="4" y2="-4" width="0.127" layer="51"/>
+<wire x1="4" y1="4" x2="4" y2="-4" width="0.127" layer="51"/>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.127" layer="51"/>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Passives">
@@ -1453,7 +1463,7 @@ design rules under a new name.</description>
 <element name="U3" library="BB8" package="T0-263-6" value="5V_BUCK_REG" x="88" y="83"/>
 <element name="U$8" library="BB8" package="RADIAL_CAN_SMD" value="100uF" x="86" y="94.88"/>
 <element name="Z1" library="BB8" package="DO-214AB2" value="SCHOTTKY_DIODE" x="77" y="76"/>
-<element name="L1" library="SparkFun-Passives" package="0805" value="100uH" x="73" y="74"/>
+<element name="L1" library="BB8" package="SRN8040" value="100uH" x="73" y="74"/>
 <element name="U$11" library="BB8" package="RADIAL_CAN_SMD" value="470uF" x="68" y="70.88"/>
 <element name="U12" library="BB8" package="IDC20" value="JTAG" x="133" y="93"/>
 <element name="R16" library="SparkFun-Passives" package="0805" value="10K" x="150" y="86"/>
@@ -2359,18 +2369,18 @@ design rules under a new name.</description>
 </signal>
 <signal name="N$31">
 <contactref element="U3" pad="P$2"/>
-<contactref element="L1" pad="2"/>
+<contactref element="L1" pad="P$2"/>
 <contactref element="Z1" pad="C"/>
 <wire x1="83.9" y1="76" x2="88" y2="84.7" width="0" layer="19" extent="1-1"/>
-<wire x1="73.9" y1="74" x2="83.9" y2="76" width="0" layer="19" extent="1-1"/>
+<wire x1="76" y1="74" x2="83.9" y2="76" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$32">
-<contactref element="L1" pad="1"/>
+<contactref element="L1" pad="P$1"/>
 <contactref element="U$11" pad="P$1"/>
 <contactref element="U3" pad="P$4"/>
 <contactref element="U$15" pad="P$1"/>
-<wire x1="72.1" y1="74" x2="88" y2="88.1" width="0" layer="19" extent="1-1"/>
-<wire x1="68" y1="70.88" x2="72.1" y2="74" width="0" layer="19" extent="1-1"/>
+<wire x1="70" y1="74" x2="88" y2="88.1" width="0" layer="19" extent="1-1"/>
+<wire x1="68" y1="70.88" x2="70" y2="74" width="0" layer="19" extent="1-1"/>
 <wire x1="48" y1="30" x2="68" y2="70.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$24">
