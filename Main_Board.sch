@@ -863,7 +863,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="1.504" y1="2.366" x2="2.393" y2="2.366" width="0.127" layer="51"/>
 <smd name="1" x="-3.7" y="0" dx="2.3" dy="5.6" layer="1"/>
 <smd name="2" x="3.7" y="0" dx="2.3" dy="5.6" layer="1"/>
-<text x="0" y="-3.302" size="1.016" layer="25" font="vector" align="center">&gt;Name</text>
+<text x="0" y="3.302" size="1.016" layer="25" font="vector" align="center">&gt;Name</text>
+<text x="0" y="-3.302" size="1.016" layer="27" font="vector" align="center">&gt;VALUE</text>
 </package>
 <package name="SPM6530">
 <smd name="P$1" x="-2.775" y="0" dx="3.4" dy="1.85" layer="1" rot="R90"/>
@@ -8255,8 +8256,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="PGND4" library="BB8" deviceset="PGND" device=""/>
 <part name="D3" library="BB8" deviceset="BAS16-SOT3" device=""/>
 <part name="U11" library="BB8" deviceset="LTC3122-MSOP" device=""/>
-<part name="F1" library="BB8" deviceset="F2875CT-ND" device=""/>
-<part name="F2" library="BB8" deviceset="F2875CT-ND" device=""/>
+<part name="F1" library="BB8" deviceset="F2875CT-ND" device="" value="4A"/>
+<part name="F2" library="BB8" deviceset="F2875CT-ND" device="" value="4A"/>
 <part name="L2" library="BB8" deviceset="INDUCTOR-SPM6530" device="" value="3.3uH"/>
 <part name="C38" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="4.7uF"/>
 <part name="C39" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="4.7uF"/>
