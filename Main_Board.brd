@@ -144,9 +144,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="167" y2="-4.5" width="0" layer="20"/>
-<wire x1="167" y1="-4.5" x2="167" y2="100" width="0" layer="20"/>
-<wire x1="167" y1="100" x2="0" y2="100" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
+<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
+<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 <dimension x1="0" y1="0" x2="160" y2="0" x3="80" y3="-10" textsize="5" layer="51"/>
 <dimension x1="160" y1="100" x2="160" y2="0" x3="174" y3="50" textsize="5" layer="51"/>
