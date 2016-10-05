@@ -958,6 +958,16 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="8" y1="-5" x2="-2" y2="-5" width="0.127" layer="21"/>
 <text x="-1" y="-7" size="1.27" layer="21">&gt;NAME</text>
 </package>
+<package name="XT60">
+<wire x1="-4.064" y1="7.8675" x2="-4.064" y2="-7.8675" width="0.127" layer="21"/>
+<wire x1="-4.064" y1="-7.8675" x2="4.064" y2="-7.8675" width="0.127" layer="21"/>
+<wire x1="4.064" y1="-7.8675" x2="4.064" y2="7.8675" width="0.127" layer="21"/>
+<wire x1="4.064" y1="7.8675" x2="-4.064" y2="7.8675" width="0.127" layer="21"/>
+<pad name="P$1" x="0" y="3.6" drill="4.25" diameter="4.675"/>
+<pad name="P$2" x="0" y="-3.6" drill="4.25" diameter="4.675"/>
+<text x="7.62" y="-3.81" size="6.35" layer="21" font="vector" align="center">+</text>
+<text x="7.62" y="3.81" size="6.35" layer="21" font="vector" align="center">-</text>
+</package>
 </packages>
 <symbols>
 <symbol name="BTM7752G">
@@ -1644,6 +1654,14 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <pin name="DATA" x="-12.7" y="5.08" visible="pin" length="middle"/>
 <text x="-7.62" y="22.86" size="1.905" layer="95">&gt;NAME</text>
 <text x="-7.62" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="XT60">
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.254" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.254" layer="94"/>
+<pin name="+12V" x="-12.7" y="2.54" length="middle"/>
+<pin name="GND" x="-12.7" y="-2.54" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2447,6 +2465,22 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <connects>
 <connect gate="G$1" pin="O" pad="P$4"/>
 <connect gate="G$1" pin="P" pad="P$3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="XT60">
+<gates>
+<gate name="G$1" symbol="XT60" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="XT60">
+<connects>
+<connect gate="G$1" pin="+12V" pad="P$2"/>
+<connect gate="G$1" pin="GND" pad="P$1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -8334,6 +8368,9 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="GND81" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND82" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
+<part name="U$1" library="BB8" deviceset="XT60" device=""/>
+<part name="PGND5" library="BB8" deviceset="PGND" device=""/>
+<part name="PGND6" library="BB8" deviceset="PGND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8769,6 +8806,9 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="GND81" gate="1" x="294.64" y="198.12"/>
 <instance part="GND82" gate="1" x="426.72" y="177.8"/>
 <instance part="SUPPLY28" gate="G$1" x="25.4" y="-172.72"/>
+<instance part="U$1" gate="G$1" x="1305.56" y="-114.3" rot="R180"/>
+<instance part="PGND5" gate="G$1" x="1564.64" y="-299.72"/>
+<instance part="PGND6" gate="G$1" x="1328.42" y="-109.22"/>
 </instances>
 <busses>
 </busses>
@@ -11251,8 +11291,9 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <net name="N$104" class="0">
 <segment>
 <wire x1="1341.12" y1="-93.98" x2="1338.58" y2="-93.98" width="0.1524" layer="91"/>
-<wire x1="1338.58" y1="-93.98" x2="1338.58" y2="-154.94" width="0.1524" layer="91"/>
+<wire x1="1338.58" y1="-93.98" x2="1338.58" y2="-116.84" width="0.1524" layer="91"/>
 <pinref part="R43" gate="G$1" pin="1"/>
+<wire x1="1338.58" y1="-116.84" x2="1338.58" y2="-154.94" width="0.1524" layer="91"/>
 <wire x1="1338.58" y1="-154.94" x2="1341.12" y2="-154.94" width="0.1524" layer="91"/>
 <pinref part="J4" gate="G$1" pin="1"/>
 <wire x1="1338.58" y1="-182.88" x2="1338.58" y2="-190.5" width="0.1524" layer="91"/>
@@ -11272,6 +11313,9 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="1221.74" y1="-167.64" x2="1221.74" y2="-180.34" width="0.1524" layer="91"/>
 <junction x="1236.98" y="-167.64"/>
 <pinref part="F1" gate="G$1" pin="1"/>
+<pinref part="U$1" gate="G$1" pin="+12V"/>
+<wire x1="1318.26" y1="-116.84" x2="1338.58" y2="-116.84" width="0.1524" layer="91"/>
+<junction x="1338.58" y="-116.84"/>
 </segment>
 </net>
 <net name="N$105" class="0">
@@ -11386,6 +11430,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="1313.18" y1="-231.14" x2="1313.18" y2="-236.22" width="0.1524" layer="91"/>
 <junction x="1313.18" y="-236.22"/>
 <pinref part="PGND4" gate="G$1" pin="PGND"/>
+<pinref part="PGND5" gate="G$1" pin="PGND"/>
+<junction x="1564.64" y="-297.18"/>
 </segment>
 </net>
 <net name="N$114" class="0">
@@ -11596,6 +11642,14 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="Q7" gate="G$1" pin="S1"/>
 <wire x1="1544.32" y1="-157.48" x2="1544.32" y2="-160.02" width="0.1524" layer="91"/>
 <pinref part="PGND2" gate="G$1" pin="PGND"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="1318.26" y1="-111.76" x2="1320.8" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="1320.8" y1="-111.76" x2="1320.8" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="1320.8" y1="-104.14" x2="1328.42" y2="-104.14" width="0.1524" layer="91"/>
+<wire x1="1328.42" y1="-104.14" x2="1328.42" y2="-106.68" width="0.1524" layer="91"/>
+<pinref part="PGND6" gate="G$1" pin="PGND"/>
 </segment>
 </net>
 <net name="N$48" class="0">
