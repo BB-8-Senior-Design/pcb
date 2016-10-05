@@ -8333,6 +8333,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="LED7" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
 <part name="GND81" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND82" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="SUPPLY28" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8767,6 +8768,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="LED7" gate="G$1" x="325.12" y="203.2" rot="R270"/>
 <instance part="GND81" gate="1" x="294.64" y="198.12"/>
 <instance part="GND82" gate="1" x="426.72" y="177.8"/>
+<instance part="SUPPLY28" gate="G$1" x="25.4" y="-172.72"/>
 </instances>
 <busses>
 </busses>
@@ -9737,6 +9739,22 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="J1" gate="J$1" pin="2"/>
 <wire x1="203.2" y1="76.2" x2="226.06" y2="76.2" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="L1" gate="G$1" pin="1"/>
+<pinref part="C8" gate="G$1" pin="+"/>
+<wire x1="12.7" y1="-185.42" x2="25.4" y2="-185.42" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-185.42" x2="25.4" y2="-187.96" width="0.1524" layer="91"/>
+<pinref part="U2" gate="G$1" pin="FEEDBACK"/>
+<wire x1="-30.48" y1="-177.8" x2="25.4" y2="-177.8" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="-177.8" x2="25.4" y2="-185.42" width="0.1524" layer="91"/>
+<junction x="25.4" y="-185.42"/>
+<pinref part="C9" gate="G$1" pin="+"/>
+<wire x1="25.4" y1="-185.42" x2="40.64" y2="-185.42" width="0.1524" layer="91"/>
+<wire x1="40.64" y1="-185.42" x2="40.64" y2="-187.96" width="0.1524" layer="91"/>
+<pinref part="SUPPLY28" gate="G$1" pin="5V"/>
+<wire x1="25.4" y1="-177.8" x2="25.4" y2="-172.72" width="0.1524" layer="91"/>
+<junction x="25.4" y="-177.8"/>
+</segment>
 </net>
 <net name="N$8" class="0">
 <segment>
@@ -10348,21 +10366,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="-10.16" y1="-185.42" x2="-2.54" y2="-185.42" width="0.1524" layer="91"/>
 <wire x1="-10.16" y1="-193.675" x2="-10.16" y2="-185.42" width="0.1524" layer="91"/>
 <junction x="-10.16" y="-185.42"/>
-</segment>
-</net>
-<net name="N$32" class="0">
-<segment>
-<pinref part="L1" gate="G$1" pin="1"/>
-<pinref part="C8" gate="G$1" pin="+"/>
-<wire x1="12.7" y1="-185.42" x2="25.4" y2="-185.42" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-185.42" x2="25.4" y2="-187.96" width="0.1524" layer="91"/>
-<pinref part="U2" gate="G$1" pin="FEEDBACK"/>
-<wire x1="-30.48" y1="-177.8" x2="25.4" y2="-177.8" width="0.1524" layer="91"/>
-<wire x1="25.4" y1="-177.8" x2="25.4" y2="-185.42" width="0.1524" layer="91"/>
-<junction x="25.4" y="-185.42"/>
-<pinref part="C9" gate="G$1" pin="+"/>
-<wire x1="25.4" y1="-185.42" x2="40.64" y2="-185.42" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="-185.42" x2="40.64" y2="-187.96" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$24" class="0">
