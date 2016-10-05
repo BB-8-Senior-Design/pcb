@@ -42,7 +42,7 @@
 <layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
@@ -144,9 +144,9 @@
 </layers>
 <board>
 <plain>
-<wire x1="0" y1="0" x2="160" y2="0" width="0" layer="20"/>
-<wire x1="160" y1="0" x2="160" y2="100" width="0" layer="20"/>
-<wire x1="160" y1="100" x2="0" y2="100" width="0" layer="20"/>
+<wire x1="0" y1="0" x2="167" y2="-4.5" width="0" layer="20"/>
+<wire x1="167" y1="-4.5" x2="167" y2="100" width="0" layer="20"/>
+<wire x1="167" y1="100" x2="0" y2="100" width="0" layer="20"/>
 <wire x1="0" y1="100" x2="0" y2="0" width="0" layer="20"/>
 <dimension x1="0" y1="0" x2="160" y2="0" x3="80" y3="-10" textsize="5" layer="51"/>
 <dimension x1="160" y1="100" x2="160" y2="0" x3="174" y3="50" textsize="5" layer="51"/>
@@ -706,33 +706,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <text x="0.036" y="-2.75" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
 <circle x="-1.484" y="0.984" radius="0.113134375" width="0.05" layer="21"/>
 </package>
-<package name="SD-5738">
-<smd name="P$9" x="-9.38" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
-<smd name="P$1" x="-6.88" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
-<smd name="P$2" x="-4.38" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
-<smd name="P$3" x="-1.08" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
-<smd name="P$4" x="0.62" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
-<smd name="P$5" x="3.12" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
-<smd name="P$6" x="5.62" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
-<smd name="P$7" x="8.05" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
-<smd name="P$8" x="9.75" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
-<smd name="P$CARDDETECT" x="11.75" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
-<smd name="P$COM" x="14.35" y="9.95" dx="2" dy="0.8" layer="1"/>
-<smd name="P$WRITEPROTECT" x="14.35" y="20" dx="2" dy="0.8" layer="1"/>
-<rectangle x1="-10" y1="6" x2="10.5" y2="10" layer="39"/>
-<rectangle x1="12" y1="4.5" x2="13.85" y2="22.3" layer="39"/>
-<circle x="12" y="23.5" radius="0.75" width="0.1" layer="45"/>
-<circle x="-12.2" y="23.5" radius="0.75" width="0.1" layer="45"/>
-<wire x1="-14.65" y1="0" x2="13.85" y2="0" width="0.25" layer="21"/>
-<wire x1="-14.65" y1="0" x2="-14.65" y2="29" width="0.25" layer="21"/>
-<wire x1="-14.65" y1="29" x2="13.85" y2="29" width="0.25" layer="21"/>
-<wire x1="13.85" y1="0" x2="13.85" y2="29" width="0.25" layer="21"/>
-<text x="1.32" y="-3.19" size="1.016" layer="24" font="vector" align="center">&gt;NAME</text>
-<rectangle x1="-17.15" y1="14.5" x2="-14.15" y2="17.5" layer="1"/>
-<rectangle x1="-17.15" y1="1.5" x2="-14.15" y2="4.5" layer="1"/>
-<rectangle x1="13.35" y1="14.5" x2="16.35" y2="17.5" layer="1"/>
-<rectangle x1="13.35" y1="1.5" x2="16.35" y2="4.5" layer="1"/>
-</package>
 <package name="S-PVQFN-N32">
 <smd name="P$GND" x="0" y="0" dx="3.45" dy="3.45" layer="1"/>
 <smd name="P$1" x="-1.75" y="2.475" dx="0.28" dy="0.85" layer="1"/>
@@ -952,6 +925,34 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="4" y1="4" x2="4" y2="-4" width="0.127" layer="51"/>
 <wire x1="-4" y1="4" x2="4" y2="4" width="0.127" layer="51"/>
 </package>
+<package name="SD-5738">
+<smd name="P$9" x="-9.38" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$1" x="-6.88" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$2" x="-4.38" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$3" x="-1.08" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$4" x="0.62" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$5" x="3.12" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$6" x="5.62" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$7" x="8.05" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$8" x="9.75" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$CARDDETECT" x="11.75" y="-1" dx="0.8" dy="2" layer="1" rot="R180"/>
+<smd name="P$COM" x="14.35" y="9.95" dx="2" dy="0.8" layer="1"/>
+<smd name="P$WRITEPROTECT" x="14.35" y="20" dx="2" dy="0.8" layer="1"/>
+<rectangle x1="-10" y1="6" x2="10.5" y2="10" layer="39"/>
+<rectangle x1="12" y1="4.5" x2="13.85" y2="22.3" layer="39"/>
+<circle x="12" y="23.5" radius="0.75" width="0.1" layer="45"/>
+<circle x="-12.2" y="23.5" radius="0.75" width="0.1" layer="45"/>
+<wire x1="-14.65" y1="0" x2="13.85" y2="0" width="0.25" layer="21"/>
+<wire x1="-14.65" y1="0" x2="-14.65" y2="29" width="0.25" layer="21"/>
+<wire x1="-14.65" y1="29" x2="13.85" y2="29" width="0.25" layer="21"/>
+<wire x1="13.85" y1="0" x2="13.85" y2="29" width="0.25" layer="21"/>
+<text x="-10.11" y="1.89" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
+<rectangle x1="-17.15" y1="14.5" x2="-14.15" y2="17.5" layer="1"/>
+<rectangle x1="-17.15" y1="1.5" x2="-14.15" y2="4.5" layer="1"/>
+<rectangle x1="13.35" y1="14.5" x2="16.35" y2="17.5" layer="1"/>
+<rectangle x1="13.35" y1="1.5" x2="16.35" y2="4.5" layer="1"/>
+<text x="6.4" y="1.89" size="1.016" layer="27" font="vector" align="center">&gt;VALUE</text>
+</package>
 </packages>
 </library>
 <library name="SparkFun-Passives">
@@ -1109,28 +1110,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <smd name="P$4" x="6.1" y="-5.7" dx="2.8" dy="2.4" layer="1"/>
 <hole x="0" y="0" drill="2.032"/>
 <hole x="4.572" y="0" drill="2.032"/>
-</package>
-<package name="1X02">
-<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
-<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
-<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
-<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
 </package>
 </packages>
 </library>
@@ -1535,7 +1514,6 @@ design rules under a new name.</description>
 <element name="C50" library="SparkFun-Capacitors" package="0805" value="0.1uF" x="37" y="22.5"/>
 <element name="C51" library="SparkFun-Capacitors" package="0805" value="0.1uF" x="31" y="20.5"/>
 <element name="U14" library="SparkFun-AnalogIC" package="POWER-SOP8" value="TPA2005D1DGN" x="39" y="6"/>
-<element name="P4" library="BB8" package="SD-5738" value="5738-SDCARD" x="18" y="77"/>
 <element name="U15" library="BB8" package="S-PVQFN-N32" value="BQ40Z60" x="117.5" y="32"/>
 <element name="U13" library="BB8" package="WSON-8" value="BQ2947" x="101" y="50"/>
 <element name="RT2" library="BB8" package="0805" value="10k-NTC" x="102.5" y="43.5"/>
@@ -1668,7 +1646,7 @@ design rules under a new name.</description>
 <element name="D1" library="SparkFun-LED" package="LED-0603" value="GREEN" x="78.5" y="61" rot="R270">
 <attribute name="PROD_ID" value="DIO-08575" x="78.5" y="61" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="J6" library="SparkFun-Connectors" package="1X02" value="SD_WP" x="39" y="94.5" rot="R270"/>
+<element name="J6" library="BB8" package="SD-5738" value="SDIO-SDCARD" x="18.5" y="74"/>
 </elements>
 <signals>
 <signal name="GND" airwireshidden="yes">
@@ -1764,8 +1742,6 @@ design rules under a new name.</description>
 <contactref element="R27" pad="2"/>
 <contactref element="C51" pad="2"/>
 <contactref element="C61" pad="2"/>
-<contactref element="P4" pad="P$3"/>
-<contactref element="P4" pad="P$6"/>
 <contactref element="U15" pad="P$GND"/>
 <contactref element="U15" pad="P$9"/>
 <contactref element="RT2" pad="2"/>
@@ -1828,6 +1804,8 @@ design rules under a new name.</description>
 <contactref element="D1" pad="C"/>
 <contactref element="LED1" pad="C"/>
 <contactref element="LED3" pad="C"/>
+<contactref element="J6" pad="P$3"/>
+<contactref element="J6" pad="P$6"/>
 <wire x1="150.78" y1="93" x2="153.32" y2="93" width="0" layer="19" extent="1-1"/>
 <wire x1="148.24" y1="93" x2="150.78" y2="93" width="0" layer="19" extent="1-1"/>
 <wire x1="145.7" y1="93" x2="148.24" y2="93" width="0" layer="19" extent="1-1"/>
@@ -1898,8 +1876,6 @@ design rules under a new name.</description>
 <wire x1="18" y1="61.45" x2="12.4" y2="62.1" width="0" layer="19" extent="1-1"/>
 <wire x1="18" y1="63.4" x2="18" y2="61.45" width="0" layer="19" extent="1-1"/>
 <wire x1="18" y1="59.5" x2="18" y2="61.45" width="0" layer="19" extent="1-1"/>
-<wire x1="16.92" y1="76" x2="18" y2="63.4" width="0" layer="19" extent="1-1"/>
-<wire x1="23.62" y1="76" x2="16.92" y2="76" width="0" layer="19" extent="1-1"/>
 <wire x1="40.5" y1="76.9" x2="38.2" y2="61" width="0" layer="19" extent="1-1"/>
 <wire x1="106.9" y1="70.5" x2="95" y2="81.5" width="0" layer="19" extent="1-1"/>
 <wire x1="110.9" y1="70.5" x2="106.9" y2="70.5" width="0" layer="19" extent="1-1"/>
@@ -1983,6 +1959,8 @@ design rules under a new name.</description>
 <wire x1="38.675" y1="8.1" x2="33.9" y2="13.5" width="0" layer="19" extent="1-1"/>
 <wire x1="39" y1="6" x2="38.675" y2="8.1" width="0" layer="19" extent="1-1"/>
 <wire x1="2" y1="6.92" x2="16.18" y2="27.55" width="0" layer="19" extent="1-1"/>
+<wire x1="24.12" y1="73" x2="2" y2="6.92" width="0" layer="19" extent="1-1"/>
+<wire x1="17.42" y1="73" x2="24.12" y2="73" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC" airwireshidden="yes">
 <contactref element="U3" pad="P$11"/>
@@ -2468,9 +2446,6 @@ design rules under a new name.</description>
 <contactref element="U8" pad="P$2"/>
 <wire x1="93.4" y1="97.5" x2="106" y2="94.95" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$27">
-<contactref element="P4" pad="P$4"/>
-</signal>
 <signal name="N$28">
 <contactref element="U8" pad="P$4"/>
 <contactref element="R17" pad="2"/>
@@ -2552,9 +2527,9 @@ design rules under a new name.</description>
 <wire x1="48.5" y1="52" x2="147.6" y2="59.6" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="MC2_INH_3.3">
-<contactref element="U7" pad="P$39"/>
 <contactref element="U6" pad="P$5"/>
-<wire x1="64.82" y1="44.4" x2="142" y2="60.9" width="0" layer="19" extent="1-1"/>
+<contactref element="U7" pad="P$45"/>
+<wire x1="67.82" y1="44.4" x2="142" y2="60.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="AC2">
 <contactref element="C28" pad="2"/>
@@ -3131,16 +3106,6 @@ design rules under a new name.</description>
 <wire x1="94.6" y1="27" x2="100.05" y2="49.75" width="0" layer="19" extent="1-1"/>
 <wire x1="100.9" y1="15" x2="94.6" y2="27" width="0" layer="19" extent="1-1"/>
 </signal>
-<signal name="N$41">
-<contactref element="P4" pad="P$WRITEPROTECT"/>
-<contactref element="J6" pad="1"/>
-<wire x1="32.35" y1="97" x2="39" y2="94.5" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="N$42">
-<contactref element="P4" pad="P$COM"/>
-<contactref element="J6" pad="2"/>
-<wire x1="32.35" y1="86.95" x2="39" y2="91.96" width="0" layer="19" extent="1-1"/>
-</signal>
 <signal name="AUDIO_PWM">
 <contactref element="U7" pad="P$21"/>
 <contactref element="C50" pad="1"/>
@@ -3160,26 +3125,6 @@ design rules under a new name.</description>
 <contactref element="U7" pad="P$33"/>
 <contactref element="R66" pad="2"/>
 <wire x1="61.82" y1="44.4" x2="107.9" y2="65.5" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SD_SPI_NSS">
-<contactref element="P4" pad="P$1"/>
-<contactref element="U7" pad="P$62"/>
-<wire x1="11.12" y1="76" x2="71.32" y2="52.9" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SD_SPI_SCK">
-<contactref element="P4" pad="P$5"/>
-<contactref element="U7" pad="P$34"/>
-<wire x1="21.12" y1="76" x2="62.32" y2="44.4" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SD_SPI_MOSI">
-<contactref element="P4" pad="P$2"/>
-<contactref element="U7" pad="P$11"/>
-<wire x1="13.62" y1="76" x2="64.32" y2="55.9" width="0" layer="19" extent="1-1"/>
-</signal>
-<signal name="SD_SPI_MISO">
-<contactref element="P4" pad="P$7"/>
-<contactref element="U7" pad="P$10"/>
-<wire x1="26.05" y1="76" x2="64.82" y2="55.9" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="IMU_I2C_SDA">
 <contactref element="U7" pad="P$59"/>
@@ -3366,6 +3311,24 @@ design rules under a new name.</description>
 <contactref element="R16" pad="1"/>
 <contactref element="D1" pad="A"/>
 <wire x1="75.9" y1="61" x2="77.623" y2="61" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDIO_D0">
+<contactref element="U7" pad="P$39"/>
+<contactref element="J6" pad="P$7"/>
+<wire x1="26.55" y1="73" x2="64.82" y2="44.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDIO_CK">
+<contactref element="U7" pad="P$53"/>
+<contactref element="J6" pad="P$5"/>
+<wire x1="21.62" y1="73" x2="71.32" y2="48.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="SDIO_CMD">
+<contactref element="U7" pad="P$54"/>
+<contactref element="J6" pad="P$2"/>
+<wire x1="14.12" y1="73" x2="71.32" y2="48.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$27">
+<contactref element="J6" pad="P$4"/>
 </signal>
 </signals>
 </board>
