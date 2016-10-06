@@ -767,7 +767,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 </package>
 <package name="SON-8">
 <smd name="P$2" x="-0.325" y="-1.435" dx="0.5" dy="0.83" layer="1"/>
-<rectangle x1="-1.225" y1="-0.56" x2="1.225" y2="1.34" layer="1"/>
 <smd name="P$1" x="-0.975" y="-1.435" dx="0.5" dy="0.83" layer="1"/>
 <smd name="P$3" x="0.325" y="-1.435" dx="0.5" dy="0.83" layer="1"/>
 <smd name="P$4" x="0.975" y="-1.435" dx="0.5" dy="0.83" layer="1"/>
@@ -781,6 +780,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="-1.64" y1="-1.65" x2="1.65" y2="-1.65" width="0.05" layer="21"/>
 <wire x1="1.65" y1="-1.65" x2="1.65" y2="1.65" width="0.05" layer="21"/>
 <wire x1="-1.64" y1="-1.65" x2="-1.64" y2="1.65" width="0.05" layer="21"/>
+<smd name="P$9" x="0" y="0.4" dx="2.45" dy="1.9" layer="1"/>
 </package>
 <package name="SOT23-3">
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -2230,7 +2230,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <devices>
 <device name="" package="SON-8">
 <connects>
-<connect gate="G$1" pin="D1" pad="P$5 P$6 P$7 P$8"/>
+<connect gate="G$1" pin="D1" pad="P$5 P$6 P$7 P$8 P$9"/>
 <connect gate="G$1" pin="G1" pad="P$4"/>
 <connect gate="G$1" pin="S1" pad="P$1 P$2 P$3"/>
 </connects>
@@ -2495,6 +2495,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="CREATIVE_COMMONS">
+<text x="-20.32" y="5.08" size="1.778" layer="51" font="vector">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
+<text x="0" y="2.54" size="1.778" layer="51" font="vector"> https://creativecommons.org/licenses/by-sa/4.0/</text>
+<text x="11.43" y="0" size="1.778" layer="51" font="vector">Designed by:</text>
 </package>
 </packages>
 <symbols>
