@@ -668,13 +668,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <smd name="P$10" x="2.1125" y="0.75" dx="0.825" dy="0.28" layer="1"/>
 <smd name="P$20" x="-2.1125" y="-0.75" dx="0.825" dy="0.28" layer="1"/>
 <smd name="P$11" x="2.1125" y="-0.75" dx="0.825" dy="0.28" layer="1"/>
-<polygon width="0.05" layer="1">
-<vertex x="-1.25" y="1"/>
-<vertex x="1.5" y="1"/>
-<vertex x="1.5" y="-1"/>
-<vertex x="-1.5" y="-1"/>
-<vertex x="-1.5" y="0.75"/>
-</polygon>
 <smd name="P$2" x="-1.75" y="1.6125" dx="0.28" dy="0.825" layer="1"/>
 <smd name="P$3" x="-1.25" y="1.6125" dx="0.28" dy="0.825" layer="1"/>
 <smd name="P$4" x="-0.75" y="1.6125" dx="0.28" dy="0.825" layer="1"/>
@@ -697,6 +690,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="-2.25" y1="1.75" x2="2.25" y2="1.75" width="0.05" layer="21"/>
 <text x="0.036" y="-2.75" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
 <circle x="-1.484" y="0.984" radius="0.113134375" width="0.05" layer="21"/>
+<smd name="P$21" x="0" y="0" dx="3" dy="2" layer="1"/>
 </package>
 <package name="S-PVQFN-N32">
 <smd name="P$GND" x="0" y="0" dx="3.45" dy="3.45" layer="1"/>
@@ -2134,7 +2128,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <connect gate="G$1" pin="FOD" pad="P$14"/>
 <connect gate="G$1" pin="ILIM" pad="P$12"/>
 <connect gate="G$1" pin="OUT" pad="P$4"/>
-<connect gate="G$1" pin="PGND" pad="P$1 P$20"/>
+<connect gate="G$1" pin="PGND" pad="P$1 P$20 P$21"/>
 <connect gate="G$1" pin="RECT" pad="P$18"/>
 <connect gate="G$1" pin="TS/CTRL" pad="P$13"/>
 </connects>
@@ -8359,7 +8353,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="GND82" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="U$1" library="BB8" deviceset="XT60" device=""/>
-<part name="PGND6" library="BB8" deviceset="PGND" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME3" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
@@ -8368,6 +8361,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="FRAME6" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME7" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME8" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="GND83" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND84" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8389,6 +8384,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <text x="1117.6" y="114.3" size="1.778" layer="98">+15V Out, goes to Pack+</text>
 <text x="942.34" y="-71.12" size="6.35" layer="94">IMU</text>
 <text x="1226.82" y="111.76" size="1.778" layer="95">Can reduce resistors for greater gain</text>
+<text x="843.28" y="165.1" size="6.4516" layer="98">Check if pgnd is needed</text>
 </plain>
 <instances>
 <instance part="U3" gate="G$1" x="0" y="147.32"/>
@@ -8788,7 +8784,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="GND82" gate="1" x="426.72" y="177.8"/>
 <instance part="SUPPLY28" gate="G$1" x="-30.48" y="-132.08"/>
 <instance part="U$1" gate="G$1" x="1277.62" y="-111.76" rot="R180"/>
-<instance part="PGND6" gate="G$1" x="1300.48" y="-106.68"/>
 <instance part="FRAME1" gate="G$1" x="1181.1" y="-332.74"/>
 <instance part="FRAME1" gate="G$2" x="1521.46" y="-345.44"/>
 <instance part="FRAME2" gate="G$1" x="1181.1" y="-48.26"/>
@@ -8805,6 +8800,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="FRAME7" gate="G$2" x="165.1" y="-48.26"/>
 <instance part="FRAME8" gate="G$1" x="-165.1" y="-332.74"/>
 <instance part="FRAME8" gate="G$2" x="165.1" y="-332.74"/>
+<instance part="GND83" gate="1" x="883.92" y="53.34"/>
+<instance part="GND84" gate="1" x="1300.48" y="-106.68"/>
 </instances>
 <busses>
 </busses>
@@ -9622,6 +9619,24 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="R76" gate="G$1" pin="2"/>
 <wire x1="419.1" y1="180.34" x2="426.72" y2="180.34" width="0.1524" layer="91"/>
 <junction x="426.72" y="180.34"/>
+</segment>
+<segment>
+<pinref part="GND83" gate="1" pin="GND"/>
+<wire x1="871.22" y1="58.42" x2="883.92" y2="58.42" width="0.1524" layer="91"/>
+<wire x1="883.92" y1="58.42" x2="883.92" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="U9" gate="G$1" pin="EN2"/>
+<pinref part="U9" gate="G$1" pin="EN1"/>
+<wire x1="871.22" y1="63.5" x2="883.92" y2="63.5" width="0.1524" layer="91"/>
+<wire x1="883.92" y1="63.5" x2="883.92" y2="58.42" width="0.1524" layer="91"/>
+<junction x="883.92" y="58.42"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="G$1" pin="GND"/>
+<wire x1="1290.32" y1="-109.22" x2="1292.86" y2="-109.22" width="0.1524" layer="91"/>
+<wire x1="1292.86" y1="-109.22" x2="1292.86" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="1292.86" y1="-101.6" x2="1300.48" y2="-101.6" width="0.1524" layer="91"/>
+<wire x1="1300.48" y1="-101.6" x2="1300.48" y2="-104.14" width="0.1524" layer="91"/>
+<pinref part="GND84" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -10790,30 +10805,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="975.36" y1="78.74" x2="975.36" y2="68.58" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="WIRELESS_EN1" class="0">
-<segment>
-<pinref part="U9" gate="G$1" pin="EN1"/>
-<wire x1="871.22" y1="63.5" x2="962.66" y2="63.5" width="0.1524" layer="91"/>
-<label x="957.58" y="63.5" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U7" gate="G$1" pin="PA10"/>
-<wire x1="383.54" y1="104.14" x2="406.4" y2="104.14" width="0.1524" layer="91"/>
-<label x="396.24" y="104.14" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="WIRELESS_EN2" class="0">
-<segment>
-<pinref part="U9" gate="G$1" pin="EN2"/>
-<wire x1="871.22" y1="58.42" x2="962.66" y2="58.42" width="0.1524" layer="91"/>
-<label x="957.58" y="58.42" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="U7" gate="G$1" pin="PA11"/>
-<wire x1="383.54" y1="111.76" x2="406.4" y2="111.76" width="0.1524" layer="91"/>
-<label x="396.24" y="111.76" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="N$64" class="0">
 <segment>
 <wire x1="1272.54" y1="127" x2="1272.54" y2="119.38" width="0.1524" layer="91"/>
@@ -11639,14 +11630,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="Q7" gate="G$1" pin="S1"/>
 <wire x1="1516.38" y1="-154.94" x2="1516.38" y2="-157.48" width="0.1524" layer="91"/>
 <pinref part="PGND2" gate="G$1" pin="PGND"/>
-</segment>
-<segment>
-<pinref part="U$1" gate="G$1" pin="GND"/>
-<wire x1="1290.32" y1="-109.22" x2="1292.86" y2="-109.22" width="0.1524" layer="91"/>
-<wire x1="1292.86" y1="-109.22" x2="1292.86" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="1292.86" y1="-101.6" x2="1300.48" y2="-101.6" width="0.1524" layer="91"/>
-<wire x1="1300.48" y1="-101.6" x2="1300.48" y2="-104.14" width="0.1524" layer="91"/>
-<pinref part="PGND6" gate="G$1" pin="PGND"/>
 </segment>
 </net>
 <net name="N$48" class="0">
