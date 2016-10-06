@@ -2501,9 +2501,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
 <package name="CREATIVE_COMMONS">
-<text x="-20.32" y="5.08" size="1.778" layer="51" font="vector">Released under the Creative Commons Attribution Share-Alike 4.0 License</text>
-<text x="0" y="2.54" size="1.778" layer="51" font="vector"> https://creativecommons.org/licenses/by-sa/4.0/</text>
-<text x="11.43" y="0" size="1.778" layer="51" font="vector">Designed by:</text>
 </package>
 </packages>
 <symbols>
@@ -8087,9 +8084,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="C17" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="2.2uF"/>
 <part name="GND34" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND33" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="FRAME3" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
-<part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
-<part name="FRAME4" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="SUPPLY1" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY3" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -8130,7 +8124,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="Y2" library="BB8" deviceset="MA-5066-25.0000M-C0" device=""/>
 <part name="S1" library="BB8" deviceset="RESET_BUTTON" device=""/>
 <part name="JP1" library="BB8" deviceset="SPDT_JUMPER" device=""/>
-<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="U1" library="BB8" deviceset="LMS8117" device=""/>
 <part name="U2" library="BB8" deviceset="5V_BUCK_REG" device=""/>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
@@ -8296,10 +8289,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="C49" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="C48" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="GND54" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="FRAME5" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
-<part name="FRAME6" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
-<part name="FRAME8" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
-<part name="FRAME7" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="R37" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="R47" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="GND49" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -8371,6 +8360,14 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="SUPPLY28" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="U$1" library="BB8" deviceset="XT60" device=""/>
 <part name="PGND6" library="BB8" deviceset="PGND" device=""/>
+<part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="FRAME3" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="FRAME4" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="FRAME5" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="FRAME6" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="FRAME7" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="FRAME8" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8451,12 +8448,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="C17" gate="G$1" x="391.16" y="134.62" rot="R90"/>
 <instance part="GND34" gate="1" x="403.86" y="10.16"/>
 <instance part="GND33" gate="1" x="401.32" y="132.08"/>
-<instance part="FRAME3" gate="G$1" x="274.32" y="-45.72"/>
-<instance part="FRAME3" gate="G$2" x="604.52" y="-45.72"/>
-<instance part="FRAME2" gate="G$1" x="-170.18" y="-335.28"/>
-<instance part="FRAME2" gate="G$2" x="157.48" y="-332.74"/>
-<instance part="FRAME4" gate="G$1" x="274.32" y="-335.28"/>
-<instance part="FRAME4" gate="G$2" x="601.98" y="-335.28"/>
 <instance part="SUPPLY1" gate="G$1" x="60.96" y="-139.7"/>
 <instance part="GND1" gate="1" x="60.96" y="-157.48"/>
 <instance part="SUPPLY3" gate="G$1" x="119.38" y="-142.24"/>
@@ -8497,8 +8488,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="Y2" gate="G$1" x="312.42" y="111.76"/>
 <instance part="S1" gate="G$1" x="312.42" y="96.52"/>
 <instance part="JP1" gate="G$1" x="312.42" y="180.34" rot="R180"/>
-<instance part="FRAME1" gate="G$1" x="-175.26" y="-43.18"/>
-<instance part="FRAME1" gate="G$2" x="154.94" y="-43.18"/>
 <instance part="U1" gate="G$1" x="86.36" y="-144.78"/>
 <instance part="U2" gate="G$1" x="-101.6" y="-139.7"/>
 <instance part="SUPPLY2" gate="G$1" x="-132.08" y="-134.62"/>
@@ -8728,14 +8717,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="GND54" gate="1" x="1252.22" y="-187.96" smashed="yes" rot="R90">
 <attribute name="VALUE" x="1254.76" y="-190.5" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="FRAME5" gate="G$1" x="734.06" y="-48.26"/>
-<instance part="FRAME5" gate="G$2" x="1064.26" y="-45.72"/>
-<instance part="FRAME6" gate="G$1" x="731.52" y="-335.28"/>
-<instance part="FRAME6" gate="G$2" x="1061.72" y="-335.28"/>
-<instance part="FRAME8" gate="G$1" x="1186.18" y="-48.26"/>
-<instance part="FRAME8" gate="G$2" x="1516.38" y="-48.26"/>
-<instance part="FRAME7" gate="G$1" x="1188.72" y="-335.28"/>
-<instance part="FRAME7" gate="G$2" x="1518.92" y="-335.28"/>
 <instance part="R37" gate="G$1" x="1193.8" y="-182.88" rot="R270"/>
 <instance part="R47" gate="G$1" x="1323.34" y="-208.28"/>
 <instance part="GND49" gate="1" x="911.86" y="-137.16" rot="R180"/>
@@ -8808,6 +8789,22 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="SUPPLY28" gate="G$1" x="-30.48" y="-132.08"/>
 <instance part="U$1" gate="G$1" x="1277.62" y="-111.76" rot="R180"/>
 <instance part="PGND6" gate="G$1" x="1300.48" y="-106.68"/>
+<instance part="FRAME1" gate="G$1" x="1181.1" y="-332.74"/>
+<instance part="FRAME1" gate="G$2" x="1521.46" y="-345.44"/>
+<instance part="FRAME2" gate="G$1" x="1181.1" y="-48.26"/>
+<instance part="FRAME2" gate="G$2" x="1511.3" y="-48.26"/>
+<instance part="FRAME3" gate="G$1" x="744.22" y="-48.26"/>
+<instance part="FRAME3" gate="G$2" x="1074.42" y="-48.26"/>
+<instance part="FRAME4" gate="G$1" x="744.22" y="-332.74"/>
+<instance part="FRAME4" gate="G$2" x="1074.42" y="-332.74"/>
+<instance part="FRAME5" gate="G$1" x="271.78" y="-48.26"/>
+<instance part="FRAME5" gate="G$2" x="601.98" y="-48.26"/>
+<instance part="FRAME6" gate="G$1" x="271.78" y="-332.74"/>
+<instance part="FRAME6" gate="G$2" x="601.98" y="-332.74"/>
+<instance part="FRAME7" gate="G$1" x="-165.1" y="-48.26"/>
+<instance part="FRAME7" gate="G$2" x="165.1" y="-48.26"/>
+<instance part="FRAME8" gate="G$1" x="-165.1" y="-332.74"/>
+<instance part="FRAME8" gate="G$2" x="165.1" y="-332.74"/>
 </instances>
 <busses>
 </busses>
