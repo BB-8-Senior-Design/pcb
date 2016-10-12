@@ -8358,15 +8358,15 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME3" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="GND83" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND84" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="JP2" library="BB8" deviceset="SPDT_JUMPER" device=""/>
+<part name="SUPPLY26" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="FRAME4" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME5" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME6" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME7" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME8" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
-<part name="GND83" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND84" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="JP2" library="BB8" deviceset="SPDT_JUMPER" device=""/>
-<part name="SUPPLY26" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8792,20 +8792,20 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="FRAME2" gate="G$2" x="1511.3" y="-48.26"/>
 <instance part="FRAME3" gate="G$1" x="744.22" y="-48.26"/>
 <instance part="FRAME3" gate="G$2" x="1074.42" y="-48.26"/>
-<instance part="FRAME4" gate="G$1" x="744.22" y="-332.74"/>
-<instance part="FRAME4" gate="G$2" x="1074.42" y="-332.74"/>
-<instance part="FRAME5" gate="G$1" x="271.78" y="-48.26"/>
-<instance part="FRAME5" gate="G$2" x="601.98" y="-48.26"/>
-<instance part="FRAME6" gate="G$1" x="271.78" y="-332.74"/>
-<instance part="FRAME6" gate="G$2" x="601.98" y="-332.74"/>
-<instance part="FRAME7" gate="G$1" x="-165.1" y="-48.26"/>
-<instance part="FRAME7" gate="G$2" x="165.1" y="-48.26"/>
-<instance part="FRAME8" gate="G$1" x="-165.1" y="-332.74"/>
-<instance part="FRAME8" gate="G$2" x="165.1" y="-332.74"/>
 <instance part="GND83" gate="1" x="883.92" y="53.34"/>
 <instance part="GND84" gate="1" x="1275.08" y="-111.76"/>
 <instance part="JP2" gate="G$1" x="1214.12" y="-78.74" rot="R180"/>
 <instance part="SUPPLY26" gate="G$1" x="1224.28" y="-76.2"/>
+<instance part="FRAME4" gate="G$1" x="251.46" y="-35.56"/>
+<instance part="FRAME4" gate="G$2" x="579.12" y="-38.1"/>
+<instance part="FRAME5" gate="G$1" x="-190.5" y="-35.56"/>
+<instance part="FRAME5" gate="G$2" x="134.62" y="-35.56"/>
+<instance part="FRAME6" gate="G$1" x="-190.5" y="-322.58"/>
+<instance part="FRAME6" gate="G$2" x="134.62" y="-322.58"/>
+<instance part="FRAME7" gate="G$1" x="251.46" y="-322.58"/>
+<instance part="FRAME7" gate="G$2" x="576.58" y="-325.12"/>
+<instance part="FRAME8" gate="G$1" x="746.76" y="-335.28"/>
+<instance part="FRAME8" gate="G$2" x="1082.04" y="-337.82"/>
 </instances>
 <busses>
 </busses>
