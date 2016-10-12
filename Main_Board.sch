@@ -8332,8 +8332,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="GND44" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J3" library="BB8" deviceset="2-PIN-JUMPER" device="" value="9.7uH"/>
 <part name="C44" library="BB8" deviceset="CAP-1206" device="" value="47uF"/>
-<part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="D1" library="SparkFun-LED" deviceset="LED-BLUE" device="0603" value="GREEN"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J6" library="BB8" deviceset="SDIO-SDCARD" device=""/>
 <part name="S2" library="BB8" deviceset="SWITCH" device=""/>
@@ -8367,6 +8365,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="FRAME6" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME7" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME8" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
+<part name="LED8" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
+<part name="R16" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 </parts>
 <sheets>
 <sheet>
@@ -8409,7 +8409,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="GND11" gate="1" x="-27.94" y="50.8"/>
 <instance part="SUPPLY5" gate="G$1" x="-27.94" y="101.6"/>
 <instance part="P2" gate="G$1" x="50.8" y="93.98" rot="R180"/>
-<instance part="R2" gate="G$1" x="-55.88" y="78.74"/>
+<instance part="R2" gate="G$1" x="-60.96" y="78.74" rot="R180"/>
 <instance part="R4" gate="G$1" x="-45.72" y="76.2"/>
 <instance part="R6" gate="G$1" x="33.02" y="58.42"/>
 <instance part="R8" gate="G$1" x="45.72" y="55.88"/>
@@ -8763,8 +8763,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="GND44" gate="1" x="772.16" y="147.32"/>
 <instance part="J3" gate="G$1" x="782.32" y="91.44"/>
 <instance part="C44" gate="G$1" x="1112.52" y="63.5" rot="R180"/>
-<instance part="R16" gate="G$1" x="330.2" y="134.62"/>
-<instance part="D1" gate="G$1" x="314.96" y="134.62" rot="R270"/>
 <instance part="GND28" gate="1" x="289.56" y="132.08"/>
 <instance part="J6" gate="G$1" x="1529.08" y="139.7"/>
 <instance part="S2" gate="G$1" x="1287.78" y="-114.3"/>
@@ -8806,6 +8804,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="FRAME7" gate="G$2" x="576.58" y="-325.12"/>
 <instance part="FRAME8" gate="G$1" x="746.76" y="-335.28"/>
 <instance part="FRAME8" gate="G$2" x="1082.04" y="-337.82"/>
+<instance part="LED8" gate="G$1" x="330.2" y="134.62" rot="R270"/>
+<instance part="R16" gate="G$1" x="314.96" y="134.62" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -9593,11 +9593,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <junction x="772.16" y="149.86"/>
 </segment>
 <segment>
-<pinref part="D1" gate="G$1" pin="C"/>
-<pinref part="GND28" gate="1" pin="GND"/>
-<wire x1="309.88" y1="134.62" x2="289.56" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="U14" gate="G$1" pin="GND@1"/>
 <wire x1="1315.72" y1="121.92" x2="1320.8" y2="121.92" width="0.1524" layer="91"/>
 <wire x1="1320.8" y1="121.92" x2="1320.8" y2="111.76" width="0.1524" layer="91"/>
@@ -9639,6 +9634,11 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="U$1" gate="G$1" pin="GND"/>
 <wire x1="1270" y1="-109.22" x2="1275.08" y2="-109.22" width="0.1524" layer="91"/>
 <pinref part="GND84" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="309.88" y1="134.62" x2="289.56" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -9884,13 +9884,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <junction x="27.94" y="78.74"/>
 </segment>
 </net>
-<net name="N$10" class="0">
-<segment>
-<pinref part="R2" gate="G$1" pin="2"/>
-<pinref part="U4" gate="G$1" pin="IN1"/>
-<wire x1="-50.8" y1="78.74" x2="-20.32" y2="78.74" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="U4" gate="G$1" pin="IN2"/>
@@ -10089,14 +10082,14 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </net>
 <net name="MC2_IN1" class="0">
 <segment>
-<pinref part="R2" gate="G$1" pin="1"/>
-<wire x1="-60.96" y1="78.74" x2="-68.58" y2="78.74" width="0.1524" layer="91"/>
-<label x="-73.66" y="78.74" size="1.778" layer="95"/>
-</segment>
-<segment>
 <pinref part="U7" gate="G$1" pin="PB6"/>
 <wire x1="335.28" y1="195.58" x2="314.96" y2="195.58" width="0.1524" layer="91"/>
 <label x="314.96" y="195.58" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="-66.04" y1="78.74" x2="-73.66" y2="78.74" width="0.1524" layer="91"/>
+<label x="-73.66" y="78.74" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MC2_IN2" class="0">
@@ -11788,19 +11781,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="J2" gate="G$1" pin="PWR"/>
 </segment>
 </net>
-<net name="N$129" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PC13"/>
-<pinref part="R16" gate="G$1" pin="2"/>
-</segment>
-</net>
-<net name="N$130" class="0">
-<segment>
-<pinref part="R16" gate="G$1" pin="1"/>
-<pinref part="D1" gate="G$1" pin="A"/>
-<wire x1="325.12" y1="134.62" x2="317.5" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="SDIO_D0" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PC8"/>
@@ -12024,6 +12004,27 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="R15" gate="G$1" pin="1"/>
 <pinref part="U7" gate="G$1" pin="PH1"/>
 <wire x1="330.2" y1="104.14" x2="335.28" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$10" class="0">
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="U4" gate="G$1" pin="IN1"/>
+<wire x1="-55.88" y1="78.74" x2="-20.32" y2="78.74" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="U7" gate="G$1" pin="PC13"/>
+<pinref part="LED8" gate="G$1" pin="A"/>
+<wire x1="332.74" y1="134.62" x2="335.28" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$104" class="0">
+<segment>
+<pinref part="LED8" gate="G$1" pin="C"/>
+<pinref part="R16" gate="G$1" pin="1"/>
+<wire x1="325.12" y1="134.62" x2="320.04" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
