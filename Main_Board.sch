@@ -8383,11 +8383,10 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <text x="1564.64" y="-294.64" size="1.778" layer="97">also known as ground</text>
 <text x="1572.26" y="-271.78" size="1.778" layer="97">charging +</text>
 <text x="462.28" y="-220.98" size="1.778" layer="95">Should possibly be .065K</text>
-<text x="1010.92" y="104.14" size="1.778" layer="97">Is this okay kyle?</text>
 <text x="1117.6" y="114.3" size="1.778" layer="98">+15V Out, goes to Pack+</text>
 <text x="942.34" y="-71.12" size="6.35" layer="94">IMU</text>
 <text x="1226.82" y="111.76" size="1.778" layer="95">Can reduce resistors for greater gain</text>
-<text x="843.28" y="165.1" size="6.4516" layer="98">Check if pgnd is needed</text>
+<text x="822.96" y="195.58" size="6.4516" layer="98">Check if pgnd is needed</text>
 </plain>
 <instances>
 <instance part="U3" gate="G$1" x="0" y="147.32"/>
