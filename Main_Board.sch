@@ -8,24 +8,24 @@
 </settings>
 <grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -34,8 +34,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -43,19 +43,19 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
-<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
-<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
-<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
-<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
-<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
-<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
-<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="yes" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="yes" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="yes" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -322,7 +322,7 @@
 <circle x="-3.57" y="-4.95" radius="0.360553125" width="0.127" layer="21"/>
 <text x="-0.35" y="-7.62" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
-<package name="RADIAL_CAN_SMD">
+<package name="RADIAL_CAN_SMD-D8">
 <smd name="P$1" x="0" y="0" dx="2.6" dy="0.65" layer="1" rot="R90"/>
 <smd name="P$2" x="0" y="4.4" dx="2.6" dy="0.65" layer="1" rot="R90"/>
 <wire x1="3.3" y1="5.7" x2="3.3" y2="0" width="0.127" layer="21"/>
@@ -971,6 +971,42 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <text x="1" y="0.95" size="0.8" layer="51">BL</text>
 <text x="3.8" y="0.85" size="0.8" layer="51">R</text>
 <text x="-3.8" y="0.95" size="0.8" layer="51">B</text>
+</package>
+<package name="RADIAL_CAN_SMD-B">
+<smd name="P$1" x="0" y="0" dx="1.8" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="2.8" dx="1.8" dy="0.65" layer="1" rot="R90"/>
+<wire x1="2.15" y1="3.6" x2="2.15" y2="0" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.8" x2="-2" y2="-0.8" width="0.127" layer="21"/>
+<wire x1="-2.15" y1="0.1" x2="-2.15" y2="3.6" width="0.127" layer="21"/>
+<wire x1="-2.15" y1="3.6" x2="2.15" y2="3.6" width="0.127" layer="21"/>
+<wire x1="-2" y1="-0.8" x2="-2.15" y2="0.1" width="0.127" layer="21"/>
+<wire x1="2" y1="-0.8" x2="2.15" y2="0" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-2.15" y="3.6"/>
+<vertex x="-2.15" y="1.8"/>
+<vertex x="2.15" y="1.8"/>
+<vertex x="2.15" y="3.6"/>
+</polygon>
+<text x="0.1" y="4.35" size="1.016" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-1.74" size="1.016" layer="21" font="vector" align="center">&gt;VALUE</text>
+</package>
+<package name="RADIAL_CAN_SMD-G">
+<smd name="P$1" x="0" y="0" dx="3.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="8.21" dx="3.5" dy="0.9" layer="1" rot="R90"/>
+<wire x1="5.15" y1="9.85" x2="5.15" y2="0" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.6" x2="-2" y2="-1.6" width="0.127" layer="21"/>
+<wire x1="-5.15" y1="0.1" x2="-5.15" y2="9.85" width="0.127" layer="21"/>
+<wire x1="-5.15" y1="9.85" x2="5.15" y2="9.85" width="0.127" layer="21"/>
+<wire x1="-2" y1="-1.6" x2="-5.15" y2="0.1" width="0.127" layer="21"/>
+<wire x1="2" y1="-1.6" x2="5.15" y2="0" width="0.127" layer="21"/>
+<polygon width="0.127" layer="21">
+<vertex x="-5.15" y="9.85"/>
+<vertex x="-5.15" y="3.4"/>
+<vertex x="5.15" y="3.4"/>
+<vertex x="5.15" y="9.85"/>
+</polygon>
+<text x="0.05" y="10.84" size="1.016" layer="21" font="vector" align="center">&gt;NAME</text>
+<text x="-0.1" y="-2.58" size="1.016" layer="21" font="vector" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1839,7 +1875,25 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <gate name="G$1" symbol="CAP_POL" x="2.54" y="5.08"/>
 </gates>
 <devices>
-<device name="" package="RADIAL_CAN_SMD">
+<device name="" package="RADIAL_CAN_SMD-D8">
+<connects>
+<connect gate="G$1" pin="+" pad="P$1"/>
+<connect gate="G$1" pin="-" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="B" package="RADIAL_CAN_SMD-B">
+<connects>
+<connect gate="G$1" pin="+" pad="P$1"/>
+<connect gate="G$1" pin="-" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="G" package="RADIAL_CAN_SMD-G">
 <connects>
 <connect gate="G$1" pin="+" pad="P$1"/>
 <connect gate="G$1" pin="-" pad="P$2"/>
@@ -7500,7 +7554,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="C2" library="BB8" deviceset="CAP_POL_PAN" device="" value="100uF"/>
 <part name="Z1" library="BB8" deviceset="SCHOTTKY_DIODE" device=""/>
 <part name="L1" library="BB8" deviceset="SRN840-101M" device="" value="100uH"/>
-<part name="C8" library="BB8" deviceset="CAP_POL_PAN" device="" value="470uF"/>
+<part name="C8" library="BB8" deviceset="CAP_POL_PAN" device="G" value="470uF"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND9" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="P3" library="BB8" deviceset="JTAG" device=""/>
@@ -7524,8 +7578,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="J1" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="SERVO"/>
 <part name="GND26" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY11" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
-<part name="C1" library="BB8" deviceset="CAP_POL_PAN" device="" value="10uF"/>
-<part name="C3" library="BB8" deviceset="CAP_POL_PAN" device="" value="10uF"/>
+<part name="C1" library="BB8" deviceset="CAP_POL_PAN" device="B" value="10uF"/>
+<part name="C3" library="BB8" deviceset="CAP_POL_PAN" device="B" value="10uF"/>
 <part name="U10" library="BB8" deviceset="IMU" device=""/>
 <part name="U9" library="BB8" deviceset="BQ51013B-20VQFN" device=""/>
 <part name="C29" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="22nF"/>
@@ -7661,7 +7715,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="SUPPLY23" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="R41" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1k"/>
 <part name="R38" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="1k"/>
-<part name="C9" library="BB8" deviceset="CAP_POL_PAN" device="" value="470uF"/>
+<part name="C9" library="BB8" deviceset="CAP_POL_PAN" device="G" value="470uF"/>
 <part name="C68" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="1uF"/>
 <part name="GND76" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="PGND1" library="BB8" deviceset="PGND" device=""/>
