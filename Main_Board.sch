@@ -516,18 +516,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <smd name="P$4" x="0" y="5.1" dx="2.16" dy="1.07" layer="1"/>
 <smd name="P$5" x="0" y="6.8" dx="2.16" dy="1.07" layer="1"/>
 <smd name="P$6" x="-10.675" y="3.4" dx="6.99" dy="8.33" layer="1"/>
-<polygon width="0.2" layer="1">
-<vertex x="-14.15" y="7.6"/>
-<vertex x="-14.15" y="8.9"/>
-<vertex x="-12.2" y="8.9"/>
-<vertex x="-12.2" y="7.6"/>
-</polygon>
-<polygon width="0.2" layer="1">
-<vertex x="-14.15" y="-2.1"/>
-<vertex x="-14.15" y="-0.8"/>
-<vertex x="-12.2" y="-0.8"/>
-<vertex x="-12.2" y="-2.1"/>
-</polygon>
 <wire x1="-14.3" y1="-2.1" x2="-14.3" y2="9" width="0.127" layer="21"/>
 <wire x1="-14.3" y1="9" x2="-6" y2="9" width="0.127" layer="21"/>
 <wire x1="-6" y1="9" x2="-6" y2="6.3" width="0.127" layer="21"/>
@@ -556,6 +544,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="-6" y1="0.5" x2="1.1" y2="0.5" width="0.127" layer="21"/>
 <wire x1="1.1" y1="0.5" x2="1.1" y2="-0.5" width="0.127" layer="21"/>
 <text x="2.2" y="3.39" size="1.016" layer="25" font="vector" rot="R90" align="center">&gt;NAME</text>
+<smd name="P$7" x="-13.208" y="8.1915" dx="1.9304" dy="1.2954" layer="1"/>
+<smd name="P$8" x="-13.208" y="-1.397" dx="1.9304" dy="1.2954" layer="1"/>
 </package>
 <package name="DO-214AB2">
 <smd name="A" x="0" y="0" dx="3.3" dy="2.5" layer="1" rot="R90"/>
@@ -1985,7 +1975,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <connects>
 <connect gate="G$1" pin="!ON/OFF" pad="P$5"/>
 <connect gate="G$1" pin="FEEDBACK" pad="P$4"/>
-<connect gate="G$1" pin="GND" pad="P$3 P$6"/>
+<connect gate="G$1" pin="GND" pad="P$3 P$6 P$7 P$8"/>
 <connect gate="G$1" pin="OUTPUT" pad="P$2"/>
 <connect gate="G$1" pin="VIN" pad="P$1"/>
 </connects>
