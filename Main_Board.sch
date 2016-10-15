@@ -323,8 +323,8 @@
 <text x="-0.35" y="-7.62" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
 <package name="RADIAL_CAN_SMD-D8">
-<smd name="P$1" x="0" y="0" dx="2.6" dy="0.65" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="4.4" dx="2.6" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="-0.1" dx="2.8" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="4.5" dx="2.8" dy="0.65" layer="1" rot="R90"/>
 <wire x1="3.3" y1="5.7" x2="3.3" y2="0" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.3" x2="-2" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="-3.3" y1="0.1" x2="-3.3" y2="5.7" width="0.127" layer="21"/>
@@ -935,16 +935,14 @@ This footprint has omitted the ground pads on pins 9 and 16.
 </package>
 <package name="SWITCH">
 <pad name="P$4" x="0" y="0" drill="1.655"/>
-<pad name="P$1" x="5.7" y="0" drill="1.655"/>
 <pad name="P$3" x="0" y="4.6" drill="1.655"/>
-<pad name="P$2" x="5.7" y="4.6" drill="1.655"/>
-<pad name="P$5" x="5.7" y="9.2" drill="1.655"/>
-<pad name="P$6" x="0" y="9.2" drill="1.655"/>
 <wire x1="-2" y1="-5" x2="-2" y2="14" width="0.127" layer="21"/>
 <wire x1="-2" y1="14" x2="8" y2="14" width="0.127" layer="21"/>
 <wire x1="8" y1="14" x2="8" y2="-5" width="0.127" layer="21"/>
 <wire x1="8" y1="-5" x2="-2" y2="-5" width="0.127" layer="21"/>
-<text x="-1" y="-7" size="1.27" layer="21">&gt;NAME</text>
+<text x="-3.055" y="6.58" size="1.27" layer="21" font="vector" rot="R270" align="center">&gt;NAME</text>
+<text x="1.27" y="14.24" size="1.6764" layer="21" font="vector">OFF</text>
+<text x="1.5" y="-7.135" size="1.6764" layer="21" font="vector">ON</text>
 </package>
 <package name="XT60">
 <wire x1="-4.064" y1="7.8675" x2="-4.064" y2="-7.8675" width="0.127" layer="21"/>
@@ -977,8 +975,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <text x="-3.8" y="0.95" size="0.8" layer="51">B</text>
 </package>
 <package name="RADIAL_CAN_SMD-B">
-<smd name="P$1" x="0" y="0" dx="1.8" dy="0.65" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="2.8" dx="1.8" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="-0.1" dx="2" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="2.9" dx="2" dy="0.65" layer="1" rot="R90"/>
 <wire x1="2.15" y1="3.6" x2="2.15" y2="0" width="0.127" layer="21"/>
 <wire x1="2" y1="-0.8" x2="-2" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="-2.15" y1="0.1" x2="-2.15" y2="3.6" width="0.127" layer="21"/>
@@ -995,8 +993,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <text x="0" y="-1.74" size="1.016" layer="21" font="vector" align="center">&gt;VALUE</text>
 </package>
 <package name="RADIAL_CAN_SMD-G">
-<smd name="P$1" x="0" y="0" dx="3.5" dy="0.9" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="8.21" dx="3.5" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="-0.1" dx="3.7" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="8.31" dx="3.7" dy="0.9" layer="1" rot="R90"/>
 <wire x1="5.15" y1="9.85" x2="5.15" y2="0" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.6" x2="-2" y2="-1.6" width="0.127" layer="21"/>
 <wire x1="-5.15" y1="0.1" x2="-5.15" y2="9.85" width="0.127" layer="21"/>
@@ -1226,8 +1224,9 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="1.27" y1="-2.032" x2="-1.27" y2="-2.032" width="0.127" layer="94"/>
 <wire x1="0" y1="-1.778" x2="-1.524" y2="-1.778" width="0.127" layer="94"/>
 <wire x1="0" y1="-1.778" x2="1.524" y2="-1.778" width="0.127" layer="94"/>
-<text x="1.27" y="-4.318" size="0.4064" layer="94">&gt;NAME</text>
+<text x="1.27" y="0.762" size="0.8128" layer="94">&gt;NAME</text>
 <wire x1="0" y1="-5.08" x2="0" y2="-3.302" width="0.127" layer="94"/>
+<text x="2.54" y="-5.08" size="0.8128" layer="94">&gt;VALUE</text>
 </symbol>
 <symbol name="SPST">
 <wire x1="-1.27" y1="0" x2="1.27" y2="1.27" width="0.254" layer="94"/>
@@ -7547,8 +7546,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="GND30" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="0"/>
 <part name="R14" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="0"/>
-<part name="Y1" library="BB8" deviceset="MC-30632.768K-E3" device=""/>
-<part name="Y2" library="BB8" deviceset="MA-5066-25.0000M-C0" device=""/>
+<part name="Y1" library="BB8" deviceset="MC-30632.768K-E3" device="" value="32.768KHz"/>
+<part name="Y2" library="BB8" deviceset="MA-5066-25.0000M-C0" device="" value="25MHz"/>
 <part name="S1" library="BB8" deviceset="RESET_BUTTON" device=""/>
 <part name="JP1" library="BB8" deviceset="SPDT_JUMPER" device=""/>
 <part name="U1" library="BB8" deviceset="LMS8117" device=""/>
@@ -7556,7 +7555,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="SUPPLY2" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="GND2" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="C2" library="BB8" deviceset="CAP_POL_PAN" device="" value="100uF"/>
-<part name="Z1" library="BB8" deviceset="SCHOTTKY_DIODE" device=""/>
+<part name="D1" library="BB8" deviceset="SCHOTTKY_DIODE" device=""/>
 <part name="L1" library="BB8" deviceset="SRN840-101M" device="" value="100uH"/>
 <part name="C8" library="BB8" deviceset="CAP_POL_PAN" device="G" value="470uF"/>
 <part name="GND4" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7572,11 +7571,11 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="R18" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="R17" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
 <part name="LED1" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
-<part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
-<part name="R23" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="R22" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
+<part name="R23" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="LED2" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
 <part name="GND38" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R25" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="R25" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="LED3" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
 <part name="GND25" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J1" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="SERVO"/>
@@ -7753,13 +7752,13 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="Q1" library="BB8" deviceset="SI9933CDY-PFET" device=""/>
 <part name="C26" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 <part name="J2" library="SparkFun-Connectors" deviceset="POWER_JACK" device="SMD" value="5.5x2.1mm Barrel"/>
-<part name="J3" library="BB8" deviceset="2-PIN-JUMPER" device="" value="9.7uH"/>
+<part name="J3" library="BB8" deviceset="2-PIN-JUMPER" device="" value=""/>
 <part name="C44" library="BB8" deviceset="CAP-1206" device="" value="47uF"/>
 <part name="GND28" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J6" library="BB8" deviceset="SDIO-SDCARD" device=""/>
 <part name="S2" library="BB8" deviceset="SWITCH" device=""/>
 <part name="GND37" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R74" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="R74" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
 <part name="LED4" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
 <part name="SUPPLY27" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND39" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
@@ -7812,7 +7811,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <text x="1262.38" y="-68.58" size="6.35" layer="94">BQ40Z60 Charging Circuit</text>
 <text x="1564.64" y="-294.64" size="1.778" layer="97">also known as ground</text>
 <text x="1572.26" y="-271.78" size="1.778" layer="97">charging +</text>
-<text x="462.28" y="-220.98" size="1.778" layer="95">Should possibly be .065K</text>
+<text x="452.12" y="-226.06" size="1.778" layer="95">Should possibly be .065K or 10K</text>
 <text x="1117.6" y="114.3" size="1.778" layer="98">+15V Out, goes to Pack+</text>
 <text x="942.34" y="-71.12" size="6.35" layer="94">IMU</text>
 <text x="1226.82" y="111.76" size="1.778" layer="95">Can reduce resistors for greater gain</text>
@@ -7921,7 +7920,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="SUPPLY2" gate="G$1" x="-132.08" y="-134.62"/>
 <instance part="GND2" gate="1" x="-132.08" y="-167.64"/>
 <instance part="C2" gate="G$1" x="-157.48" y="-139.7"/>
-<instance part="Z1" gate="G$1" x="-66.04" y="-147.32" rot="R90"/>
+<instance part="D1" gate="G$1" x="-66.04" y="-147.32" rot="R90"/>
 <instance part="L1" gate="G$1" x="-50.8" y="-144.78" rot="MR90"/>
 <instance part="C8" gate="G$1" x="-30.48" y="-149.86"/>
 <instance part="GND4" gate="1" x="-66.04" y="-167.64"/>
@@ -8600,10 +8599,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <junction x="289.56" y="111.76"/>
 <wire x1="289.56" y1="104.14" x2="289.56" y2="96.52" width="0.1524" layer="91"/>
 <junction x="289.56" y="96.52"/>
-<pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="299.72" y1="86.36" x2="299.72" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="299.72" y1="86.36" x2="289.56" y2="86.36" width="0.1524" layer="91"/>
-<junction x="289.56" y="86.36"/>
 <pinref part="S1" gate="G$1" pin="P"/>
 </segment>
 <segment>
@@ -8626,7 +8621,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="-157.48" y1="-147.32" x2="-157.48" y2="-144.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="Z1" gate="G$1" pin="A"/>
+<pinref part="D1" gate="G$1" pin="A"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="-66.04" y1="-160.02" x2="-66.04" y2="-165.1" width="0.1524" layer="91"/>
 </segment>
@@ -9701,7 +9696,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="U2" gate="G$1" pin="OUTPUT"/>
 <pinref part="L1" gate="G$1" pin="2"/>
 <wire x1="-86.36" y1="-144.78" x2="-66.04" y2="-144.78" width="0.1524" layer="91"/>
-<pinref part="Z1" gate="G$1" pin="C"/>
+<pinref part="D1" gate="G$1" pin="C"/>
 <wire x1="-66.04" y1="-144.78" x2="-58.42" y2="-144.78" width="0.1524" layer="91"/>
 <wire x1="-66.04" y1="-153.035" x2="-66.04" y2="-144.78" width="0.1524" layer="91"/>
 <junction x="-66.04" y="-144.78"/>
@@ -9739,6 +9734,12 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="335.28" y1="96.52" x2="317.5" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="O"/>
 <label x="325.12" y="96.52" size="1.778" layer="95"/>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="299.72" y1="88.9" x2="307.34" y2="88.9" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="88.9" x2="307.34" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="91.44" x2="317.5" y2="91.44" width="0.1524" layer="91"/>
+<wire x1="317.5" y1="91.44" x2="317.5" y2="96.52" width="0.1524" layer="91"/>
+<junction x="317.5" y="96.52"/>
 </segment>
 </net>
 <net name="N$7" class="0">
