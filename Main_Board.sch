@@ -7764,15 +7764,9 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="GND39" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="SUPPLY25" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
-<part name="J7" library="SparkFun-Connectors" deviceset="M03" device="PTH" value="header"/>
-<part name="LED5" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
-<part name="LED6" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
-<part name="R75" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
-<part name="R76" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R77" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="LED7" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
 <part name="GND81" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="GND82" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="SparkFun-Aesthetics" deviceset="5V" device=""/>
 <part name="U$1" library="BB8" deviceset="XT60" device=""/>
 <part name="FRAME1" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
@@ -8194,15 +8188,9 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="GND39" gate="1" x="190.5" y="-165.1" rot="MR0"/>
 <instance part="SUPPLY24" gate="G$1" x="1353.82" y="139.7"/>
 <instance part="SUPPLY25" gate="G$1" x="1503.68" y="165.1"/>
-<instance part="J7" gate="J$1" x="444.5" y="43.18" rot="R180"/>
-<instance part="LED5" gate="G$1" x="398.78" y="180.34" rot="R90"/>
-<instance part="LED6" gate="G$1" x="398.78" y="187.96" rot="R90"/>
-<instance part="R75" gate="G$1" x="414.02" y="187.96"/>
-<instance part="R76" gate="G$1" x="414.02" y="180.34"/>
 <instance part="R77" gate="G$1" x="307.34" y="203.2" rot="R180"/>
 <instance part="LED7" gate="G$1" x="325.12" y="203.2" rot="R270"/>
 <instance part="GND81" gate="1" x="294.64" y="198.12"/>
-<instance part="GND82" gate="1" x="426.72" y="177.8"/>
 <instance part="SUPPLY28" gate="G$1" x="-30.48" y="-132.08"/>
 <instance part="U$1" gate="G$1" x="1257.3" y="-111.76" rot="R180"/>
 <instance part="FRAME1" gate="G$1" x="1181.1" y="-332.74"/>
@@ -8933,15 +8921,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="GND81" gate="1" pin="GND"/>
 <wire x1="302.26" y1="203.2" x2="294.64" y2="203.2" width="0.1524" layer="91"/>
 <wire x1="294.64" y1="203.2" x2="294.64" y2="200.66" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="R75" gate="G$1" pin="2"/>
-<pinref part="GND82" gate="1" pin="GND"/>
-<wire x1="419.1" y1="187.96" x2="426.72" y2="187.96" width="0.1524" layer="91"/>
-<wire x1="426.72" y1="187.96" x2="426.72" y2="180.34" width="0.1524" layer="91"/>
-<pinref part="R76" gate="G$1" pin="2"/>
-<wire x1="419.1" y1="180.34" x2="426.72" y2="180.34" width="0.1524" layer="91"/>
-<junction x="426.72" y="180.34"/>
 </segment>
 <segment>
 <pinref part="U$1" gate="G$1" pin="GND"/>
@@ -11265,59 +11244,6 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="R74" gate="G$1" pin="1"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
 <wire x1="190.5" y1="-147.32" x2="190.5" y2="-152.4" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$27" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PB15"/>
-<wire x1="383.54" y1="50.8" x2="429.26" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="J7" gate="J$1" pin="1"/>
-<wire x1="436.88" y1="45.72" x2="429.26" y2="45.72" width="0.1524" layer="91"/>
-<wire x1="429.26" y1="45.72" x2="429.26" y2="50.8" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$43" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PB14"/>
-<wire x1="383.54" y1="43.18" x2="436.88" y2="43.18" width="0.1524" layer="91"/>
-<pinref part="J7" gate="J$1" pin="2"/>
-</segment>
-</net>
-<net name="N$44" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PB13"/>
-<wire x1="383.54" y1="35.56" x2="429.26" y2="35.56" width="0.1524" layer="91"/>
-<pinref part="J7" gate="J$1" pin="3"/>
-<wire x1="436.88" y1="40.64" x2="429.26" y2="40.64" width="0.1524" layer="91"/>
-<wire x1="429.26" y1="40.64" x2="429.26" y2="35.56" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$45" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PC10"/>
-<pinref part="LED6" gate="G$1" pin="A"/>
-<wire x1="383.54" y1="187.96" x2="396.24" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$47" class="0">
-<segment>
-<pinref part="LED5" gate="G$1" pin="A"/>
-<pinref part="U7" gate="G$1" pin="PC11"/>
-<wire x1="396.24" y1="180.34" x2="383.54" y2="180.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$131" class="0">
-<segment>
-<pinref part="LED6" gate="G$1" pin="C"/>
-<pinref part="R75" gate="G$1" pin="1"/>
-<wire x1="408.94" y1="187.96" x2="403.86" y2="187.96" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$132" class="0">
-<segment>
-<pinref part="LED5" gate="G$1" pin="C"/>
-<pinref part="R76" gate="G$1" pin="1"/>
-<wire x1="408.94" y1="180.34" x2="403.86" y2="180.34" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$133" class="0">
