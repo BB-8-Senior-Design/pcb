@@ -7773,7 +7773,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="FRAME2" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME3" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="GND84" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="JP2" library="BB8" deviceset="SPDT_JUMPER" device=""/>
+<part name="JP2" library="BB8" deviceset="SPDT_JUMPER" device="" value="IGNORE_CC"/>
 <part name="SUPPLY26" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
 <part name="FRAME4" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
 <part name="FRAME5" library="SparkFun-Aesthetics" deviceset="FRAME-LEDGER" device=""/>
