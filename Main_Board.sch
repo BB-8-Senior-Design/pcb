@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -685,12 +685,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <text x="0.036" y="-2.75" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
 <circle x="-1.484" y="0.984" radius="0.113134375" width="0.05" layer="21"/>
 <smd name="P$21" x="0" y="0" dx="3" dy="2" layer="1"/>
-<pad name="P$22" x="0" y="0.45" drill="0.5" diameter="0.9" shape="square"/>
-<pad name="P$23" x="0.9" y="0.45" drill="0.5" diameter="0.9" shape="square"/>
-<pad name="P$24" x="0.9" y="-0.45" drill="0.5" diameter="0.9" shape="square"/>
-<pad name="P$25" x="0" y="-0.45" drill="0.5" diameter="0.9" shape="square"/>
-<pad name="P$26" x="-0.9" y="-0.45" drill="0.5" diameter="0.9" shape="square"/>
-<pad name="P$27" x="-0.9" y="0.45" drill="0.5" diameter="0.9" shape="square"/>
 </package>
 <package name="S-PVQFN-N32">
 <smd name="P$GND" x="0" y="0" dx="3.45" dy="3.45" layer="1"/>
@@ -732,15 +726,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="-2.575" y1="-2.575" x2="-2.575" y2="2.575" width="0.05" layer="21"/>
 <wire x1="2.575" y1="-2.575" x2="2.575" y2="2.575" width="0.05" layer="21"/>
 <text x="0" y="-3.81" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
-<pad name="P$33" x="0" y="0" drill="0.5" diameter="1" shape="square"/>
-<pad name="P$34" x="1" y="0" drill="0.5" diameter="1" shape="square"/>
-<pad name="P$35" x="0" y="1" drill="0.5" diameter="1" shape="square"/>
-<pad name="P$36" x="-1" y="0" drill="0.5" diameter="1" shape="square"/>
-<pad name="P$37" x="1" y="1" drill="0.5" diameter="1" shape="square"/>
-<pad name="P$38" x="-1" y="1" drill="0.5" diameter="1" shape="square"/>
-<pad name="P$39" x="-1" y="-1" drill="0.5" diameter="1" shape="square"/>
-<pad name="P$40" x="0" y="-1" drill="0.5" diameter="1" shape="square"/>
-<pad name="P$41" x="1" y="-1" drill="0.5" diameter="1" shape="square"/>
 </package>
 <package name="WSON-8">
 <smd name="P$GND" x="0" y="0" dx="0.9" dy="1.6" layer="1"/>
@@ -790,12 +775,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="1.65" y1="-1.65" x2="1.65" y2="1.65" width="0.05" layer="21"/>
 <wire x1="-1.64" y1="-1.65" x2="-1.64" y2="1.65" width="0.05" layer="21"/>
 <smd name="P$9" x="0" y="0.4" dx="2.45" dy="1.9" layer="1"/>
-<pad name="P$10" x="0" y="-0.1" drill="0.3" diameter="0.8" shape="square"/>
-<pad name="P$11" x="0.8" y="-0.1" drill="0.3" diameter="0.8" shape="square"/>
-<pad name="P$12" x="-0.8" y="-0.1" drill="0.3" diameter="0.8" shape="square"/>
-<pad name="P$13" x="-0.8" y="0.7" drill="0.3" diameter="0.8" shape="square"/>
-<pad name="P$14" x="0" y="0.7" drill="0.3" diameter="0.8" shape="square"/>
-<pad name="P$15" x="0.8" y="0.7" drill="0.3" diameter="0.8" shape="square"/>
 </package>
 <package name="SOT23-3">
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -835,12 +814,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="1.5" y1="2" x2="-1.5" y2="2" width="0.127" layer="21"/>
 <circle x="-1.1" y="1.6" radius="0.1" width="0.127" layer="21"/>
 <text x="0" y="-2.794" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
-<pad name="P$1" x="-0.4" y="0" drill="0.5" diameter="0.8" shape="square"/>
-<pad name="P$2" x="0.4" y="0" drill="0.5" diameter="0.8" shape="square"/>
-<pad name="P$3" x="-0.4" y="0.8" drill="0.5" diameter="0.8" shape="square"/>
-<pad name="P$4" x="0.4" y="0.8" drill="0.5" diameter="0.8" shape="square"/>
-<pad name="P$5" x="0.4" y="-0.8" drill="0.5" diameter="0.8" shape="square"/>
-<pad name="P$6" x="-0.4" y="-0.8" drill="0.5" diameter="0.8" shape="square"/>
 </package>
 <package name="PTC-2920">
 <wire x1="-2.4" y1="2" x2="2.4" y2="2" width="0.127" layer="51"/>
@@ -2238,7 +2211,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <connect gate="G$1" pin="FOD" pad="P$14"/>
 <connect gate="G$1" pin="ILIM" pad="P$12"/>
 <connect gate="G$1" pin="OUT" pad="P$4"/>
-<connect gate="G$1" pin="PGND" pad="P$1 P$20 P$21 P$22 P$23 P$24 P$25 P$26 P$27"/>
+<connect gate="G$1" pin="PGND" pad="P$1 P$20 P$21"/>
 <connect gate="G$1" pin="RECT" pad="P$18"/>
 <connect gate="G$1" pin="TS/CTRL" pad="P$13"/>
 </connects>
@@ -2268,7 +2241,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <connect gate="G$1" pin="HSRP" pad="P$20"/>
 <connect gate="G$1" pin="LODRV" pad="P$25"/>
 <connect gate="G$1" pin="PBI" pad="P$2"/>
-<connect gate="G$1" pin="PGND" pad="P$24 P$33 P$34 P$35 P$36 P$37 P$38 P$39 P$40 P$41"/>
+<connect gate="G$1" pin="PGND" pad="P$24"/>
 <connect gate="G$1" pin="PH" pad="P$26"/>
 <connect gate="G$1" pin="REGN" pad="P$23"/>
 <connect gate="G$1" pin="SMBC" pad="P$17"/>
@@ -2340,7 +2313,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <devices>
 <device name="" package="SON-8">
 <connects>
-<connect gate="G$1" pin="D1" pad="P$5 P$6 P$7 P$8 P$9 P$10 P$11 P$12 P$13 P$14 P$15"/>
+<connect gate="G$1" pin="D1" pad="P$5 P$6 P$7 P$8 P$9"/>
 <connect gate="G$1" pin="G1" pad="P$4"/>
 <connect gate="G$1" pin="S1" pad="P$1 P$2 P$3"/>
 </connects>
@@ -2389,7 +2362,7 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <connect gate="G$1" pin="!SD" pad="9"/>
 <connect gate="G$1" pin="CAP" pad="12"/>
 <connect gate="G$1" pin="FB" pad="8"/>
-<connect gate="G$1" pin="PGND" pad="2 13 P$1 P$2 P$3 P$4 P$5 P$6"/>
+<connect gate="G$1" pin="PGND" pad="2 13"/>
 <connect gate="G$1" pin="PWM/SYNC" pad="4"/>
 <connect gate="G$1" pin="RT" pad="6"/>
 <connect gate="G$1" pin="SGND" pad="10"/>
@@ -7817,6 +7790,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="PGND10" library="BB8" deviceset="PGND" device=""/>
 <part name="PGND11" library="BB8" deviceset="PGND" device=""/>
 <part name="PGND12" library="BB8" deviceset="PGND" device=""/>
+<part name="R75" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="0"/>
 </parts>
 <sheets>
 <sheet>
@@ -8130,7 +8104,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="GND60" gate="1" x="1356.36" y="-223.52" rot="R270"/>
 <instance part="C59" gate="G$1" x="1369.06" y="-233.68"/>
 <instance part="GND62" gate="1" x="1369.06" y="-241.3"/>
-<instance part="GND80" gate="1" x="1559.56" y="-297.18"/>
+<instance part="GND80" gate="1" x="1229.36" y="-302.26"/>
 <instance part="R42" gate="G$1" x="1285.24" y="-223.52" rot="R270"/>
 <instance part="GND55" gate="1" x="1267.46" y="-220.98"/>
 <instance part="R40" gate="G$1" x="1247.14" y="-177.8"/>
@@ -8174,7 +8148,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="PGND1" gate="G$1" x="1508.76" y="-104.14"/>
 <instance part="PGND3" gate="G$1" x="1536.7" y="-137.16"/>
 <instance part="PGND2" gate="G$1" x="1516.38" y="-160.02"/>
-<instance part="PGND4" gate="G$1" x="1503.68" y="-297.18"/>
+<instance part="PGND4" gate="G$1" x="1193.8" y="-302.26"/>
 <instance part="D3" gate="G$1" x="1336.04" y="-157.48"/>
 <instance part="U11" gate="G$1" x="1049.02" y="91.44"/>
 <instance part="F1" gate="G$1" x="1318.26" y="-91.44"/>
@@ -8249,6 +8223,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="PGND10" gate="G$1" x="883.92" y="53.34"/>
 <instance part="PGND11" gate="G$1" x="955.04" y="83.82"/>
 <instance part="PGND12" gate="G$1" x="1104.9" y="48.26"/>
+<instance part="R75" gate="G$1" x="1214.12" y="-292.1"/>
 </instances>
 <busses>
 </busses>
@@ -8958,6 +8933,12 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="R16" gate="G$1" pin="2"/>
 <pinref part="GND28" gate="1" pin="GND"/>
 <wire x1="309.88" y1="134.62" x2="289.56" y2="134.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="R75" gate="G$1" pin="2"/>
+<pinref part="GND80" gate="1" pin="GND"/>
+<wire x1="1219.2" y1="-292.1" x2="1229.36" y2="-292.1" width="0.1524" layer="91"/>
+<wire x1="1229.36" y1="-292.1" x2="1229.36" y2="-299.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -10688,19 +10669,13 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="1285.24" y1="-233.68" x2="1285.24" y2="-322.58" width="0.1524" layer="91"/>
 <wire x1="1285.24" y1="-322.58" x2="1513.84" y2="-322.58" width="0.1524" layer="91"/>
 <wire x1="1513.84" y1="-322.58" x2="1513.84" y2="-292.1" width="0.1524" layer="91"/>
-<wire x1="1513.84" y1="-292.1" x2="1559.56" y2="-292.1" width="0.1524" layer="91"/>
-<wire x1="1559.56" y1="-292.1" x2="1567.18" y2="-292.1" width="0.1524" layer="91"/>
+<wire x1="1513.84" y1="-292.1" x2="1567.18" y2="-292.1" width="0.1524" layer="91"/>
 <wire x1="1513.84" y1="-292.1" x2="1503.68" y2="-292.1" width="0.1524" layer="91"/>
-<wire x1="1503.68" y1="-292.1" x2="1503.68" y2="-294.64" width="0.1524" layer="91"/>
 <junction x="1513.84" y="-292.1"/>
-<wire x1="1559.56" y1="-292.1" x2="1559.56" y2="-294.64" width="0.1524" layer="91"/>
-<junction x="1559.56" y="-292.1"/>
-<pinref part="GND80" gate="1" pin="GND"/>
 <label x="1562.1" y="-292.1" size="1.778" layer="95"/>
 <pinref part="R42" gate="G$1" pin="2"/>
 <wire x1="1285.24" y1="-228.6" x2="1285.24" y2="-233.68" width="0.1524" layer="91"/>
 <junction x="1285.24" y="-233.68"/>
-<pinref part="PGND4" gate="G$1" pin="PGND"/>
 </segment>
 </net>
 <net name="N$114" class="0">
@@ -11023,6 +10998,12 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="C44" gate="G$1" pin="1"/>
 <pinref part="PGND12" gate="G$1" pin="PGND"/>
 <junction x="1104.9" y="50.8"/>
+</segment>
+<segment>
+<pinref part="PGND4" gate="G$1" pin="PGND"/>
+<pinref part="R75" gate="G$1" pin="1"/>
+<wire x1="1193.8" y1="-299.72" x2="1193.8" y2="-292.1" width="0.1524" layer="91"/>
+<wire x1="1193.8" y1="-292.1" x2="1209.04" y2="-292.1" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$48" class="0">
