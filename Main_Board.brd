@@ -251,6 +251,7 @@ Kyle Rakos, Chis Chow
 Alex Marcelus, Allison Gruninger</text>
 <text x="155.6" y="77.3" size="1.016" layer="22" font="vector" rot="MR90" align="center">BB-8 v1
 Oct 16, 2016</text>
+<rectangle x1="109.6" y1="76" x2="130.4" y2="80" layer="41"/>
 </plain>
 <libraries>
 <library name="BB8">
