@@ -8535,6 +8535,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="SUPPLY30" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND45" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J8" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP"/>
+<part name="F3" library="BB8" deviceset="F2875CT-ND" device="" value="4A"/>
 </parts>
 <sheets>
 <sheet>
@@ -8976,6 +8977,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="SUPPLY30" gate="G$1" x="411.48" y="-177.8"/>
 <instance part="GND45" gate="1" x="411.48" y="-198.12"/>
 <instance part="J8" gate="G$1" x="424.18" y="180.34" rot="R180"/>
+<instance part="F3" gate="G$1" x="1193.8" y="-81.28"/>
 </instances>
 <busses>
 </busses>
@@ -11354,9 +11356,9 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <label x="1303.02" y="-111.76" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="G$1" pin="O"/>
-<wire x1="1209.04" y1="-81.28" x2="1193.8" y2="-81.28" width="0.1524" layer="91"/>
-<label x="1193.8" y="-81.28" size="1.778" layer="95"/>
+<pinref part="F3" gate="G$1" pin="1"/>
+<wire x1="1183.64" y1="-81.28" x2="1188.72" y2="-81.28" width="0.1524" layer="91"/>
+<label x="1181.1" y="-81.28" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$105" class="0">
@@ -12199,6 +12201,13 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="U7" gate="G$1" pin="PC11"/>
 <pinref part="J8" gate="G$1" pin="1"/>
 <wire x1="416.56" y1="180.34" x2="383.54" y2="180.34" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$27" class="0">
+<segment>
+<pinref part="F3" gate="G$1" pin="2"/>
+<pinref part="JP2" gate="G$1" pin="O"/>
+<wire x1="1201.42" y1="-81.28" x2="1209.04" y2="-81.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
