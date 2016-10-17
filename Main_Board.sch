@@ -8536,6 +8536,15 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="GND45" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J8" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP"/>
 <part name="F3" library="BB8" deviceset="F2875CT-ND" device="" value="4A"/>
+<part name="GND46" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND47" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND48" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="C75" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C76" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="C77" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
+<part name="R79" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="R80" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="R81" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 </parts>
 <sheets>
 <sheet>
@@ -8554,7 +8563,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <text x="452.12" y="-226.06" size="1.778" layer="95">Should possibly be .065K or 10K</text>
 <text x="1117.6" y="114.3" size="1.778" layer="98">+15V Out, goes to Pack+</text>
 <text x="942.34" y="-71.12" size="6.35" layer="94">IMU</text>
-<text x="1226.82" y="111.76" size="1.778" layer="95">Can reduce resistors for greater gain</text>
+<text x="1320.8" y="96.52" size="1.778" layer="95">Can reduce resistors for greater gain</text>
 <text x="822.96" y="195.58" size="6.4516" layer="98">Check if pgnd is needed</text>
 </plain>
 <instances>
@@ -8726,15 +8735,15 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="R28" gate="G$1" x="891.54" y="106.68" rot="R180"/>
 <instance part="RT1" gate="G$1" x="927.1" y="99.06" rot="R270"/>
 <instance part="D2" gate="G$1" x="975.36" y="111.76"/>
-<instance part="GND61" gate="1" x="1292.86" y="109.22"/>
-<instance part="R44" gate="G$1" x="1264.92" y="134.62"/>
-<instance part="R50" gate="G$1" x="1272.54" y="114.3" rot="R90"/>
-<instance part="C61" gate="G$1" x="1353.82" y="129.54"/>
-<instance part="C50" gate="G$1" x="1249.68" y="134.62" rot="R90"/>
-<instance part="C51" gate="G$1" x="1272.54" y="101.6"/>
-<instance part="GND56" gate="1" x="1272.54" y="93.98"/>
-<instance part="GND65" gate="1" x="1353.82" y="121.92"/>
-<instance part="U14" gate="G$1" x="1297.94" y="129.54"/>
+<instance part="GND61" gate="1" x="1386.84" y="93.98"/>
+<instance part="R44" gate="G$1" x="1358.9" y="119.38"/>
+<instance part="R50" gate="G$1" x="1366.52" y="99.06" rot="R90"/>
+<instance part="C61" gate="G$1" x="1447.8" y="114.3"/>
+<instance part="C50" gate="G$1" x="1343.66" y="119.38" rot="R90"/>
+<instance part="C51" gate="G$1" x="1366.52" y="86.36"/>
+<instance part="GND56" gate="1" x="1366.52" y="78.74"/>
+<instance part="GND65" gate="1" x="1447.8" y="106.68"/>
+<instance part="U14" gate="G$1" x="1391.92" y="114.3"/>
 <instance part="GND72" gate="1" x="1508.76" y="109.22"/>
 <instance part="U15" gate="G$1" x="1427.48" y="-193.04"/>
 <instance part="U13" gate="G$1" x="1224.28" y="-203.2"/>
@@ -8912,7 +8921,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="R35" gate="G$1" x="1102.36" y="91.44" rot="R90"/>
 <instance part="U12" gate="G$1" x="1117.6" y="86.36" rot="R270"/>
 <instance part="Z2" gate="G$1" x="1122.68" y="63.5" rot="R270"/>
-<instance part="J5" gate="G$1" x="1338.58" y="127" rot="MR0"/>
+<instance part="J5" gate="G$1" x="1432.56" y="111.76" rot="MR0"/>
 <instance part="R32" gate="G$1" x="975.36" y="83.82" rot="R270"/>
 <instance part="R29" gate="G$1" x="927.1" y="109.22" rot="R270"/>
 <instance part="C37" gate="G$1" x="955.04" y="96.52"/>
@@ -8927,12 +8936,12 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="GND28" gate="1" x="289.56" y="132.08"/>
 <instance part="J6" gate="G$1" x="1529.08" y="139.7"/>
 <instance part="S2" gate="G$1" x="1287.78" y="-114.3"/>
-<instance part="GND37" gate="1" x="1320.8" y="109.22"/>
+<instance part="GND37" gate="1" x="1414.78" y="93.98"/>
 <instance part="R74" gate="G$1" x="190.5" y="-142.24" rot="MR90"/>
 <instance part="LED4" gate="G$1" x="190.5" y="-154.94" rot="MR0"/>
 <instance part="SUPPLY27" gate="G$1" x="190.5" y="-134.62" rot="MR0"/>
 <instance part="GND39" gate="1" x="190.5" y="-165.1" rot="MR0"/>
-<instance part="SUPPLY24" gate="G$1" x="1353.82" y="139.7"/>
+<instance part="SUPPLY24" gate="G$1" x="1447.8" y="124.46"/>
 <instance part="SUPPLY25" gate="G$1" x="1503.68" y="165.1"/>
 <instance part="R77" gate="G$1" x="307.34" y="203.2" rot="R180"/>
 <instance part="LED7" gate="G$1" x="325.12" y="203.2" rot="R270"/>
@@ -8978,6 +8987,15 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="GND45" gate="1" x="411.48" y="-198.12"/>
 <instance part="J8" gate="G$1" x="424.18" y="180.34" rot="R180"/>
 <instance part="F3" gate="G$1" x="1193.8" y="-81.28"/>
+<instance part="GND46" gate="1" x="1305.56" y="101.6"/>
+<instance part="GND47" gate="1" x="1287.78" y="101.6"/>
+<instance part="GND48" gate="1" x="1270" y="101.6"/>
+<instance part="C75" gate="G$1" x="1305.56" y="109.22"/>
+<instance part="C76" gate="G$1" x="1287.78" y="109.22"/>
+<instance part="C77" gate="G$1" x="1270" y="109.22"/>
+<instance part="R79" gate="G$1" x="1297.94" y="119.38"/>
+<instance part="R80" gate="G$1" x="1280.16" y="119.38"/>
+<instance part="R81" gate="G$1" x="1259.84" y="119.38"/>
 </instances>
 <busses>
 </busses>
@@ -9474,18 +9492,18 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="C51" gate="G$1" pin="2"/>
-<wire x1="1272.54" y1="99.06" x2="1272.54" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="1366.52" y1="83.82" x2="1366.52" y2="81.28" width="0.1524" layer="91"/>
 <pinref part="GND56" gate="1" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C61" gate="G$1" pin="2"/>
 <pinref part="GND65" gate="1" pin="GND"/>
-<wire x1="1353.82" y1="124.46" x2="1353.82" y2="127" width="0.1524" layer="91"/>
+<wire x1="1447.8" y1="109.22" x2="1447.8" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND61" gate="1" pin="GND"/>
 <pinref part="U14" gate="G$1" pin="GND@2"/>
-<wire x1="1292.86" y1="111.76" x2="1292.86" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="1386.84" y1="96.52" x2="1386.84" y2="101.6" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND72" gate="1" pin="GND"/>
@@ -9666,8 +9684,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </segment>
 <segment>
 <pinref part="U14" gate="G$1" pin="GND@1"/>
-<wire x1="1315.72" y1="121.92" x2="1320.8" y2="121.92" width="0.1524" layer="91"/>
-<wire x1="1320.8" y1="121.92" x2="1320.8" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="1409.7" y1="106.68" x2="1414.78" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="1414.78" y1="106.68" x2="1414.78" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="GND37" gate="1" pin="GND"/>
 </segment>
 <segment>
@@ -9709,6 +9727,21 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="GND45" gate="1" pin="GND"/>
 <wire x1="403.86" y1="-193.04" x2="411.48" y2="-193.04" width="0.1524" layer="91"/>
 <wire x1="411.48" y1="-193.04" x2="411.48" y2="-195.58" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C77" gate="G$1" pin="2"/>
+<pinref part="GND48" gate="1" pin="GND"/>
+<wire x1="1270" y1="106.68" x2="1270" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C76" gate="G$1" pin="2"/>
+<pinref part="GND47" gate="1" pin="GND"/>
+<wire x1="1287.78" y1="106.68" x2="1287.78" y2="104.14" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C75" gate="G$1" pin="2"/>
+<pinref part="GND46" gate="1" pin="GND"/>
+<wire x1="1305.56" y1="106.68" x2="1305.56" y2="104.14" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -10122,12 +10155,12 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="190.5" y1="-137.16" x2="190.5" y2="-134.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="1315.72" y1="134.62" x2="1353.82" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="1409.7" y1="119.38" x2="1447.8" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C61" gate="G$1" pin="1"/>
 <pinref part="U14" gate="G$1" pin="VDD"/>
 <pinref part="SUPPLY24" gate="G$1" pin="3.3V"/>
-<wire x1="1353.82" y1="134.62" x2="1353.82" y2="139.7" width="0.1524" layer="91"/>
-<junction x="1353.82" y="134.62"/>
+<wire x1="1447.8" y1="119.38" x2="1447.8" y2="124.46" width="0.1524" layer="91"/>
+<junction x="1447.8" y="119.38"/>
 </segment>
 <segment>
 <wire x1="1516.38" y1="160.02" x2="1503.68" y2="160.02" width="0.1524" layer="91"/>
@@ -10871,41 +10904,41 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </net>
 <net name="N$64" class="0">
 <segment>
-<wire x1="1272.54" y1="127" x2="1272.54" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="1366.52" y1="111.76" x2="1366.52" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="R50" gate="G$1" pin="2"/>
 <pinref part="U14" gate="G$1" pin="IN-"/>
-<wire x1="1282.7" y1="127" x2="1272.54" y2="127" width="0.1524" layer="91"/>
+<wire x1="1376.68" y1="111.76" x2="1366.52" y2="111.76" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$65" class="0">
 <segment>
 <pinref part="R44" gate="G$1" pin="1"/>
 <pinref part="C50" gate="G$1" pin="2"/>
-<wire x1="1259.84" y1="134.62" x2="1252.22" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="1353.82" y1="119.38" x2="1346.2" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$66" class="0">
 <segment>
 <pinref part="R50" gate="G$1" pin="1"/>
 <pinref part="C51" gate="G$1" pin="1"/>
-<wire x1="1272.54" y1="109.22" x2="1272.54" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="1366.52" y1="93.98" x2="1366.52" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$67" class="0">
 <segment>
 <pinref part="U14" gate="G$1" pin="IN+"/>
-<wire x1="1272.54" y1="134.62" x2="1272.54" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="1272.54" y1="129.54" x2="1282.7" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="1366.52" y1="119.38" x2="1366.52" y2="114.3" width="0.1524" layer="91"/>
+<wire x1="1366.52" y1="114.3" x2="1376.68" y2="114.3" width="0.1524" layer="91"/>
 <pinref part="R44" gate="G$1" pin="2"/>
-<wire x1="1272.54" y1="134.62" x2="1270" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="1366.52" y1="119.38" x2="1363.98" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="SPEAKER_SHUTDOWN" class="0">
 <segment>
 <pinref part="U14" gate="G$1" pin="SHUTDOWN"/>
-<wire x1="1282.7" y1="134.62" x2="1282.7" y2="147.32" width="0.1524" layer="91"/>
-<wire x1="1282.7" y1="147.32" x2="1226.82" y2="147.32" width="0.1524" layer="91"/>
-<label x="1226.82" y="147.32" size="1.778" layer="95"/>
+<wire x1="1376.68" y1="119.38" x2="1376.68" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="1376.68" y1="132.08" x2="1320.8" y2="132.08" width="0.1524" layer="91"/>
+<label x="1320.8" y="132.08" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="U7" gate="G$1" pin="PB2"/>
@@ -11555,9 +11588,9 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <label x="312.42" y="-10.16" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="C50" gate="G$1" pin="1"/>
-<wire x1="1244.6" y1="134.62" x2="1226.82" y2="134.62" width="0.1524" layer="91"/>
-<label x="1226.82" y="134.62" size="1.778" layer="95"/>
+<pinref part="R81" gate="G$1" pin="1"/>
+<wire x1="1254.76" y1="119.38" x2="1242.06" y2="119.38" width="0.1524" layer="91"/>
+<label x="1242.06" y="119.38" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="CHRG_I2C_SCL" class="0">
@@ -11907,16 +11940,16 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <segment>
 <pinref part="U14" gate="G$1" pin="OUT+"/>
 <pinref part="J5" gate="G$1" pin="2"/>
-<wire x1="1315.72" y1="129.54" x2="1330.96" y2="129.54" width="0.1524" layer="91"/>
-<label x="1315.72" y="129.54" size="1.778" layer="95"/>
+<wire x1="1409.7" y1="114.3" x2="1424.94" y2="114.3" width="0.1524" layer="91"/>
+<label x="1409.7" y="114.3" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="AUDIO-" class="0">
 <segment>
 <pinref part="U14" gate="G$1" pin="OUT-"/>
 <pinref part="J5" gate="G$1" pin="1"/>
-<wire x1="1315.72" y1="127" x2="1330.96" y2="127" width="0.1524" layer="91"/>
-<label x="1315.72" y="127" size="1.778" layer="95"/>
+<wire x1="1409.7" y1="111.76" x2="1424.94" y2="111.76" width="0.1524" layer="91"/>
+<label x="1409.7" y="111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$115" class="0">
@@ -12208,6 +12241,38 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <pinref part="F3" gate="G$1" pin="2"/>
 <pinref part="JP2" gate="G$1" pin="O"/>
 <wire x1="1201.42" y1="-81.28" x2="1209.04" y2="-81.28" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="R81" gate="G$1" pin="2"/>
+<pinref part="R80" gate="G$1" pin="1"/>
+<wire x1="1270" y1="119.38" x2="1275.08" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="1264.92" y1="119.38" x2="1270" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C77" gate="G$1" pin="1"/>
+<wire x1="1270" y1="119.38" x2="1270" y2="114.3" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="R80" gate="G$1" pin="2"/>
+<pinref part="C76" gate="G$1" pin="1"/>
+<wire x1="1285.24" y1="119.38" x2="1287.78" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="1287.78" y1="119.38" x2="1287.78" y2="114.3" width="0.1524" layer="91"/>
+<pinref part="R79" gate="G$1" pin="1"/>
+<wire x1="1287.78" y1="119.38" x2="1292.86" y2="119.38" width="0.1524" layer="91"/>
+<junction x="1287.78" y="119.38"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="R79" gate="G$1" pin="2"/>
+<pinref part="C50" gate="G$1" pin="1"/>
+<wire x1="1303.02" y1="119.38" x2="1305.56" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="C75" gate="G$1" pin="1"/>
+<wire x1="1305.56" y1="119.38" x2="1338.58" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="1305.56" y1="119.38" x2="1305.56" y2="114.3" width="0.1524" layer="91"/>
+<junction x="1305.56" y="119.38"/>
 </segment>
 </net>
 </nets>
