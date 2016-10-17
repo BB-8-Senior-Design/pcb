@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -12204,6 +12204,67 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="104,1,-20.32,170.18,U3,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,167.64,U3,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,165.1,U3,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,162.56,U3,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,160.02,U3,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,157.48,U3,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,154.94,U3,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,152.4,U3,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,99.06,U4,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,96.52,U4,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,93.98,U4,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,91.44,U4,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,88.9,U4,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,86.36,U4,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,83.82,U4,VS,VCC,,,"/>
+<approved hash="104,1,-20.32,81.28,U4,VS,VCC,,,"/>
+<approved hash="202,1,533.4,-190.5,U8,SPI/!PIO,,,,"/>
+<approved hash="104,1,533.4,-160.02,U8,VDD,3.3V,,,"/>
+<approved hash="104,1,1315.72,134.62,U14,VDD,3.3V,,,"/>
+<approved hash="206,1,20.32,170.18,N$1,,,,,"/>
+<approved hash="206,1,20.32,167.64,N$1,,,,,"/>
+<approved hash="206,1,20.32,165.1,N$1,,,,,"/>
+<approved hash="206,1,20.32,162.56,N$1,,,,,"/>
+<approved hash="206,1,20.32,160.02,N$1,,,,,"/>
+<approved hash="206,1,20.32,157.48,N$1,,,,,"/>
+<approved hash="206,1,20.32,154.94,N$1,,,,,"/>
+<approved hash="206,1,20.32,152.4,N$1,,,,,"/>
+<approved hash="206,1,20.32,149.86,N$2,,,,,"/>
+<approved hash="206,1,20.32,147.32,N$2,,,,,"/>
+<approved hash="206,1,20.32,144.78,N$2,,,,,"/>
+<approved hash="206,1,20.32,142.24,N$2,,,,,"/>
+<approved hash="206,1,20.32,139.7,N$2,,,,,"/>
+<approved hash="206,1,20.32,137.16,N$2,,,,,"/>
+<approved hash="206,1,20.32,134.62,N$2,,,,,"/>
+<approved hash="206,1,20.32,132.08,N$2,,,,,"/>
+<approved hash="206,1,20.32,99.06,N$8,,,,,"/>
+<approved hash="206,1,20.32,96.52,N$8,,,,,"/>
+<approved hash="206,1,20.32,93.98,N$8,,,,,"/>
+<approved hash="206,1,20.32,91.44,N$8,,,,,"/>
+<approved hash="206,1,20.32,88.9,N$8,,,,,"/>
+<approved hash="206,1,20.32,86.36,N$8,,,,,"/>
+<approved hash="206,1,20.32,83.82,N$8,,,,,"/>
+<approved hash="206,1,20.32,81.28,N$8,,,,,"/>
+<approved hash="206,1,20.32,78.74,N$9,,,,,"/>
+<approved hash="206,1,20.32,76.2,N$9,,,,,"/>
+<approved hash="206,1,20.32,73.66,N$9,,,,,"/>
+<approved hash="206,1,20.32,71.12,N$9,,,,,"/>
+<approved hash="206,1,20.32,68.58,N$9,,,,,"/>
+<approved hash="206,1,20.32,66.04,N$9,,,,,"/>
+<approved hash="206,1,20.32,63.5,N$9,,,,,"/>
+<approved hash="206,1,20.32,60.96,N$9,,,,,"/>
+<approved hash="113,1,493.082,-229.87,LED1,,,,,"/>
+<approved hash="113,1,498.162,-237.49,LED2,,,,,"/>
+<approved hash="113,1,503.242,-245.11,LED3,,,,,"/>
+<approved hash="113,1,190.178,-156.21,LED4,,,,,"/>
+<approved hash="113,1,323.85,202.878,LED7,,,,,"/>
+<approved hash="113,1,328.93,134.298,LED8,,,,,"/>
+<approved hash="113,1,400.643,-186.495,J7,,,,,"/>
+<approved hash="113,1,419.777,178.875,J8,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
