@@ -8566,6 +8566,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="R79" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R80" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R81" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="R82" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 </parts>
 <sheets>
 <sheet>
@@ -9017,6 +9018,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="R79" gate="G$1" x="1297.94" y="119.38"/>
 <instance part="R80" gate="G$1" x="1280.16" y="119.38"/>
 <instance part="R81" gate="G$1" x="1259.84" y="119.38"/>
+<instance part="R82" gate="G$1" x="299.72" y="81.28" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -10551,12 +10553,12 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="335.28" y1="96.52" x2="317.5" y2="96.52" width="0.1524" layer="91"/>
 <pinref part="S1" gate="G$1" pin="O"/>
 <label x="325.12" y="96.52" size="1.778" layer="95"/>
-<pinref part="C11" gate="G$1" pin="2"/>
-<wire x1="299.72" y1="88.9" x2="307.34" y2="88.9" width="0.1524" layer="91"/>
-<wire x1="307.34" y1="88.9" x2="307.34" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="307.34" y1="91.44" x2="317.5" y2="91.44" width="0.1524" layer="91"/>
 <wire x1="317.5" y1="91.44" x2="317.5" y2="96.52" width="0.1524" layer="91"/>
 <junction x="317.5" y="96.52"/>
+<pinref part="R82" gate="G$1" pin="1"/>
+<wire x1="299.72" y1="76.2" x2="307.34" y2="76.2" width="0.1524" layer="91"/>
+<wire x1="307.34" y1="76.2" x2="307.34" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -12294,6 +12296,13 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="1305.56" y1="119.38" x2="1338.58" y2="119.38" width="0.1524" layer="91"/>
 <wire x1="1305.56" y1="119.38" x2="1305.56" y2="114.3" width="0.1524" layer="91"/>
 <junction x="1305.56" y="119.38"/>
+</segment>
+</net>
+<net name="N$129" class="0">
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<pinref part="R82" gate="G$1" pin="2"/>
+<wire x1="299.72" y1="88.9" x2="299.72" y2="86.36" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
