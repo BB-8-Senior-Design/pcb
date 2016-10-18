@@ -8567,6 +8567,7 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <part name="R80" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R81" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R82" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="C78" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value="0.1uF"/>
 </parts>
 <sheets>
 <sheet>
@@ -9019,6 +9020,10 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <instance part="R80" gate="G$1" x="1280.16" y="119.38"/>
 <instance part="R81" gate="G$1" x="1259.84" y="119.38"/>
 <instance part="R82" gate="G$1" x="299.72" y="81.28" rot="R90"/>
+<instance part="C78" gate="G$1" x="1209.04" y="-223.52" smashed="yes">
+<attribute name="NAME" x="1202.944" y="-223.139" size="1.778" layer="95"/>
+<attribute name="VALUE" x="1207.516" y="-223.901" size="1.778" layer="96" rot="R180"/>
+</instance>
 </instances>
 <busses>
 </busses>
@@ -11568,6 +11573,11 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <wire x1="1239.52" y1="-205.74" x2="1239.52" y2="-208.28" width="0.1524" layer="91"/>
 <junction x="1239.52" y="-208.28"/>
 <pinref part="R41" gate="G$1" pin="1"/>
+<pinref part="C78" gate="G$1" pin="2"/>
+<wire x1="1209.04" y1="-226.06" x2="1244.6" y2="-226.06" width="0.1524" layer="91"/>
+<wire x1="1244.6" y1="-226.06" x2="1244.6" y2="-213.36" width="0.1524" layer="91"/>
+<wire x1="1244.6" y1="-213.36" x2="1239.52" y2="-213.36" width="0.1524" layer="91"/>
+<wire x1="1239.52" y1="-213.36" x2="1239.52" y2="-208.28" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$122" class="0">
@@ -11712,6 +11722,8 @@ B340A  3A 40V SMA &lt;br&gt;</description>
 <junction x="1209.04" y="-208.28"/>
 <wire x1="1193.8" y1="-208.28" x2="1209.04" y2="-208.28" width="0.1524" layer="91"/>
 <pinref part="R38" gate="G$1" pin="2"/>
+<pinref part="C78" gate="G$1" pin="1"/>
+<wire x1="1209.04" y1="-208.28" x2="1209.04" y2="-218.44" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PGND" class="0">
