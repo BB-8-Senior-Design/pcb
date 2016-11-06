@@ -5125,6 +5125,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <part name="R81" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="R82" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="SUPPLY26" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>
+<part name="R12" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="R13" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="10K"/>
+<part name="SUPPLY31" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
+<part name="SUPPLY32" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5329,6 +5333,10 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <instance part="R81" gate="G$1" x="779.78" y="7.62"/>
 <instance part="R82" gate="G$1" x="299.72" y="81.28" rot="R90"/>
 <instance part="SUPPLY26" gate="G$1" x="871.22" y="177.8"/>
+<instance part="R12" gate="G$1" x="1008.38" y="137.16" rot="R90"/>
+<instance part="R13" gate="G$1" x="998.22" y="124.46" rot="R90"/>
+<instance part="SUPPLY31" gate="G$1" x="1008.38" y="142.24"/>
+<instance part="SUPPLY32" gate="G$1" x="998.22" y="129.54"/>
 </instances>
 <busses>
 </busses>
@@ -6330,6 +6338,14 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 <pinref part="SUPPLY30" gate="G$1" pin="3.3V"/>
 <wire x1="411.48" y1="-182.88" x2="411.48" y2="-177.8" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="R12" gate="G$1" pin="2"/>
+<pinref part="SUPPLY31" gate="G$1" pin="3.3V"/>
+</segment>
+<segment>
+<pinref part="R13" gate="G$1" pin="2"/>
+<pinref part="SUPPLY32" gate="G$1" pin="3.3V"/>
+</segment>
 </net>
 <net name="N$15" class="0">
 <segment>
@@ -6994,8 +7010,11 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="DATA"/>
-<wire x1="1046.48" y1="119.38" x2="1023.62" y2="119.38" width="0.1524" layer="91"/>
 <label x="1023.62" y="119.38" size="1.778" layer="95"/>
+<pinref part="R13" gate="G$1" pin="1"/>
+<wire x1="1046.48" y1="119.38" x2="998.22" y2="119.38" width="0.1524" layer="91"/>
+<wire x1="998.22" y1="119.38" x2="988.06" y2="119.38" width="0.1524" layer="91"/>
+<junction x="998.22" y="119.38"/>
 </segment>
 </net>
 <net name="SDIO_CK" class="0">
@@ -7018,8 +7037,12 @@ Basic schematic elements and footprints for 0603, 1206, and PTH resistors.</desc
 </segment>
 <segment>
 <pinref part="J6" gate="G$1" pin="CMD"/>
-<wire x1="1046.48" y1="129.54" x2="1023.62" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="1046.48" y1="129.54" x2="1008.38" y2="129.54" width="0.1524" layer="91"/>
 <label x="1023.62" y="129.54" size="1.778" layer="95"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="1008.38" y1="129.54" x2="1008.38" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="1008.38" y1="129.54" x2="1003.3" y2="129.54" width="0.1524" layer="91"/>
+<junction x="1008.38" y="129.54"/>
 </segment>
 </net>
 <net name="IMU_SDO_AG" class="0">
