@@ -1,2 +1,2 @@
 # pcb
-The main PCB
+The main PCB - now without a charging circuit
