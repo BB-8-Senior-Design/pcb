@@ -243,7 +243,7 @@
 <text x="119.28" y="50.5" size="1.778" layer="21">5V</text>
 <text x="117.18" y="47.7" size="1.778" layer="21">GND</text>
 <text x="122.94" y="74.44" size="1.016" layer="21" font="vector" rot="R90" align="center">ECE 477: GROUP 4
-Kyle Rakos, Chis Chow
+Kyle Rakos, Chris Chow
 Alex Marcellus, Allison Gruninger</text>
 <text x="124.64" y="75.3" size="1.016" layer="22" font="vector" rot="MR90" align="center">November 6, 2016</text>
 <rectangle x1="84" y1="17.4" x2="104.8" y2="21.4" layer="41"/>
