@@ -333,8 +333,8 @@
 <text x="-0.35" y="-7.62" size="1.016" layer="25" font="vector" align="center">&gt;NAME</text>
 </package>
 <package name="RADIAL_CAN_SMD-D8">
-<smd name="P$1" x="0" y="-0.25" dx="3.1" dy="0.65" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="4.65" dx="3.1" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="-0.1" dx="2.8" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="4.5" dx="2.8" dy="0.65" layer="1" rot="R90"/>
 <wire x1="3.3" y1="5.7" x2="3.3" y2="0" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.3" x2="-2" y2="-1.3" width="0.127" layer="21"/>
 <wire x1="-3.3" y1="0.1" x2="-3.3" y2="5.7" width="0.127" layer="21"/>
@@ -395,6 +395,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <rectangle x1="-5.5" y1="2.1" x2="-4.4" y2="3.8" layer="42"/>
 <rectangle x1="-3.9" y1="3.2" x2="-1.6" y2="4.8" layer="42"/>
 <rectangle x1="4.4" y1="2.1" x2="5.5" y2="3.8" layer="42"/>
+<smd name="P$9" x="-5.7" y="-9.7" dx="1.5" dy="1.5" layer="1" roundness="100"/>
+<smd name="P$16" x="5.7" y="-9.8" dx="1.5" dy="1.5" layer="1" roundness="100"/>
 </package>
 <package name="14-TSSOP">
 <smd name="P$1" x="0" y="0" dx="0.35" dy="1.6" layer="1"/>
@@ -705,8 +707,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <text x="7.62" y="3.81" size="6.35" layer="21" font="vector" align="center">-</text>
 </package>
 <package name="RADIAL_CAN_SMD-B">
-<smd name="P$1" x="0" y="-0.25" dx="2.3" dy="0.65" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="3.05" dx="2.3" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="-0.1" dx="2" dy="0.65" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="2.9" dx="2" dy="0.65" layer="1" rot="R90"/>
 <wire x1="2.15" y1="3.6" x2="2.15" y2="0" width="0.127" layer="21"/>
 <wire x1="2" y1="-0.8" x2="-2" y2="-0.8" width="0.127" layer="21"/>
 <wire x1="-2.15" y1="0.1" x2="-2.15" y2="3.6" width="0.127" layer="21"/>
@@ -723,8 +725,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <text x="0" y="-1.74" size="1.016" layer="21" font="vector" align="center">&gt;VALUE</text>
 </package>
 <package name="RADIAL_CAN_SMD-G">
-<smd name="P$1" x="0" y="-0.25" dx="4" dy="0.9" layer="1" rot="R90"/>
-<smd name="P$2" x="0" y="8.46" dx="4" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$1" x="0" y="-0.1" dx="3.7" dy="0.9" layer="1" rot="R90"/>
+<smd name="P$2" x="0" y="8.31" dx="3.7" dy="0.9" layer="1" rot="R90"/>
 <wire x1="5.15" y1="9.85" x2="5.15" y2="0" width="0.127" layer="21"/>
 <wire x1="2" y1="-1.6" x2="-2" y2="-1.6" width="0.127" layer="21"/>
 <wire x1="-5.15" y1="0.1" x2="-5.15" y2="9.85" width="0.127" layer="21"/>
@@ -1311,8 +1313,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <connect gate="G$1" pin="AIO1" pad="P$3"/>
 <connect gate="G$1" pin="AIO2" pad="P$2"/>
 <connect gate="G$1" pin="CMD/MLDP" pad="P$8"/>
-<connect gate="G$1" pin="GND@1" pad="P$1"/>
-<connect gate="G$1" pin="GND@24" pad="P$24"/>
+<connect gate="G$1" pin="GND@1" pad="P$1 P$9"/>
+<connect gate="G$1" pin="GND@24" pad="P$16 P$24"/>
 <connect gate="G$1" pin="PIO1" pad="P$10"/>
 <connect gate="G$1" pin="PIO2" pad="P$11"/>
 <connect gate="G$1" pin="PIO3" pad="P$12"/>
