@@ -640,8 +640,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="-1" y1="-1.75" x2="1" y2="-1.75" width="0.2032" layer="21"/>
 <wire x1="1" y1="-1.75" x2="1" y2="-2.25" width="0.2032" layer="21"/>
 <wire x1="-1" y1="-1.75" x2="-1" y2="-2.25" width="0.2032" layer="21"/>
-<pad name="1" x="-1.25" y="-0.55" drill="0.7" diameter="1.6"/>
-<pad name="2" x="1.25" y="-0.55" drill="0.7" diameter="1.6"/>
+<pad name="1" x="-1.25" y="-0.55" drill="1.016" diameter="1.778"/>
+<pad name="2" x="1.25" y="-0.55" drill="1.016" diameter="1.778"/>
 <text x="0" y="3.81" size="1.016" layer="25" font="vector" align="center">&gt;Name</text>
 <text x="0" y="-3.81" size="1.016" layer="27" font="vector" align="center">&gt;Value</text>
 <text x="0.616" y="0.75" size="1.27" layer="51">+</text>
