@@ -1074,6 +1074,23 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </package>
 </packages>
 </library>
+<library name="testpad">
+<description>&lt;b&gt;Test Pins/Pads&lt;/b&gt;&lt;p&gt;
+Cream on SMD OFF.&lt;br&gt;
+new: Attribute TP_SIGNAL_NAME&lt;br&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="B1,27">
+<description>&lt;b&gt;TEST PAD&lt;/b&gt;</description>
+<wire x1="-0.635" y1="0" x2="0.635" y2="0" width="0.0024" layer="37"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.0024" layer="37"/>
+<smd name="TP" x="0" y="0" dx="1.27" dy="1.27" layer="1" roundness="100" cream="no"/>
+<text x="-0.635" y="1.016" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-0.635" y="-0.762" size="0.0254" layer="27">&gt;VALUE</text>
+<text x="-0.635" y="-1.905" size="1" layer="37">&gt;TP_SIGNAL_NAME</text>
+</package>
+</packages>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1375,6 +1392,16 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R12" library="SparkFun-Passives" package="0805" value="10K" x="97.6" y="32.4" rot="R180"/>
 <element name="R13" library="SparkFun-Passives" package="0805" value="10K" x="91" y="32.4"/>
 <element name="R14" library="SparkFun-Passives" package="0805" value="10k" x="44.2" y="26.2" rot="R270"/>
+<element name="AUDIO" library="testpad" package="B1,27" value="PTR1B1,27" x="34.2" y="25.8" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="33.565" y="23.895" size="1" layer="37"/>
+<attribute name="NAME" x="29.765" y="26.616" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="33.565" y="25.038" size="0.0254" layer="27"/>
+</element>
+<element name="SPEAK" library="testpad" package="B1,27" value="PTR1B1,27" x="36" y="17.6" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="35.365" y="15.695" size="1" layer="37"/>
+<attribute name="NAME" x="33.565" y="18.616" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="35.365" y="16.838" size="0.0254" layer="27"/>
+</element>
 </elements>
 <signals>
 <signal name="VCC">
@@ -3149,6 +3176,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="40.9" y1="18.2" x2="39.1" y2="16.4" width="0.3048" layer="1"/>
 <wire x1="39.1" y1="16.4" x2="39.1" y2="9.1" width="0.3048" layer="1"/>
 <wire x1="39.1" y1="9.1" x2="39.95" y2="7.9" width="0.3048" layer="1"/>
+<contactref element="SPEAK" pad="TP"/>
+<wire x1="36" y1="17.6" x2="37.9" y2="17.6" width="0.254" layer="1"/>
+<wire x1="37.9" y1="17.6" x2="39.1" y2="16.4" width="0.254" layer="1"/>
 </signal>
 <signal name="AUDIO-">
 <contactref element="U14" pad="8"/>
@@ -3753,7 +3783,7 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="34.6" y1="30.7" x2="35" y2="30.3" width="0.2" layer="1"/>
 <wire x1="35" y1="30.3" x2="35.9" y2="30.3" width="0.2" layer="1"/>
 </signal>
-<signal name="N$47">
+<signal name="AUDIO_FILT_OUT">
 <contactref element="R79" pad="2"/>
 <contactref element="C50" pad="1"/>
 <contactref element="C75" pad="1"/>
@@ -3765,6 +3795,9 @@ Please make sure your boards conform to these design rules.</description>
 <wire x1="37.8" y1="27.7" x2="37.1" y2="27.7" width="0.2" layer="1"/>
 <wire x1="37.1" y1="27.7" x2="36.45" y2="27.05" width="0.2" layer="1"/>
 <wire x1="36.45" y1="27.05" x2="36.45" y2="26.35" width="0.2" layer="1"/>
+<contactref element="AUDIO" pad="TP"/>
+<wire x1="36.45" y1="26.35" x2="34.75" y2="26.35" width="0.254" layer="1"/>
+<wire x1="34.75" y1="26.35" x2="34.2" y2="25.8" width="0.254" layer="1"/>
 </signal>
 <signal name="N$129">
 <contactref element="C11" pad="2"/>
