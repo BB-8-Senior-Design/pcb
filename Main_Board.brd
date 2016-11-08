@@ -3804,7 +3804,7 @@ Please make sure your boards conform to these design rules.</description>
 <element name="U3" library="BB8" package="36-BSSOP" value="BTM7752G" x="108.08" y="44.51"/>
 <element name="P1" library="BB8" package="1X06" value="MOTOR_HEADER" x="124.33" y="49.9" smashed="yes" rot="R90">
 <attribute name="NAME" x="126.6588" y="50.0962" size="1.27" layer="25" font="vector" ratio="10" rot="R270" align="center"/>
-<attribute name="VALUE" x="126.505" y="49.68" size="1.27" layer="27" font="vector" rot="R90" align="center"/>
+<attribute name="VALUE" x="119.02" y="41.105" size="1.27" layer="27" font="vector" rot="R180" align="center"/>
 </element>
 <element name="R1" library="SparkFun-Passives" package="0805" value="4.7K" x="102.41" y="47.66"/>
 <element name="R3" library="SparkFun-Passives" package="0805" value="4.7K" x="102.35" y="44.66"/>
@@ -3813,7 +3813,10 @@ Please make sure your boards conform to these design rules.</description>
 <element name="R9" library="SparkFun-Passives" package="0805" value=".244K" x="97.42" y="44.66"/>
 <element name="C6" library="SparkFun-Capacitors" package="0805" value="470nF" x="102.35" y="50.44" rot="R180"/>
 <element name="U4" library="BB8" package="36-BSSOP" value="BTM7752G" x="13.9" y="49.6"/>
-<element name="P2" library="BB8" package="1X06" value="MOTOR_HEADER" x="5.4" y="54.6" rot="R90"/>
+<element name="P2" library="BB8" package="1X06" value="MOTOR_HEADER" x="5.4" y="54.6" smashed="yes" rot="R90">
+<attribute name="NAME" x="3.1712" y="54.6038" size="1.27" layer="25" font="vector" ratio="10" rot="R90" align="center"/>
+<attribute name="VALUE" x="10.98" y="45.625" size="1.27" layer="27" font="vector" align="center"/>
+</element>
 <element name="R2" library="SparkFun-Passives" package="0805" value="4.7K" x="28.49" y="50.46"/>
 <element name="R4" library="SparkFun-Passives" package="0805" value="4.7K" x="28.5" y="47.24" rot="R180"/>
 <element name="R6" library="SparkFun-Passives" package="0805" value="4.7K" x="34.71" y="53.46"/>
