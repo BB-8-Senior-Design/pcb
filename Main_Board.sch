@@ -395,8 +395,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <rectangle x1="-5.5" y1="2.1" x2="-4.4" y2="3.8" layer="42"/>
 <rectangle x1="-3.9" y1="3.2" x2="-1.6" y2="4.8" layer="42"/>
 <rectangle x1="4.4" y1="2.1" x2="5.5" y2="3.8" layer="42"/>
-<smd name="P$9" x="-5.7" y="-9.7" dx="1.5" dy="1.5" layer="1" roundness="100"/>
-<smd name="P$16" x="5.7" y="-9.8" dx="1.5" dy="1.5" layer="1" roundness="100"/>
 </package>
 <package name="14-TSSOP">
 <smd name="P$1" x="0" y="0" dx="0.35" dy="1.6" layer="1"/>
@@ -640,8 +638,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="-1" y1="-1.75" x2="1" y2="-1.75" width="0.2032" layer="21"/>
 <wire x1="1" y1="-1.75" x2="1" y2="-2.25" width="0.2032" layer="21"/>
 <wire x1="-1" y1="-1.75" x2="-1" y2="-2.25" width="0.2032" layer="21"/>
-<pad name="1" x="-1.25" y="-0.55" drill="1.016" diameter="1.778"/>
-<pad name="2" x="1.25" y="-0.55" drill="1.016" diameter="1.778"/>
+<pad name="1" x="-1.25" y="-0.55" drill="0.7" diameter="1.6"/>
+<pad name="2" x="1.25" y="-0.55" drill="0.7" diameter="1.6"/>
 <text x="0" y="3.81" size="1.016" layer="25" font="vector" align="center">&gt;Name</text>
 <text x="0" y="-3.81" size="1.016" layer="27" font="vector" align="center">&gt;Value</text>
 <text x="0.616" y="0.75" size="1.27" layer="51">+</text>
@@ -672,6 +670,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <smd name="P$WRITEPROTECT" x="14.35" y="20" dx="2" dy="0.8" layer="1"/>
 <rectangle x1="-10" y1="6" x2="10.5" y2="10" layer="39"/>
 <rectangle x1="12" y1="4.5" x2="13.85" y2="22.3" layer="39"/>
+<circle x="12" y="23.5" radius="0.75" width="0.1" layer="45"/>
+<circle x="-12.2" y="23.5" radius="0.75" width="0.1" layer="45"/>
 <wire x1="-14.65" y1="0" x2="13.85" y2="0" width="0.25" layer="21"/>
 <wire x1="-14.65" y1="0" x2="-14.65" y2="29" width="0.25" layer="21"/>
 <wire x1="-14.65" y1="29" x2="13.85" y2="29" width="0.25" layer="21"/>
@@ -682,8 +682,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <rectangle x1="13.35" y1="14.5" x2="16.35" y2="17.5" layer="1"/>
 <rectangle x1="13.35" y1="1.5" x2="16.35" y2="4.5" layer="1"/>
 <text x="6.4" y="1.89" size="1.016" layer="27" font="vector" align="center">&gt;VALUE</text>
-<hole x="-12.2" y="23.5" drill="0.75"/>
-<hole x="12" y="23.5" drill="0.75"/>
 </package>
 <package name="SWITCH">
 <pad name="P$4" x="0" y="0" drill="1.655"/>
@@ -1313,8 +1311,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <connect gate="G$1" pin="AIO1" pad="P$3"/>
 <connect gate="G$1" pin="AIO2" pad="P$2"/>
 <connect gate="G$1" pin="CMD/MLDP" pad="P$8"/>
-<connect gate="G$1" pin="GND@1" pad="P$1 P$9"/>
-<connect gate="G$1" pin="GND@24" pad="P$16 P$24"/>
+<connect gate="G$1" pin="GND@1" pad="P$1"/>
+<connect gate="G$1" pin="GND@24" pad="P$24"/>
 <connect gate="G$1" pin="PIO1" pad="P$10"/>
 <connect gate="G$1" pin="PIO2" pad="P$11"/>
 <connect gate="G$1" pin="PIO3" pad="P$12"/>
@@ -6468,7 +6466,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="S2" library="BB8" deviceset="SWITCH" device=""/>
 <part name="GND37" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="R74" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES" value="1K"/>
-<part name="LED4" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
+<part name="POWER" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
 <part name="SUPPLY27" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
 <part name="GND39" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY24" library="SparkFun-Aesthetics" deviceset="3.3V" device=""/>
@@ -6517,7 +6515,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SPEAK" library="testpad" deviceset="PTR1" device="B1,27"/>
 <part name="J9" library="SparkFun-Connectors" deviceset="M04" device="POLAR"/>
 <part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="J2" library="BB8" deviceset="2-PIN-JUMPER" device="" value=""/>
+<part name="J2" library="BB8" deviceset="2-PIN-JUMPER" device="" value="2-PIN-JUMPER"/>
 <part name="LED5" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
 <part name="R15" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP"/>
@@ -6680,7 +6678,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="S2" gate="G$1" x="843.28" y="175.26"/>
 <instance part="GND37" gate="1" x="934.72" y="-17.78"/>
 <instance part="R74" gate="G$1" x="190.5" y="-142.24" rot="MR90"/>
-<instance part="LED4" gate="G$1" x="190.5" y="-154.94" rot="MR0"/>
+<instance part="POWER" gate="G$1" x="190.5" y="-154.94" rot="MR0"/>
 <instance part="SUPPLY27" gate="G$1" x="190.5" y="-134.62" rot="MR0"/>
 <instance part="GND39" gate="1" x="190.5" y="-165.1" rot="MR0"/>
 <instance part="SUPPLY24" gate="G$1" x="967.74" y="12.7"/>
@@ -7263,7 +7261,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <segment>
 <pinref part="GND39" gate="1" pin="GND"/>
 <wire x1="190.5" y1="-157.48" x2="190.5" y2="-160.02" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="POWER" gate="G$1" pin="C"/>
 <wire x1="190.5" y1="-160.02" x2="190.5" y2="-162.56" width="0.1524" layer="91"/>
 <junction x="190.5" y="-160.02"/>
 </segment>
@@ -8507,7 +8505,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$42" class="0">
 <segment>
 <pinref part="R74" gate="G$1" pin="1"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="POWER" gate="G$1" pin="A"/>
 <wire x1="190.5" y1="-147.32" x2="190.5" y2="-152.4" width="0.1524" layer="91"/>
 </segment>
 </net>
