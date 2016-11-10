@@ -6519,6 +6519,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="LED5" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
 <part name="R15" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
 <part name="J3" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP"/>
+<part name="C12" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value=".1uF"/>
+<part name="C13" library="SparkFun-Capacitors" deviceset="CAP" device="0805" value=".1uF"/>
+<part name="GND51" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
+<part name="GND52" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -6737,6 +6741,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="LED5" gate="G$1" x="330.2" y="127" rot="R270"/>
 <instance part="R15" gate="G$1" x="314.96" y="127" rot="R180"/>
 <instance part="J3" gate="G$1" x="314.96" y="119.38"/>
+<instance part="C12" gate="G$1" x="149.86" y="99.06"/>
+<instance part="C13" gate="G$1" x="157.48" y="172.72"/>
+<instance part="GND51" gate="1" x="157.48" y="165.1"/>
+<instance part="GND52" gate="1" x="149.86" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -7318,6 +7326,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="309.88" y1="127" x2="297.18" y2="127" width="0.1524" layer="91"/>
 <junction x="297.18" y="127"/>
 </segment>
+<segment>
+<pinref part="C13" gate="G$1" pin="2"/>
+<pinref part="GND51" gate="1" pin="GND"/>
+<wire x1="157.48" y1="170.18" x2="157.48" y2="167.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="2"/>
+<pinref part="GND52" gate="1" pin="GND"/>
+<wire x1="149.86" y1="96.52" x2="149.86" y2="93.98" width="0.1524" layer="91"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -7462,6 +7480,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="127" y1="104.14" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
 <pinref part="SUPPLY10" gate="G$1" pin="5V"/>
 <wire x1="137.16" y1="104.14" x2="137.16" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="149.86" y1="104.14" x2="137.16" y2="104.14" width="0.1524" layer="91"/>
+<junction x="137.16" y="104.14"/>
 </segment>
 <segment>
 <pinref part="U6" gate="G$1" pin="4!OE"/>
@@ -7680,6 +7701,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="127" y1="177.8" x2="134.62" y2="177.8" width="0.1524" layer="91"/>
 <pinref part="SUPPLY8" gate="G$1" pin="3.3V"/>
 <wire x1="134.62" y1="177.8" x2="134.62" y2="180.34" width="0.1524" layer="91"/>
+<pinref part="C13" gate="G$1" pin="1"/>
+<wire x1="134.62" y1="177.8" x2="157.48" y2="177.8" width="0.1524" layer="91"/>
+<junction x="134.62" y="177.8"/>
 </segment>
 <segment>
 <pinref part="U8" gate="G$1" pin="VDD"/>
