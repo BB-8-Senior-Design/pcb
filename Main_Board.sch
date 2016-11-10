@@ -6518,6 +6518,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="J9" library="SparkFun-Connectors" deviceset="M04" device="POLAR"/>
 <part name="GND50" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="J2" library="BB8" deviceset="2-PIN-JUMPER" device="" value=""/>
+<part name="LED5" library="LilyPad-Wearables" deviceset="LED" device="1206"/>
+<part name="R15" library="SparkFun-Resistors" deviceset="RESISTOR" device="0805-RES" value="100"/>
+<part name="J3" library="SparkFun-Connectors" deviceset="M01" device="PTH_NO_SILK_YES_STOP"/>
 </parts>
 <sheets>
 <sheet>
@@ -6672,7 +6675,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="SUPPLY23" gate="G$1" x="985.52" y="-144.78"/>
 <instance part="C9" gate="G$1" x="-15.24" y="-149.86"/>
 <instance part="J5" gate="G$1" x="952.5" y="0" rot="MR0"/>
-<instance part="GND28" gate="1" x="289.56" y="132.08"/>
+<instance part="GND28" gate="1" x="297.18" y="109.22"/>
 <instance part="J6" gate="G$1" x="1059.18" y="114.3"/>
 <instance part="S2" gate="G$1" x="843.28" y="175.26"/>
 <instance part="GND37" gate="1" x="934.72" y="-17.78"/>
@@ -6733,6 +6736,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="J9" gate="G$1" x="497.84" y="2.54" rot="R180"/>
 <instance part="GND50" gate="1" x="426.72" y="-2.54"/>
 <instance part="J2" gate="G$1" x="500.38" y="-20.32" rot="R180"/>
+<instance part="LED5" gate="G$1" x="330.2" y="127" rot="R270"/>
+<instance part="R15" gate="G$1" x="314.96" y="127" rot="R180"/>
+<instance part="J3" gate="G$1" x="314.96" y="119.38"/>
 </instances>
 <busses>
 </busses>
@@ -7273,11 +7279,6 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="GND84" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="R16" gate="G$1" pin="2"/>
-<pinref part="GND28" gate="1" pin="GND"/>
-<wire x1="309.88" y1="134.62" x2="289.56" y2="134.62" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="R78" gate="G$1" pin="2"/>
 <pinref part="GND44" gate="1" pin="GND"/>
 <wire x1="762" y1="154.94" x2="762" y2="152.4" width="0.1524" layer="91"/>
@@ -7308,6 +7309,16 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="492.76" y1="5.08" x2="426.72" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="426.72" y1="5.08" x2="426.72" y2="0" width="0.1524" layer="91"/>
 <pinref part="GND50" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R16" gate="G$1" pin="2"/>
+<pinref part="GND28" gate="1" pin="GND"/>
+<wire x1="309.88" y1="134.62" x2="297.18" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="297.18" y1="134.62" x2="297.18" y2="127" width="0.1524" layer="91"/>
+<pinref part="R15" gate="G$1" pin="2"/>
+<wire x1="297.18" y1="127" x2="297.18" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="309.88" y1="127" x2="297.18" y2="127" width="0.1524" layer="91"/>
+<junction x="297.18" y="127"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -8524,13 +8535,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <net name="N$29" class="0">
 <segment>
 <pinref part="U7" gate="G$1" pin="PC14"/>
-<wire x1="330.2" y1="127" x2="335.28" y2="127" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$21" class="0">
-<segment>
-<pinref part="U7" gate="G$1" pin="PC15"/>
-<wire x1="330.2" y1="119.38" x2="335.28" y2="119.38" width="0.1524" layer="91"/>
+<pinref part="LED5" gate="G$1" pin="A"/>
+<wire x1="335.28" y1="127" x2="332.74" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -8633,6 +8639,20 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="S2" gate="G$1" pin="O"/>
 <pinref part="F3" gate="G$1" pin="1"/>
 <wire x1="850.9" y1="175.26" x2="848.36" y2="175.26" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$12" class="0">
+<segment>
+<pinref part="LED5" gate="G$1" pin="C"/>
+<pinref part="R15" gate="G$1" pin="1"/>
+<wire x1="320.04" y1="127" x2="325.12" y2="127" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$17" class="0">
+<segment>
+<pinref part="U7" gate="G$1" pin="PC15"/>
+<pinref part="J3" gate="G$1" pin="1"/>
+<wire x1="335.28" y1="119.38" x2="322.58" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
