@@ -395,6 +395,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <rectangle x1="-5.5" y1="2.1" x2="-4.4" y2="3.8" layer="42"/>
 <rectangle x1="-3.9" y1="3.2" x2="-1.6" y2="4.8" layer="42"/>
 <rectangle x1="4.4" y1="2.1" x2="5.5" y2="3.8" layer="42"/>
+<smd name="P$9" x="-5.7" y="-9.7" dx="1.5" dy="1.5" layer="1" roundness="100"/>
+<smd name="P$16" x="5.7" y="-9.8" dx="1.5" dy="1.5" layer="1" roundness="100"/>
 </package>
 <package name="14-TSSOP">
 <smd name="P$1" x="0" y="0" dx="0.35" dy="1.6" layer="1"/>
@@ -638,8 +640,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <wire x1="-1" y1="-1.75" x2="1" y2="-1.75" width="0.2032" layer="21"/>
 <wire x1="1" y1="-1.75" x2="1" y2="-2.25" width="0.2032" layer="21"/>
 <wire x1="-1" y1="-1.75" x2="-1" y2="-2.25" width="0.2032" layer="21"/>
-<pad name="1" x="-1.25" y="-0.55" drill="0.7" diameter="1.6"/>
-<pad name="2" x="1.25" y="-0.55" drill="0.7" diameter="1.6"/>
+<pad name="1" x="-1.25" y="-0.55" drill="1.016" diameter="1.778"/>
+<pad name="2" x="1.25" y="-0.55" drill="1.016" diameter="1.778"/>
 <text x="0" y="3.81" size="1.016" layer="25" font="vector" align="center">&gt;Name</text>
 <text x="0" y="-3.81" size="1.016" layer="27" font="vector" align="center">&gt;Value</text>
 <text x="0.616" y="0.75" size="1.27" layer="51">+</text>
@@ -670,8 +672,6 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <smd name="P$WRITEPROTECT" x="14.35" y="20" dx="2" dy="0.8" layer="1"/>
 <rectangle x1="-10" y1="6" x2="10.5" y2="10" layer="39"/>
 <rectangle x1="12" y1="4.5" x2="13.85" y2="22.3" layer="39"/>
-<circle x="12" y="23.5" radius="0.75" width="0.1" layer="45"/>
-<circle x="-12.2" y="23.5" radius="0.75" width="0.1" layer="45"/>
 <wire x1="-14.65" y1="0" x2="13.85" y2="0" width="0.25" layer="21"/>
 <wire x1="-14.65" y1="0" x2="-14.65" y2="29" width="0.25" layer="21"/>
 <wire x1="-14.65" y1="29" x2="13.85" y2="29" width="0.25" layer="21"/>
@@ -682,6 +682,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <rectangle x1="13.35" y1="14.5" x2="16.35" y2="17.5" layer="1"/>
 <rectangle x1="13.35" y1="1.5" x2="16.35" y2="4.5" layer="1"/>
 <text x="6.4" y="1.89" size="1.016" layer="27" font="vector" align="center">&gt;VALUE</text>
+<hole x="-12.2" y="23.5" drill="0.75"/>
+<hole x="12" y="23.5" drill="0.75"/>
 </package>
 <package name="SWITCH">
 <pad name="P$4" x="0" y="0" drill="1.655"/>
@@ -1311,8 +1313,8 @@ This footprint has omitted the ground pads on pins 9 and 16.
 <connect gate="G$1" pin="AIO1" pad="P$3"/>
 <connect gate="G$1" pin="AIO2" pad="P$2"/>
 <connect gate="G$1" pin="CMD/MLDP" pad="P$8"/>
-<connect gate="G$1" pin="GND@1" pad="P$1"/>
-<connect gate="G$1" pin="GND@24" pad="P$24"/>
+<connect gate="G$1" pin="GND@1" pad="P$1 P$9"/>
+<connect gate="G$1" pin="GND@24" pad="P$16 P$24"/>
 <connect gate="G$1" pin="PIO1" pad="P$10"/>
 <connect gate="G$1" pin="PIO2" pad="P$11"/>
 <connect gate="G$1" pin="PIO3" pad="P$12"/>
@@ -1776,21 +1778,6 @@ We've spent an enormous amount of time creating and checking these footprints an
 &lt;br&gt;&lt;br&gt;
 You are welcome to use this library for commercial purposes. For attribution, we ask that when you begin to sell your device using our footprint, you email us with a link to the product being sold. We want bragging rights that we helped (in a very small part) to create your 8th world wonder. We would like the opportunity to feature your device on our homepage.</description>
 <packages>
-<package name="1206">
-<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
-<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
-<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
-<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
-<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
-<text x="-1.27" y="1.143" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.397" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
-<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
-<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
-</package>
 <package name="AXIAL-0.3">
 <wire x1="-2.54" y1="0.762" x2="2.54" y2="0.762" width="0.2032" layer="21"/>
 <wire x1="2.54" y1="0.762" x2="2.54" y2="0" width="0.2032" layer="21"/>
@@ -1828,8 +1815,8 @@ chip</description>
 <wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
 <smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
 <smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
-<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+<text x="0" y="1.3335" size="0.8128" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="0" y="-1.143" size="0.8128" layer="27" font="vector" align="center">&gt;VALUE</text>
 </package>
 <package name="0603-RES">
 <wire x1="-1.473" y1="0.983" x2="1.473" y2="0.983" width="0.0508" layer="39"/>
@@ -2192,6 +2179,21 @@ It has reduced top mask to make it harder to put the component on the wrong side
 <circle x="2.54" y="0" radius="0.915809375" width="0" layer="30"/>
 <circle x="0" y="0" radius="0.40160625" width="0" layer="29"/>
 <circle x="2.54" y="0" radius="0.40160625" width="0" layer="29"/>
+</package>
+<package name="1206">
+<wire x1="-2.473" y1="0.983" x2="2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="-0.983" x2="-2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-2.473" y1="-0.983" x2="-2.473" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="2.473" y1="0.983" x2="2.473" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-0.965" y1="0.787" x2="0.965" y2="0.787" width="0.1016" layer="51"/>
+<wire x1="-0.965" y1="-0.787" x2="0.965" y2="-0.787" width="0.1016" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<smd name="2" x="1.4" y="0" dx="1.6" dy="1.8" layer="1"/>
+<text x="0" y="1.524" size="0.8128" layer="25" font="vector" align="center">&gt;NAME</text>
+<text x="-1.397" y="-1.524" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.7018" y1="-0.8509" x2="-0.9517" y2="0.8491" layer="51"/>
+<rectangle x1="0.9517" y1="-0.8491" x2="1.7018" y2="0.8509" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.4001" x2="0.1999" y2="0.4001" layer="35"/>
 </package>
 </packages>
 <symbols>
