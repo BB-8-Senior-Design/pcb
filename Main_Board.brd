@@ -2708,6 +2708,7 @@ Alex Marcellus, Allison Gruninger</text>
 <text x="68.3" y="21.4" size="1" layer="21" font="vector" rot="R90">N/C</text>
 <text x="72.3" y="25.5" size="1" layer="21" font="vector" rot="R90">ALERT</text>
 <text x="72.4" y="20.9" size="1" layer="21" font="vector" rot="R90">PRES</text>
+<text x="33.7" y="7.5" size="1.778" layer="21" font="vector" align="center">-</text>
 </plain>
 <libraries>
 <library name="BB8">
